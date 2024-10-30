@@ -7,32 +7,7 @@ Here's the updated `README.md` with the information about the GitHub Actions wor
 This repository contains the setup for a **Docusaurus** site enhanced with **Insighter** and custom CSS. The site can be deployed through **GitHub Pages** and managed using external CMS systems like **DHub** or **Insighter** .
 
 ## Table of Contents 
- 
-- [Features](#features)
 
-- [Prerequisites](#prerequisites)
-
-- [Getting Started](#getting-started)
-
-  - [Installation](#installation)
-
-  - [Custom CSS](#custom-css)
-
-- [Content Management](#content-management)
-
-  - [Using Insighter](#using-insighter)
-
-  - [Using DHub](#using-dhub)
-
-- [Deployment](#deployment)
-
-  - [Deploying to GitHub Pages](#deploying-to-github-pages)
-
-  - [Direct Fork Deployment via Insighter](#direct-fork-deployment-via-insighter)
-
-- [Contributing](#contributing)
-
-- [License](#license)
 
 ## Features
 
