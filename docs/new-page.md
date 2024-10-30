@@ -26,7 +26,7 @@ This repository contains the setup for a **Docusaurus** site enhanced with **Ins
 
 ## Getting Started
 
-```bash
+```js
 
 ciao
 
