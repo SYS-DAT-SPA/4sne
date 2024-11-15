@@ -18,7 +18,7 @@ jobs:
       - name: create pull request
         run: gh pr create -B build -H master --title 'Merge master into build' --body 'Created by Github action'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
 
       # Aspetta qualche secondo per permettere la creazione della PR
       - name: Wait for PR creation
@@ -38,9 +38,9 @@ jobs:
       - name: Trigger another workflow via API
         run: |
           curl -X POST \
-          -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
+          -H "Authorization: token ${{ secrets.TOKEN }}" \
           -H "Accept: application/vnd.github.v3+json" \
           https://api.github.com/repos/${{ github.repository }}/actions/workflows/87786988/dispatches \
           -d '{"ref":"build"}'
         env:
-          GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
