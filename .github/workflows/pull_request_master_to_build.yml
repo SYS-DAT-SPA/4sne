@@ -18,7 +18,7 @@ jobs:
       - name: create pull request
         run: gh pr create -B build -H master --title 'Merge master into build' --body 'Created by Github action'
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
 
       # Aspetta qualche secondo per permettere la creazione della PR
       - name: Wait for PR creation
