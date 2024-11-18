@@ -1,1 +1,0 @@
-(self.webpackChunkinsighter=self.webpackChunkinsighter||[]).push([[9833],{9833:()=>{}}]);
