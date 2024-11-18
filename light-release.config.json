@@ -5,7 +5,7 @@
   "badgeStyle": "flat-square",
   "dateFormat": "YYYY-MM-DD",
   "autoCommit": true,
-  "omitAuthor": true,
+  "omitAuthor": false,
   "blockIfChangesExist": false,
   "squashIntoSingleVersioning": true,
   "showCommitImpact": true,
