@@ -2,7 +2,7 @@
   "label": "Docs Sidebar",
   "items": [
     {
-      "document": "docs/Introduction.mdx",
+      "document": "docs/INTRODUCTION.mdx",
       "_template": "doc"
     },
     {
