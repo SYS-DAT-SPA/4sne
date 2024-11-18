@@ -12,12 +12,6 @@
       "link": "blog",
       "externalLink": "/blog",
       "position": "left"
-    },
-    {
-      "label": "Edit",
-      "link": "external",
-      "externalLink": "/",
-      "position": "right"
     }
   ],
   "logo": {

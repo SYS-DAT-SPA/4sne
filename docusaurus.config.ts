@@ -153,6 +153,10 @@ const config = {
           (docusaurusData.footer?.copyright || docusaurusData.title),
       },
     }),
+    themes: [["@easyops-cn/docusaurus-search-local",{
+        hashed: true,
+      },
+    ]],
 };
 
 module.exports = config;

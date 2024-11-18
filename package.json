@@ -1,9 +1,10 @@
 {
   "name": "insighter",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
+    "release": "light-release",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "postbuild": "node postprocess",
@@ -18,9 +19,11 @@
   "dependencies": {
     "@docusaurus/core": "3.5.2",
     "@docusaurus/preset-classic": "3.5.2",
+    "@easyops-cn/docusaurus-search-local": "^0.45.0",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
     "decap-cms-app": "^3.3.3",
+    "light-release": "^2.4.0",
     "prism-react-renderer": "^2.4.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
