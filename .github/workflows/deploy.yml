@@ -1,7 +1,8 @@
 on:
-  push:
-    branches:
-      - build # Change this to your default branch if it's different
+  pull_request:
+    branches: 
+      - build
+    types: [closed]
 
 jobs:
   deploy:
