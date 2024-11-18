@@ -2,20 +2,217 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://localhost:3000/blog</id>
     <title>4Seasons Next Edition Blog</title>
-    <updated>2024-10-18T00:00:00.000Z</updated>
+    <updated>2024-11-18T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="../http:/localhost:3000/blog/index.html"/>
     <subtitle>4Seasons Next Edition Blog</subtitle>
     <icon>http://localhost:3000/img/logo.png</icon>
     <entry>
-        <title type="html"><![CDATA[Release note 2.6.507.2442.1.0.1745.0]]></title>
+        <title type="html"><![CDATA[Release note 2447]]></title>
+        <id>http://localhost:3000/blog/Release note 2024-11-18</id>
+        <link href="../http:/localhost:3000/blog/Release note 2024-11-18/index.html"/>
+        <updated>2024-11-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[4Seasons Next]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="http://localhost:3000/blog/Release%20note%202024-11-18#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
+<p>La seguente versione 2447 del 18/11/2024 riporta i seguenti aggiornamenti</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p><p>Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="http://localhost:3000/blog/Release%20note%202024-11-18#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
+<p>#24</p>
+<p>L'aggiornamento del software ha introdotto diverse migliorie significative. Tra le principali novità, si evidenziano l'estensione della gestione del magazzino con nuove etichette, la possibilità di visualizzare lo storico dei blocchi clienti, e l'ottimizzazione della creazione di documenti e modelli. Inoltre, sono stati implementati controlli più strutturati per l'inventario e miglioramenti nell'importazione dei prodotti per l'e-commerce, rendendo il sistema più efficiente e user-friendly.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="http://localhost:3000/blog/Release%20note%202024-11-18#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
+<ol>
+<li>Magazzino CF: prevista l'estensione prodotto (etichetta/cartellino/richiesta confezione) nella maschera di movimento manuale.&nbsp;</li>
+<li>Clienti: abilitata la possibilità di avere lo storico del campo blocco cliente nel tempo di un determinato cliente.</li>
+<li>Import-tool: aggiunta la tabella che copia gli argomenti-dto sul template, ciò permette di poter generare diversi template su lo stesso argomento.</li>
+<li>Documenti clienti: spostati in prima pagina e sempre visibili i campi relativi alle movimentazioni di magazzino.</li>
+<li>Documenti clienti e fornitori aggiunta la possibilità di rendere provvisorio un documento definitivo purché sia manuale.</li>
+<li>Documenti clienti da ordini clienti: ripristino il recupero del tipo documento da ordine ed ottimizzata la procedura.</li>
+<li>Composizioni: è stata allargata la descrizione della composizione.</li>
+<li>Modelli: nella gestione per l'automazione del codice modello è stata inserita la gestione del contatore alfanumerico (ad oggi era solo numerico).</li>
+<li>Ordini fornitori MP: fix conversione della quantità della UM alternativa.</li>
+<li>Ora è possibile filtrare le liste libere per totale capi direttamente in griglia</li>
+<li>Crea documenti da reso: contemplata la spaccatura e il riporto del campo ScorpIva, prezzi incluso iva.</li>
+<li>Gestione reso: nelle righe del reso visualizzato anche il documento di partenza.&nbsp;</li>
+<li>Aggiunta configurazione in azienda per la gestione delle etichette cartellino richieste su confezione. Le opzioni sono:&nbsp; &nbsp;solo nell'ordine cliente anche in approvvigionamento e magazzino</li>
+<li>Gestione Etichetta Cartellino Richiesta Confezionamento in Richieste Lancio: In base alla selezione in azienda (Etichetta\Cartellino\Richiesta su Confezione), nei risultati si vedranno o meno le colonne dei campi Etichetta Cartellino Richiesta su Confezione.&nbsp; Il calcolo oltre a verificare la selezione in azienda verifica anche i flag singoli del prodotto, per raggruppare in caso di unito oppure semplicemente non considerare in caso di non unito.</li>
+<li>Sono Stati inseriti i campi per inserire Etichetta, Cartellino e Richiesta su Confezione al lancio delle commesse manuali in base alle configurazioni dell'azienda del codice prodotto</li>
+<li>Modelli abbinamenti di vendita: fix ripristinata la cancellazione di un abbinamento, il problema era legato all'esistenza di un commercializzato ma non controllava tutta la chiave, è stata ripristinata verificando tutta la chiave.</li>
+<li>Versamento resi: contemplata la gestione del conto vendita in fase di versamento a magazzino, scaricando l'eventuale magazzino in c/v specificato (al momento solo manuale).</li>
+<li>Inventario: aggiunti controlli più strutturati sul processo di inventario, diversificandolo dal rettifica.</li>
+<li>Disassegnazione ordine: se a parità di chiave (ordine-riga-frazio) esistono righe in spedizione o già bollettate, la disassegnazione genera una nuova riga ordine.</li>
+<li>Ordini fornitori CF: contemplato il codice sconto che non sembrava venisse calcolato sia nel riepilogo sia in stampa.</li>
+<li>Nelle richieste fabbisogno sono stati eliminati i filtri sui materiali presenti nella sezione magazzino. Nei risultati è stata aggiunta la possibilità di filtrare la griglia dei risultati anche per Codice e descrizione fornitore, inoltre è stato aggiunto un pulsante per l'estrazione dei dati in csv</li>
+<li>In stampa barcode, quando viene forzato un listino viene messo il prezzo del listino trovato, 0 se il listino non esiste</li>
+<li>E-commerce: ottimizzato&nbsp;import prodotti per accelerarne i tempi.</li>
+<li>Documenti clienti: ottimizzato il calcolo delle scadenze, migliorando il tempo di salvataggio.</li>
+</ol>]]></content>
+        <author>
+            <name>4SNE</name>
+            <uri>https://www.sys-datgroup.com/</uri>
+        </author>
+        <category label="4SNE" term="4SNE"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Release note 2446]]></title>
+        <id>http://localhost:3000/blog/Release note 2024-11-15</id>
+        <link href="../http:/localhost:3000/blog/Release note 2024-11-15/index.html"/>
+        <updated>2024-11-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[4Seasons Next]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="http://localhost:3000/blog/Release%20note%202024-11-15#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
+<p>&nbsp;</p>
+<p>La seguente versione <strong>2446</strong> del 15/11/2024 riporta i seguenti aggiornamenti</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p></div></div>
+<p>&nbsp;</p>
+<p>Aggiornamenti:</p>
+<h1>4</h1>
+<p>L'aggiornamento del software ha introdotto diverse migliorie significative. È stata aggiunta la possibilità di rendere provvisori i documenti definitivi manuali per clienti e fornitori, e il calcolo del codice sconto negli ordini fornitori è stato corretto per apparire sia nel riepilogo che nella stampa. Inoltre, è stato ottimizzato il calcolo delle scadenze nei documenti clienti, riducendo il tempo di salvataggio.</p>
+<p>&nbsp;</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="http://localhost:3000/blog/Release%20note%202024-11-15#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
+<ol>
+<li>Documenti clienti e fornitori: aggiunta la possibilità di rendere provvisorio un documento definitivo purché sia manuale.</li>
+<li>Ordini fornitori CF: contemplato il codice sconto che non sembrava venisse calcolato sia nel riepilogo sia in stampa.</li>
+<li>In stampa barcode: quando viene forzato un listino viene messo il prezzo del listino trovato, 0 se il listino non esiste.</li>
+<li>Documenti clienti: ottimizzato il calcolo delle scadenze, migliorando il tempo di salvataggio.</li>
+</ol>]]></content>
+        <author>
+            <name>4SNE</name>
+            <uri>https://www.sys-datgroup.com/</uri>
+        </author>
+        <category label="4SNE" term="4SNE"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Release note 2445]]></title>
+        <id>http://localhost:3000/blog/Release note 2024-11-08</id>
+        <link href="../http:/localhost:3000/blog/Release note 2024-11-08/index.html"/>
+        <updated>2024-11-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[4Seasons Next]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="http://localhost:3000/blog/Release%20note%202024-11-08#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
+<p>&nbsp;</p>
+<p>La seguente versione <strong>2445</strong> del 08/11/2024 riporta i seguenti aggiornamenti</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p></div></div>
+<p>&nbsp;</p>
+<p>Aggiornamenti:</p>
+<h1>9</h1>
+<p>Ecco un riepilogo dell'aggiornamento del software: 1. È stato ripristinato il recupero del tipo documento da ordini clienti e ottimizzata la relativa procedura. 2. È stata aggiunta una verifica per il lancio delle commesse semilavorato-articoli, assicurando che tutte le righe siano controllate prima del lancio. 3. È stata implementata una nuova configurazione per la gestione delle etichette cartellino richieste su confezione, con opzioni per l'ordine cliente e per approvvigionamento e magazzino. Questi aggiornamenti mirano a migliorare l'efficienza e la gestione dei documenti e delle etichette nel sistema.</p>
+<p>&nbsp;</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="http://localhost:3000/blog/Release%20note%202024-11-08#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
+<ol>
+<li>Documenti clienti da ordini clienti: ripristino il recupero del tipo documento da ordine ed ottimizzata la procedura.</li>
+<li>Lancio commessa semilavorato-articoli: aggiunto un controllo delle righe che verifica l'esistenza degli abbinamenti di vendita e della DiBa per la stagione di vendita della testata. Lo stato di riga viene verificato all'inserimento/cambio del prodotto e/o della stagione della commessa. Le righe devono essere tutte verificate per poter lanciare la commessa.</li>
+<li>Aggiunta configurazione in azienda per la gestione delle etichette cartellino richieste su confezione. Le opzioni sono:<!-- -->
+<ul>
+<li>solo nell'ordine cliente</li>
+<li>anche in approvvigionamento e magazzino</li>
+</ul>
+</li>
+<li>Gestione Etichetta Cartellino Richiesta Confezionamento in Richieste Lancio: In base alla selezione in azienda (Etichetta\Cartellino\Richiesta su Confezione), nei risultati si vedranno o meno le colonne dei campi Etichetta Cartellino Richiesta su Confezione. Il calcolo oltre a verificare la selezione in azienda verifica anche i flag singoli del prodotto, per raggruppare in caso di unito oppure semplicemente non considerare in caso di non unito.</li>
+<li>L'aggiornamento massivo dalla generalità dell'articolo funziona, è stato aggiunto il filtro per aggiornare anche la riga misura quando un materiale non è a misura.</li>
+<li>Versamento resi: contemplata la gestione del conto vendita in fase di versamento a magazzino, scaricando l'eventuale magazzino in c/v specificato (al momento solo manuale).</li>
+<li>Disassegnazione ordine: se a parità di chiave (ordine-riga-frazio) esistono righe in spedizione o già bollettate, la disassegnazione genera una nuova riga ordine.</li>
+<li>Ordine fornitore CF: fix import lista libera resa funzionante.</li>
+<li>Risolto, fare il test per verificare in caso di Lavaggio valorizzato se funziona l'estrazione.</li>
+</ol>]]></content>
+        <author>
+            <name>4SNE</name>
+            <uri>https://www.sys-datgroup.com/</uri>
+        </author>
+        <category label="4SNE" term="4SNE"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Release note 2443]]></title>
+        <id>http://localhost:3000/blog/Release note 2024-10-23</id>
+        <link href="../http:/localhost:3000/blog/Release note 2024-10-23/index.html"/>
+        <updated>2024-10-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[4Seasons Next]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="http://localhost:3000/blog/Release%20note%202024-10-23#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
+<p>&nbsp;</p>
+<p>La seguente versione <strong>2443</strong> del 23/10/2024 riporta i seguenti aggiornamenti</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p></div></div>
+<p>&nbsp;</p>
+<p>Aggiornamenti:</p>
+<h1>19</h1>
+<p>Il software è stato aggiornato con miglioramenti come la gestione dell'estensione prodotto, l'adattamento dei decimali nei costi, il recupero automatico del tipo documento di spedizione, l'aggiunta di una tabella per generare diversi template, e l'allargamento della descrizione della composizione. Altri miglioramenti includono la corretta visualizzazione dei riferimenti del documento, la gestione delle unità di misura alternativa, e la spalmatura della quantità solo sulle taglie presenti nell'ordine. Sono state apportate correzioni e aggiunte in vari processi come la gestione dei capi in magazzino, la creazione di documenti da reso, e la revisione delle pagine dei colli nei documenti clienti. Altri aggiornamenti riguardano l'importazione di liste libere, l'ordine fornitore MP, la gestione dei movimenti, e l'aggiornamento massivo dell'articolo con nuovi filtri e controlli strutturati.</p>
+<p>&nbsp;</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="http://localhost:3000/blog/Release%20note%202024-10-23#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
+<ol>
+<li>
+<p>Gestione dell'estensione prodotto (etichetta/cartellino/richiesta confezione) nella maschera di movimento manuale.</p>
+</li>
+<li>
+<p>In gestione costi di distinta base, il numero massimo di decimali è stato adattato allo standard di 2.</p>
+</li>
+<li>
+<p>Ordine Cliente: recuperato in automatico il tipo documento di spedizione dal cliente (prioritario) o dal tipo ordine, sia in fase di creazione dell'ordine sia in modifica con apposito alert di sovrascrittura.</p>
+</li>
+<li>
+<p>Aggiunta la tabella che copia gli argomenti-dto sul template ciò permette di poter generare diversi template sullo stesso argomento.</p>
+</li>
+<li>
+<p>La descrizione della composizione è stata allargata per contenere descrizioni più ampie.</p>
+</li>
+<li>
+<p>I riferimenti del documento vengono ora correttamente riportati in fase di versamento autorizzazione al reso.</p>
+</li>
+<li>
+<p>Fix gestione unità di misura alternativa in fase di versamento materiali a magazzino da ordine fornitore.</p>
+</li>
+<li>
+<p>Adesso durante la generazione la quantità verrà spalmata solo per le taglie presenti nella riga dell'ordine e non su tutte le taglie abilitate sul modello.</p>
+</li>
+<li>
+<p>Dopo la generazione provare che la stampa vada correttamente a termine.</p>
+</li>
+<li>
+<p>Gestione capi a magazzino: ricerca movimenti aggiunto il filtro tipo documento.</p>
+</li>
+<li>
+<p>Documento cliente: fix materie prime mancava la paginazione e faceva vedere solo i primi 20.</p>
+</li>
+<li>
+<p>Ora è possibile filtrare le liste libere per totale capi direttamente in griglia.</p>
+</li>
+<li>
+<p>Crea documenti da reso: contemplata la spaccatura e il riporto del campo ScorpIva, prezzi incluso iva.</p>
+</li>
+<li>
+<p>Eliminato il controllo sull'articolo nella lista materiali della scheda tecnica così da permettere la creazione della diba con anche righe non valorizzate. Fatto un test e visto che non crea righe diba vuote.</p>
+</li>
+<li>
+<p>Documento cliente: rivista la pagina dei colli che proponeva la lista delle righe capi mentre è stata sistemata proponendo i dati dei colli.</p>
+</li>
+<li>
+<p>Aggiunto il campo totale quando si importa di lista libera, ed usato il campo totale della testata movimenti quando si selezionano e cambiano quantità.</p>
+</li>
+<li>
+<p>Ordine fornitore MP: fix se valorizzata l'unità misura alternativa non permetteva l'inserimento.</p>
+</li>
+<li>
+<p>Sistemata la gestione dei movimenti così da svuotare correttamente le input in caso di successo e lasciarle compilate in caso di errore.</p>
+</li>
+<li>
+<p>L'aggiornamento massivo dalla generalità dell'articolo funziona, è stato aggiunto il filtro per aggiornare anche la riga misura quando un materiale non è a misura.</p>
+</li>
+<li>
+<p>Aggiunti controlli più strutturati sul processo di inventario, diversificandolo dal rettifica.</p>
+</li>
+</ol>]]></content>
+        <author>
+            <name>4SNE</name>
+            <uri>https://www.sys-datgroup.com/</uri>
+        </author>
+        <category label="4SNE" term="4SNE"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Release note 2442]]></title>
         <id>http://localhost:3000/blog/Release note 2014-10-18</id>
         <link href="../http:/localhost:3000/blog/Release note 2014-10-18/index.html"/>
-        <updated>2024-10-18T00:00:00.000Z</updated>
+        <updated>2024-10-16T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[4Seasons Next]]></summary>
         <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="http://localhost:3000/blog/Release%20note%202014-10-18#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
 <p>&nbsp;</p>
-<p>La seguente versione <strong>2.6.507.2442.1.0.1745.0</strong> del 16/10/2024 riporta i seguenti aggiornamenti</p>
+<p>La seguente versione <strong>2442</strong> del 16/10/2024 riporta i seguenti aggiornamenti</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p></div></div>
 <p>&nbsp;</p>
 <p>Aggiornamenti:</p>
 <h1>12</h1>
@@ -88,47 +285,16 @@
         <category label="4SNE" term="4SNE"/>
     </entry>
     <entry>
-        <title type="html"><![CDATA[MDX Blog Post]]></title>
-        <id>http://localhost:3000/blog/mdx-blog-post</id>
-        <link href="../http:/localhost:3000/blog/mdx-blog-post/index.html"/>
-        <updated>2021-08-01T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Blog posts support Docusaurus Markdown features, such as MDX.]]></summary>
-        <content type="html"><![CDATA[<p>Blog posts support <a href="https://docusaurus.io/docs/markdown-features" target="_blank" rel="noopener noreferrer">Docusaurus Markdown features</a>, such as <a href="https://mdxjs.com/" target="_blank" rel="noopener noreferrer">MDX</a>.</p>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><p>Use the power of React to create interactive blog posts.</p></div></div>
+        <title type="html"><![CDATA[Aggiornamento documentazione]]></title>
+        <id>http://localhost:3000/blog/docs-update</id>
+        <link href="../http:/localhost:3000/blog/docs-update/index.html"/>
+        <updated>2024-10-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[4Seasons Next]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="http://localhost:3000/blog/docs-update#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
+<p>È stata introdotta una nuova funzionalità per la documentazione del software 4Seasons Next.</p>
+<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><p>La documentazione è stata aggiornata per includere nuove funzionalità e miglioramenti.</p></div></div>
 <!-- -->
-<p>For example, use JSX to create an interactive button:</p>
-<div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#bfc7d5;--prism-background-color:#292d3e"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#bfc7d5;background-color:#292d3e"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#bfc7d5"><span class="token operator" style="color:rgb(137, 221, 255)">&lt;</span><span class="token plain">button onClick</span><span class="token operator" style="color:rgb(137, 221, 255)">=</span><span class="token punctuation" style="color:rgb(199, 146, 234)">{</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token plain"> </span><span class="token arrow operator" style="color:rgb(137, 221, 255)">=&gt;</span><span class="token plain"> </span><span class="token function" style="color:rgb(130, 170, 255)">alert</span><span class="token punctuation" style="color:rgb(199, 146, 234)">(</span><span class="token string" style="color:rgb(195, 232, 141)">'button clicked!'</span><span class="token punctuation" style="color:rgb(199, 146, 234)">)</span><span class="token punctuation" style="color:rgb(199, 146, 234)">}</span><span class="token operator" style="color:rgb(137, 221, 255)">&gt;</span><span class="token maybe-class-name">Click</span><span class="token plain"> me</span><span class="token operator" style="color:rgb(137, 221, 255)">!</span><span class="token operator" style="color:rgb(137, 221, 255)">&lt;</span><span class="token operator" style="color:rgb(137, 221, 255)">/</span><span class="token plain">button</span><span class="token operator" style="color:rgb(137, 221, 255)">&gt;</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<button>Click me!</button>]]></content>
-        <author>
-            <name>4SNE</name>
-            <uri>https://www.sys-datgroup.com/</uri>
-        </author>
-        <category label="4SNE" term="4SNE"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Long Blog Post]]></title>
-        <id>http://localhost:3000/blog/long-blog-post</id>
-        <link href="../http:/localhost:3000/blog/long-blog-post/index.html"/>
-        <updated>2019-05-29T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[This is the summary of a very long blog post,]]></summary>
-        <content type="html"><![CDATA[<p>This is the summary of a very long blog post,</p>
-<p>Use a <code>&lt;!--</code> <code>truncate</code> <code>--&gt;</code> comment to limit blog post size in the list view.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
+<button class="btn">Inizia!</button>]]></content>
         <author>
             <name>4SNE</name>
             <uri>https://www.sys-datgroup.com/</uri>
