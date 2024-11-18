@@ -87,7 +87,7 @@ const config = {
   title: docusaurusData.title || "My Site",
   tagline: docusaurusData.tagline || "Dinosaurs are cool",
   url: docusaurusData.url,
-  baseUrl: "/",
+  baseUrl: "/4sne/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/logo.png",
