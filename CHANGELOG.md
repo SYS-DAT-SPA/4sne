@@ -1,3 +1,8 @@
+## [1.0.2] - November 18, 2024
+
+### Changes
+- Release notes generated for version [1.0.2](.release-notes/1.0.2/release.md)
+
 ## [1.0.1] - November 18, 2024
 
 ### Changes
