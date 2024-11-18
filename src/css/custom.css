@@ -22765,3 +22765,12 @@ video {
 main {
   padding: 1rem !important;
 }
+
+.aa-DetachedSearchButton {
+  background: #fafafa !important;
+  border-radius: 50px !important;
+}
+
+.dsla-search-field {
+  width: 10rem;
+}
