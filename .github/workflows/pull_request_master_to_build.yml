@@ -35,7 +35,7 @@ jobs:
             echo "No open PR found to merge."
           fi
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
       - name: Trigger another workflow via API
         run: |
           curl -X POST \
