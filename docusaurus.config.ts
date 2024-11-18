@@ -125,6 +125,14 @@ const config = {
       }),
     ],
   ],
+  plugins: [
+    [
+      "@cmfcmf/docusaurus-search-local",
+      {
+        indexDocs: true,
+      },
+    ],
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -153,10 +161,10 @@ const config = {
           (docusaurusData.footer?.copyright || docusaurusData.title),
       },
     }),
-    themes: [["@easyops-cn/docusaurus-search-local",{
+/*     themes: [["@easyops-cn/docusaurus-search-local",{
         hashed: true,
       },
-    ]],
+    ]], */
 };
 
 module.exports = config;
