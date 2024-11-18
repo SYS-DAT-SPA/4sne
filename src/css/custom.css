@@ -22757,3 +22757,11 @@ video {
 .markdown a:hover:before {
   width: 110%;
 }
+
+.sidebar_node_modules-\@docusaurus-theme-classic-lib-theme-BlogSidebar-Desktop-styles-module {
+  padding: 1rem;
+}
+
+main {
+  padding: 1rem !important;
+}
