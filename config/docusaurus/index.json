@@ -4,7 +4,7 @@
     {
       "label": "Docs",
       "link": "doc",
-      "docLink": "docs/INTRODUCTION.mdx",
+      "docLink": "docs/1. INTRODUZIONE.mdx",
       "position": "left"
     },
     {
@@ -27,8 +27,8 @@
         "title": "Docs",
         "items": [
           {
-            "label": "INTRODUCTION",
-            "to": "docs/INTRODUCTION.mdx",
+            "label": "Introduzione",
+            "to": "docs/1. INTRODUZIONE.mdx",
             "_template": "internal"
           }
         ]
