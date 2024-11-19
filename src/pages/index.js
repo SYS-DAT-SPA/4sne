@@ -58,7 +58,7 @@ export default function Home() {
 
              </p>
              <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
-                <a class="btn btn-primary ms-2 me-2 me-lg-4 mt-2" href="basic-startup/">Get Started</a>
+                <a class="btn btn-primary ms-2 me-2 me-lg-4 mt-2" href="4sne/docs/INTRODUCTION">Inizia</a>
              </div>
           </div>
           <div class="col-lg-4 d-lg-block d-none">
@@ -85,13 +85,13 @@ export default function Home() {
                   <h2 class="mb-3 fw-bold">Non Hai Trovato Quello che Cerchi?</h2>
                   <p>Se nella documentazione non hai trovato la risposta che cercavi, siamo qui per aiutarti! Puoi:
 <ul>
-<li>Contattare il Supporto: Il nostro team è a disposizione per fornirti assistenza personalizzata.</li>
-<li>Consultare il tuo Consulente: Rivolgiti al consulente dedicato per ricevere supporto specifico per le tue esigenze.</li>
-<li>Suggerire un Aggiornamento: Aiutaci a migliorare! Segnala contenuti mancanti o argomenti da approfondire.</li>
+<li><b> - Contattare il Supporto</b>: Il nostro team è a disposizione per fornirti assistenza personalizzata.</li>
+<li><b> - Consultare il tuo Consulente</b>: Rivolgiti al consulente dedicato per ricevere supporto specifico per le tue esigenze.</li>
+<li><b> - Suggerire un Aggiornamento</b>: Aiutaci a migliorare! Segnala contenuti mancanti o argomenti da approfondire.</li>
 </ul>
 La tua esperienza conta: lavoriamo ogni giorno per rendere 4SeasonsNext e la sua documentazione sempre più completa e utile!
 </p>
-                  <a href="blog" class="btn btn-primary">Vai ai Rilasci</a>
+                  <a href="4sne/blog" class="btn btn-primary">Vai ai Rilasci</a>
                </div>
             </div>
          </div>
