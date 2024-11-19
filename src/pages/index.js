@@ -5,19 +5,19 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Soluzioni ERP su Misura per il Fashion',
     icon: 'fa fa-sliders-h',
-    description: "Docusaurus was designed from the ground up to be easily installed and used to get your website up and running quickly.",
+    description: "4SeasonsNext combina tecnologia avanzata e design intuitivo per rispondere alle esigenze uniche dell’industria del fashion. Automatizza processi complessi, migliora la collaborazione tra team e mantieni il controllo creativo con una soluzione ERP costruita per la moda.",
   },
   {
-    title: 'Focus on What Matters',
+    title: 'ERP Cloud-Ready per il Mondo della Moda',
     icon: 'fa fa-sliders-h',
-    description: "Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go ahead and move your docs into the <code>docs</code> directory."
+    description: "Gestisci il tuo business in ogni momento e ovunque ti trovi con 4SeasonsNext. Una piattaforma scalabile e sicura che collega produzione, magazzino, e-commerce e punti vendita in un’unica soluzione, pensata per il dinamismo del settore moda."
   },
   {
-    title: 'Powered by React',
+    title: 'Documentazione Completa',
     icon: 'fa fa-sliders-h',
-    description: "Extend or customize your website layout by reusing React. Docusaurus can be extended while reusing the same header and footer.",
+    description: "Scopri come 4SeasonsNext rivoluziona la gestione aziendale nel mondo della moda. Dalla produzione alla logistica, fino alla vendita al dettaglio, la nostra piattaforma ti offre strumenti avanzati per ottimizzare ogni aspetto della tua attività, adattandosi perfettamente al tuo brand.",
   },
 ];
 
@@ -53,8 +53,10 @@ export default function Home() {
     <div class="container">
        <div class="row justify-content-between align-items-center">
           <div class="col-xl-6 col-lg-8 text-center text-lg-start">
-             <h1 class="mb-4">Documentation</h1>
-             <p class="mb-4">Lorem ipsum dolor amet, consetetur sadiffspscing elitr, diam nonumy invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua At.</p>
+             <h1 class="mb-4">Documentazione</h1>
+             <p class="mb-4">Benvenuto nella documentazione di 4SeasonsNext, la tua guida essenziale per sfruttare al massimo le potenzialità del nostro ERP web dedicato al mondo della moda. Qui troverai tutto ciò di cui hai bisogno: guide passo-passo, best practice e dettagli tecnici per configurare, personalizzare e ottimizzare ogni aspetto della piattaforma. Esplora le funzionalità, risolvi dubbi e porta il tuo business al livello successivo con un supporto chiaro e dettagliato.
+
+             </p>
              <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
                 <a class="btn btn-primary ms-2 me-2 me-lg-4 mt-2" href="basic-startup/">Get Started</a>
              </div>
@@ -80,9 +82,16 @@ export default function Home() {
                <div class="col-lg-4 text-center d-lg-block d-none">
                 <img src="https://ouch-cdn2.icons8.com/tQ0HwENhibiKHVm7aUvPDylUlQ8W01w2GOAlnFYiO54/rs:fit:368:315/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9wbmcvMjcw/LzVhMjE4ODUxLTUw/OWItNGQyOC1hNjQ0/LWIzMDYxMGFlYjY4/MC5wbmc.png" loading="lazy" decoding="async" alt="call-to-action" class="img-fluid" width="254" height="428"/></div>
                <div class="col-lg-8 text-lg-start text-center">
-                  <h2 class="mb-3 fw-bold">Still Didn’t Find Your Answer?</h2>
-                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam<br/>nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
-                  <a href="page.html" class="btn btn-primary">Submit a ticket</a>
+                  <h2 class="mb-3 fw-bold">Non Hai Trovato Quello che Cerchi?</h2>
+                  <p>Se nella documentazione non hai trovato la risposta che cercavi, siamo qui per aiutarti! Puoi:
+<ul>
+<li>Contattare il Supporto: Il nostro team è a disposizione per fornirti assistenza personalizzata.</li>
+<li>Consultare il tuo Consulente: Rivolgiti al consulente dedicato per ricevere supporto specifico per le tue esigenze.</li>
+<li>Suggerire un Aggiornamento: Aiutaci a migliorare! Segnala contenuti mancanti o argomenti da approfondire.</li>
+</ul>
+La tua esperienza conta: lavoriamo ogni giorno per rendere 4SeasonsNext e la sua documentazione sempre più completa e utile!
+</p>
+                  <a href="blog" class="btn btn-primary">Vai ai Rilasci</a>
                </div>
             </div>
          </div>
