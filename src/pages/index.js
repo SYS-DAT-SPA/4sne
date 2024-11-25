@@ -29,7 +29,6 @@ const FeatureList = [
           <div class="card-icon mb-4"><i class={icon}></i></div>
           <h3 class="card-title h4">{title}</h3>
           <p class="card-text">{description}</p>
-          <!--a href="1.html" class="stretched-link"></a-->
       </div>
     </div>
     </div>
