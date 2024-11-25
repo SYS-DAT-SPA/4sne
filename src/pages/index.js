@@ -29,7 +29,7 @@ const FeatureList = [
           <div class="card-icon mb-4"><i class={icon}></i></div>
           <h3 class="card-title h4">{title}</h3>
           <p class="card-text">{description}</p>
-          <a href="1.html" class="stretched-link"></a>
+          <!--a href="1.html" class="stretched-link"></a-->
       </div>
     </div>
     </div>
@@ -58,7 +58,7 @@ export default function Home() {
 
              </p>
              <div class="d-flex flex-wrap justify-content-center justify-content-lg-start">
-                <a class="btn btn-primary ms-2 me-2 me-lg-4 mt-2" href="4sne/docs/INTRODUCTION">Inizia</a>
+                <a class="btn btn-primary ms-2 me-2 me-lg-4 mt-2" href="4sne/docs/INTRODUZIONE">Inizia</a>
              </div>
           </div>
           <div class="col-lg-4 d-lg-block d-none">
