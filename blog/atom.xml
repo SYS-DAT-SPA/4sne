@@ -2,11 +2,41 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sys-dat-spa.github.io/4sne/blog</id>
     <title>4Seasons Next Edition Blog</title>
-    <updated>2024-12-20T00:00:00.000Z</updated>
+    <updated>2025-01-10T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sys-dat-spa.github.io/4sne/blog"/>
     <subtitle>4Seasons Next Edition Blog</subtitle>
     <icon>https://sys-dat-spa.github.io/4sne/img/logo.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Release note 252]]></title>
+        <id>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-01-10</id>
+        <link href="https://sys-dat-spa.github.io/4sne/blog/Release note 2025-01-10"/>
+        <updated>2025-01-10T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[4Seasons Next]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-01-10#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
+<p>La seguente versione 252 del 10/01/2025 riporta i seguenti aggiornamenti</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p><p>Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-01-10#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
+<h1>4</h1>
+<p>Il recente aggiornamento del software ha introdotto diverse migliorie. È stata aggiunta una colonna nel "Monitor Spedizioni" con tre stati: "da consolidare", "in consolidamento" e "consolidato", per migliorare la tracciabilità delle spedizioni. Inoltre, è stata ottimizzata la gestione dei resi e il recupero del listino di vendita per velocizzare i processi, mentre tutte le esportazioni necessitano di test per garantire il corretto funzionamento.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-01-10#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
+<ol>
+<li>Aggiungere in “Monitor
+Spedizioni” una colonna con 3 status possibili:  “da consolidare” =&gt; è ancora
+in lav in MM&nbsp; (4S ha inviato in
+lavorazione le liste a MM) “in consolidamento” =&gt;
+packing completato e MM ha consegnato i colli a TWS (prevedere aggiornamento da
+“da consolidare” a “in consolidamento” con flusso da MM) “consolidato” =&gt; merce
+entrata e confermata in TWS (prevedere aggiornamento da “in consolidamento” a
+“consolidato” con flusso da TWS)    1. Versamento resi: contemplata la gestione del conto vendita in fase di versamento a magazzino, scaricando l'eventuale magazzino in c/v specificato (al momento solo manuale). 1. Documenti clienti: ottimizzato il recupero del listino di vendita per accelerarne i tempi. 1. Da testare tutte le esportazione per vedere che tutto funzioni&nbsp;</li>
+</ol>]]></content>
+        <author>
+            <name>4SNE</name>
+            <uri>https://www.sys-datgroup.com/</uri>
+        </author>
+        <category label="4SNE" term="4SNE"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Release note 2451]]></title>
         <id>https://sys-dat-spa.github.io/4sne/blog/Release note 2024-12-20</id>
