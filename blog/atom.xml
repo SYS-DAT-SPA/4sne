@@ -2,11 +2,35 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sys-dat-spa.github.io/4sne/blog</id>
     <title>4Seasons Next Edition Blog</title>
-    <updated>2025-01-10T00:00:00.000Z</updated>
+    <updated>2025-01-17T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sys-dat-spa.github.io/4sne/blog"/>
     <subtitle>4Seasons Next Edition Blog</subtitle>
     <icon>https://sys-dat-spa.github.io/4sne/img/logo.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Release note 253]]></title>
+        <id>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-01-17</id>
+        <link href="https://sys-dat-spa.github.io/4sne/blog/Release note 2025-01-17"/>
+        <updated>2025-01-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[4Seasons Next]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-01-17#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
+<p>La seguente versione 253 del 17/01/2025 riporta i seguenti aggiornamenti</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p><p>Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-01-17#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
+<h1>11</h1>
+<p>Ecco un riepilogo dei punti principali dell'aggiornamento del software:</p>
+<p>L'aggiornamento include la gestione del conto vendita durante il versamento a magazzino e l'uniformazione degli input nelle fasi di distinta base e anagrafica materie prime. Sono state aggiunte nuove funzionalità alla packing list, come la riapertura del collo e il calcolo dei totali, e sono stati migliorati i campi nella situazione delle liste di spedizione. Inoltre, la procedura di valorizzazione del magazzino è stata velocizzata e sono state risolte anomalie nel salvataggio delle configurazioni nelle tabelle statistiche.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-01-17#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
+<ol>
+<li>Versamento resi: contemplata la gestione del conto vendita in fase di versamento a magazzino, scaricando l'eventuale magazzino in c/v specificato (al momento solo manuale). 1. Uniformato input delle fasi e macrofasi su distinta base e anagrafica materie prime. 1. Packing list: aggiunta la funzione riapertura del collo per ri-elaborarne il contenuto + pulsante apertura barcode + totali per residuo/inscatolato + descrizioni mancanti. 1. Situazione liste spedizione: in griglia aggiunti i campi capi da sparare, sparati e in bolla. 1. Magazzino MP: la quantità da prelevare è la quantità disponibile (al netto dell'impegnato) e non più quella reale. 1. In tutti i punti dove è previsto un import da lista libera ora è possibile selezionare in base allo stato di prelevato  1. Ora è possibile l'import lista libera con prezzo anche nei documenti clienti 1. La procedura di valorizzazione di magazzino è stata velocizzata nel caso di grandi moli di dati 1. Rimosso filtro tipo materiale in vista e selezione di&nbsp;Gestione capi a magazzino 1. Se si carica una materia prima tramite il barcode in documenti cliente, il programma ora recupera il prezzo con gli stessi criteri con cui lo recupera inserendo la materia prima manualmente 1. Risolta anomalia nel salvataggio configurazioni e scenari nelle tabelle statistiche Pivot della reportistica UFR</li>
+</ol>]]></content>
+        <author>
+            <name>4SNE</name>
+            <uri>https://www.sys-datgroup.com/</uri>
+        </author>
+        <category label="4SNE" term="4SNE"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Release note 252]]></title>
         <id>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-01-10</id>
