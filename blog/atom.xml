@@ -19,7 +19,6 @@
 SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-01-24#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
 <h1>19</h1>
-<p>Ecco un riepilogo dei punti principali dell'aggiornamento del software:</p>
 <p>L'aggiornamento ha introdotto miglioramenti nella gestione del conto vendita durante il versamento a magazzino e ha uniformato l'input delle fasi su distinta base e anagrafica materie prime. Sono state ottimizzate le procedure per l'importazione dei prodotti e l'interfaccia contabile è stata integrata con le anagrafiche principali, mentre sono stati risolti vari problemi, come il blocco della pagina degli avanzamenti di produzione e anomalie nel salvataggio delle configurazioni.</p>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-01-24#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
 <ol>
@@ -43,7 +42,6 @@ SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni p
 SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-01-17#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
 <h1>11</h1>
-<p>Ecco un riepilogo dei punti principali dell'aggiornamento del software:</p>
 <p>L'aggiornamento include la gestione del conto vendita durante il versamento a magazzino e l'uniformazione degli input nelle fasi di distinta base e anagrafica materie prime. Sono state aggiunte nuove funzionalità alla packing list, come la riapertura del collo e il calcolo dei totali, e sono stati migliorati i campi nella situazione delle liste di spedizione. Inoltre, la procedura di valorizzazione del magazzino è stata velocizzata e sono state risolte anomalie nel salvataggio delle configurazioni nelle tabelle statistiche.</p>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-01-17#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
 <ol>
@@ -97,7 +95,6 @@ entrata e confermata in TWS (prevedere aggiornamento da “in consolidamento” 
 SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202024-12-20#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
 <h1>16</h1>
-<p>Ecco un riepilogo delle principali novità dell'aggiornamento software:</p>
 <ol>
 <li>È stata introdotta la possibilità di rendere provvisori i documenti definitivi manuali e ottimizzato il recupero del listino di vendita per i documenti clienti.</li>
 <li>Le liste spedizioni sono state migliorate con una gestione più pratica e la possibilità di unire liste già imballate, mentre l'inventario ora consente l'export in Excel.</li>
@@ -125,7 +122,6 @@ SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni p
 SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202024-12-13#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
 <h1>27</h1>
-<p>Ecco un riepilogo delle principali modifiche apportate nel software:</p>
 <ol>
 <li>
 <p>I documenti dei clienti ora mostrano in prima pagina i campi relativi alle movimentazioni di magazzino e sono state ottimizzate le funzionalità di calcolo delle scadenze e recupero del listino di vendita. È stata aggiunta la paginazione per un utilizzo più fluido e la possibilità di rendere provvisori i documenti definitivi.</p>
@@ -166,7 +162,6 @@ entrata e confermata in TWS (prevedere aggiornamento da “in consolidamento” 
 SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202024-12-06#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
 <h1>23</h1>
-<p>Ecco un riepilogo delle principali novità dell'aggiornamento software:</p>
 <ol>
 <li>È stata abilitata la visualizzazione dello storico del blocco cliente e la possibilità di rendere provvisori documenti definitivi. Inoltre, sono stati aggiunti nuovi campi nelle liste di prelievo e nella gestione dei documenti clienti per migliorare l'usabilità.</li>
 <li>Sono state implementate nuove funzionalità nel monitoraggio delle spedizioni, con l'aggiunta di tre stati per il processo di consolidamento, e ottimizzazioni nel calcolo delle scadenze e nella gestione delle quantità amministrative per ordini e fatture.</li>
@@ -261,7 +256,6 @@ SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni p
 SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
 <h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202024-11-20#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
 <h1>22</h1>
-<p>Ecco un riepilogo delle principali novità dell'aggiornamento software:</p>
 <ol>
 <li>È stata estesa la funzionalità del magazzino CF per includere nuove opzioni di etichettatura e gestione dei documenti, come la possibilità di rendere provvisori documenti definitivi e il ripristino del recupero del tipo documento da ordini.</li>
 <li>Sono stati implementati miglioramenti nell'importazione dei dati, con l'aggiunta di nuove tabelle e la velocizzazione del processo, oltre a ottimizzazioni nel calcolo delle scadenze e nel recupero dei listini di vendita.</li>
@@ -339,7 +333,9 @@ SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni p
 <p>&nbsp;</p>
 <p>Aggiornamenti:</p>
 <h1>9</h1>
-<p>Ecco un riepilogo dell'aggiornamento del software: 1. È stato ripristinato il recupero del tipo documento da ordini clienti e ottimizzata la relativa procedura. 2. È stata aggiunta una verifica per il lancio delle commesse semilavorato-articoli, assicurando che tutte le righe siano controllate prima del lancio. 3. È stata implementata una nuova configurazione per la gestione delle etichette cartellino richieste su confezione, con opzioni per l'ordine cliente e per approvvigionamento e magazzino. Questi aggiornamenti mirano a migliorare l'efficienza e la gestione dei documenti e delle etichette nel sistema.</p>
+<ol>
+<li>È stato ripristinato il recupero del tipo documento da ordini clienti e ottimizzata la relativa procedura. 2. È stata aggiunta una verifica per il lancio delle commesse semilavorato-articoli, assicurando che tutte le righe siano controllate prima del lancio. 3. È stata implementata una nuova configurazione per la gestione delle etichette cartellino richieste su confezione, con opzioni per l'ordine cliente e per approvvigionamento e magazzino. Questi aggiornamenti mirano a migliorare l'efficienza e la gestione dei documenti e delle etichette nel sistema.</li>
+</ol>
 <p>&nbsp;</p>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202024-11-08#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
 <ol>
