@@ -4,10 +4,49 @@
         <title>4Seasons Next Edition Blog</title>
         <link>https://sys-dat-spa.github.io/4sne/blog</link>
         <description>4Seasons Next Edition Blog</description>
-        <lastBuildDate>Fri, 24 Jan 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 31 Jan 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Release note 255]]></title>
+            <link>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-01-31</link>
+            <guid>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-01-31</guid>
+            <pubDate>Fri, 31 Jan 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[4Seasons Next]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-01-31#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
+<p>La seguente versione 255 del 31/01/2025 riporta i seguenti aggiornamenti</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p><p>Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-01-31#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
+<h1>16</h1>
+<p>Ecco un riepilogo dei punti principali dell'aggiornamento del software:</p>
+<ol>
+<li>Sono stati implementati miglioramenti nella gestione degli ordini fornitori, con una corretta distribuzione delle quantità e l'aggiunta di filtri per i colori.</li>
+<li>È stata introdotta la paginazione nei documenti cliente per un utilizzo più fluido e sono stati aggiunti controlli più strutturati nel processo di inventario.</li>
+<li>L'interfaccia contabile è ora integrata con le anagrafiche principali, e sono state apportate modifiche significative alla gestione dei campi di input, consentendo una configurazione più flessibile e personalizzata.</li>
+</ol>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-01-31#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
+<ol>
+<li>Ordini fornitori MP: fix conversione della quantità della UM alternativa.</li>
+<li>Adesso durante la generazione barcode, la quantità verrà spalmata solo per le taglie presente nella riga dell'ordine e non su tutte le taglie abilitate sul modello. Dopo la generazione provare che la stampa vada correttamente a termine</li>
+<li>Documento cliente: aggiunta paginazione su righe materiali per un utilizzo più fluido.</li>
+<li>In fase di sincronizzazione con CM, la categoria del prodotto deve essere preceduta da una categoria fittizia CM-SHOPIFY1. Questa categoria di fatto non esiste ma serve per creare un canale su CM.</li>
+<li>Inventario: aggiunti controlli più strutturati sul processo di inventario, diversificandolo dal rettifica.</li>
+<li>Cambia dati documento: divisa la possibilità di cambiare numero/data oppure clienti, con l'eventuale nuova numerazione della spedizione in caso di cambio cliente spedizione.</li>
+<li>L'interfaccia contabile SAM è ora integrata con le principali anagrafiche interessate</li>
+<li>E' ora possibile avanzare al laboratorio anche una quantità maggiore rispetto alla commessa</li>
+<li>Implementazione del controllo sulle schede tecniche che non permette la duplica o modifica se esiste una scheda tecnica con prodotto e stagione di vendita già presenti</li>
+<li>Magazzino CF: visualizzati anche i capi che hanno una giacenza negativa in&nbsp;vista e selezione.</li>
+<li>Valorizzazione CF: velocizzata la procedura di analisi e di elaborazione degli strati.</li>
+<li>Nella nuova versione i menu standard sono stati separati dai menu custom, rendendo la modifica appannaggio del reparto tecnico e del team del prodotto standard</li>
+<li>E' ora disponibile una versione della stampa conferma ordine fornitore materie prime senza prezzi</li>
+<li>Ordine Fornitore MP: in aggiunta riga manuale previsto il filtro dei colori associati al materiale.</li>
+<li>Sono stati revisionati <strong>interamente</strong> i campi di input testuale, numerico, booleano e tendinato nella gestione dei default. Ora è possibile impostare obbligatorietà, valore default, visibilità e mask anche ai campi non legati a tabelle, ovvero tutti quei parametri funzionali presenti nelle pagine operative. Questa estensione è estremamente impattante e permetterà di configurarsi autonomamente la quasi totalità degli elementi a schermo.</li>
+<li>Aggiunta possibilità di stampare un unico pdf per tipod documento</li>
+</ol>]]></content:encoded>
+            <category>4SNE</category>
+        </item>
         <item>
             <title><![CDATA[Release note 254]]></title>
             <link>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-01-24</link>
