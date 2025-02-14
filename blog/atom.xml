@@ -2,11 +2,101 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sys-dat-spa.github.io/4sne/blog</id>
     <title>4Seasons Next Edition Blog</title>
-    <updated>2025-01-31T00:00:00.000Z</updated>
+    <updated>2025-02-14T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sys-dat-spa.github.io/4sne/blog"/>
     <subtitle>4Seasons Next Edition Blog</subtitle>
     <icon>https://sys-dat-spa.github.io/4sne/img/logo.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Release note 257]]></title>
+        <id>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-02-14</id>
+        <link href="https://sys-dat-spa.github.io/4sne/blog/Release note 2025-02-14"/>
+        <updated>2025-02-14T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[4Seasons Next]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-02-14#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
+<p>La seguente versione 257 del 14/02/2025 riporta i seguenti aggiornamenti</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p><p>Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-02-14#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
+<h1>22</h1>
+<p>Ecco un riepilogo delle principali novità dell'aggiornamento software:</p>
+<p>Sono state implementate diverse migliorie, tra cui l'aggiunta di paginazione nei documenti cliente per un utilizzo più fluido e la separazione delle opzioni di modifica per numero/data e clienti. Inoltre, è stata velocizzata la valorizzazione dei materiali e migliorata la gestione del magazzino, consentendo la visualizzazione di capi con giacenza negativa. Altre novità includono la revisione del layout della scheda tecnica e la possibilità di stampare documenti clienti in un unico PDF.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-02-14#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
+<ol>
+<li>Documento cliente: aggiunta paginazione su righe materiali per un utilizzo più fluido.</li>
+<li>Cambia dati documento: divisa la possibilità di cambiare numero/data oppure clienti, con l'eventuale nuova numerazione della spedizione in caso di cambio cliente spedizione.</li>
+<li>Gestione estensione prodotto ordine fornitori capi finiti</li>
+<li>Produzione: è ora possibile avanzare al laboratorio anche una quantità maggiore rispetto alla commessa.</li>
+<li>Valorizzazione MP: velocizzata la procedura nei controlli.</li>
+<li>Scheda tecnica: controllo che non permette la duplica o modifica se esiste una scheda tecnica con prodotto e stagione di vendita già presenti.</li>
+<li>Magazzino CF: visualizzati anche i capi che hanno una giacenza negativa in&nbsp;vista e selezione.</li>
+<li>Valorizzazione CF: velocizzata la procedura di analisi e di elaborazione degli strati.</li>
+<li>Configurazioni report: gestita l'esptansione righe e loghi per tutti i moduli presenti</li>
+<li>Nuova versione ASN con gestione arrivi da commessa</li>
+<li>Revisione layout scheda misura nella scheda tecnica</li>
+<li>Ristampa documenti clienti: aggiunta possibilità di stampare un unico pdf per tipo documento.</li>
+<li>Aggiunto campo Pagina del Book negli abbinamenti di vendita</li>
+<li>Sistemazione del caricamento dei dati dei quadri della scheda tecnica</li>
+<li>Documenti cliente da ordini cliente: esposti solo documenti collegati a clienti</li>
+<li>Generazione Listini al momento del salvataggio distinta base</li>
+<li>Gestione estensione prodotto nel flusso ASN</li>
+<li>Sistemazione della verbosità degli errori</li>
+<li>Creazione cartella: rimossa gestione colore NONE</li>
+<li>Inserito Alert deprecazione dell'assegnazione versione 1</li>
+<li>Filtri preimpostati: attivato il salvataggio per tutti gli utenti</li>
+</ol>]]></content>
+        <author>
+            <name>4SNE</name>
+            <uri>https://www.sys-datgroup.com/</uri>
+        </author>
+        <category label="4SNE" term="4SNE"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Release note 256]]></title>
+        <id>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-02-07</id>
+        <link href="https://sys-dat-spa.github.io/4sne/blog/Release note 2025-02-07"/>
+        <updated>2025-02-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[4Seasons Next]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-02-07#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
+<p>La seguente versione 256 del 07/02/2025 riporta i seguenti aggiornamenti</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p><p>Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-02-07#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
+<h1>19</h1>
+<p>Ecco un riepilogo delle principali novità dell'aggiornamento software:</p>
+<ol>
+<li>La generazione dei codici a barre ora si applica solo alle taglie presenti nell'ordine, migliorando l'efficienza.</li>
+<li>È stata introdotta la paginazione nei documenti cliente e ottimizzata la gestione dei resi, con la possibilità di gestire il conto vendita durante il versamento a magazzino.</li>
+<li>Sono state apportate migliorie significative in vari ambiti, come l'interfaccia contabile, la produzione, e la valorizzazione dei materiali, rendendo il sistema più fluido e configurabile.</li>
+</ol>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-02-07#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
+<ol>
+<li>Stampa barcode: durante la generazione la quantità verrà spalmata solo per le taglie presente nella riga dell'ordine e non su tutte le taglie abilitate sul modello.</li>
+<li>Documento cliente: aggiunta paginazione su righe materiali per un utilizzo più fluido.</li>
+<li>Versamento resi: contemplata la gestione del conto vendita in fase di versamento a magazzino, scaricando l'eventuale magazzino in c/v specificato (al momento solo manuale).</li>
+<li>Cambia dati documento: divisa la possibilità di cambiare numero/data oppure clienti, con l'eventuale nuova numerazione della spedizione in caso di cambio cliente spedizione.</li>
+<li>Aspetto beni: aggiunta traduzione.</li>
+<li>Versamento capi a magazzino:&nbsp;esteso input alfanumerico su numero documento (anche caratteri speciali).</li>
+<li>Snellita la paginazione nell'inserimento righe autorizzazione&nbsp;da documento</li>
+<li>Interfaccia contabile SAM: integrata con le principali anagrafiche interessate.</li>
+<li>Produzione: è ora possibile avanzare al laboratorio anche una quantità maggiore rispetto alla commessa.</li>
+<li>Valorizzazione MP: velocizzata la procedura nei controlli.</li>
+<li>Scheda tecnica: controllo che non permette la duplica o modifica se esiste una scheda tecnica con prodotto e stagione di vendita già presenti.</li>
+<li>Magazzino CF: visualizzati anche i capi che hanno una giacenza negativa in&nbsp;vista e selezione.</li>
+<li>Valorizzazione CF: velocizzata la procedura di analisi e di elaborazione degli strati.</li>
+<li>E' stato ottimizzata la selezione ByPrority nella v2 della assegnazione</li>
+<li>Scheda tecnica: la copia sezione adesso applica correttamente le regole dalla taglia base nel quadro misura.</li>
+<li>Packing list: corretti i totali in testa al riepilogo lista.</li>
+<li>Ordine fornitore MP: in aggiunta riga manuale previsto il filtro dei colori associati al materiale.</li>
+<li>Sono stati revisionati interamente i campi di input testuale, numerico, booleano e tendinato nella gestione dei default. Ora è possibile impostare obbligatorietà, valore default, visibilità e mask anche ai campi non legati a tabelle, ovvero tutti quei parametri funzionali presenti nelle pagine operative. Questa estensione è estremamente impattante e permetterà di configurarsi autonomamente la quasi totalità degli elementi a schermo.</li>
+<li>Ristampa documenti clienti: aggiunta possibilità di stampare un unico pdf per tipo documento.</li>
+</ol>]]></content>
+        <author>
+            <name>4SNE</name>
+            <uri>https://www.sys-datgroup.com/</uri>
+        </author>
+        <category label="4SNE" term="4SNE"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Release note 255]]></title>
         <id>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-01-31</id>
@@ -65,7 +155,25 @@ SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni p
 <p>L'aggiornamento ha introdotto miglioramenti nella gestione del conto vendita durante il versamento a magazzino e ha uniformato l'input delle fasi su distinta base e anagrafica materie prime. Sono state ottimizzate le procedure per l'importazione dei prodotti e l'interfaccia contabile è stata integrata con le anagrafiche principali, mentre sono stati risolti vari problemi, come il blocco della pagina degli avanzamenti di produzione e anomalie nel salvataggio delle configurazioni.</p>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-01-24#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
 <ol>
-<li>Versamento resi: contemplata la gestione del conto vendita in fase di versamento a magazzino, scaricando l'eventuale magazzino in c/v specificato (al momento solo manuale). 1. Uniformato input delle fasi e macrofasi su distinta base e anagrafica materie prime. 1. E-commerce: ottimizzato&nbsp;import prodotti per accelerarne i tempi. 1. L'interfaccia contabile SAM è ora integrata con le principali anagrafiche interessate 1. E' ora possibile avanzare al laboratorio anche una quantità maggiore rispetto alla commessa 1. Documenti, ordine cliente, resi, giacenza ed inventario:&nbsp; import lista libera previsto il check di "già prelevate". 1. Implemnetazione del controllo sulle schede tecniche che non permette la duplica o modifica se esiste una scheda tecnica con prodotto e stagione di vendita già presenti  1. E' stato risolto il blocco della pagina degli avanzamenti di produzione 1. Magazzino CF: visualizzati anche i capi che hanno una giacenza negativa in&nbsp;vista e selezione. 1. Documenti clienti: import lista libera con prezzo. 1. Valorizzazione CF: velocizzata la procedura di analisi e di elaborazione degli strati. 1. Magazzino CF: rimosso filtro tipo materiale in vista e selezione. 1. Documenti clienti: aggiunto materiale con barcode recuperato il prezzo come se fosse una riga manuale.  1. E' stato ottimizzata la selezione ByPrority nella v2 della assegnazione 1. UFR: risolta anomalia nel salvataggio configurazioni e scenari nelle tabelle statistiche Pivot della reportistica UFR 1. Il copia sezione della scheda tecnica applica ora correttamente le regole dalla taglia base nel quadro misura 1. Packing list: corretti i totali in testa al riepilogo lista. 1. E' ora disponibile una versione della stampa conferma ordine fornitore materie prime senza prezzi 1. Ordine Fornitore MP: in aggiunta riga manuale previsto il filtro dei colori associati al materiale.</li>
+<li>Versamento resi: contemplata la gestione del conto vendita in fase di versamento a magazzino, scaricando l'eventuale magazzino in c/v specificato (al momento solo manuale).</li>
+<li>Uniformato input delle fasi e macrofasi su distinta base e anagrafica materie prime.</li>
+<li>E-commerce: ottimizzato&nbsp;import prodotti per accelerarne i tempi.</li>
+<li>L'interfaccia contabile SAM è ora integrata con le principali anagrafiche interessate</li>
+<li>E' ora possibile avanzare al laboratorio anche una quantità maggiore rispetto alla commessa</li>
+<li>Documenti, ordine cliente, resi, giacenza ed inventario:&nbsp; import lista libera previsto il check di "già prelevate".</li>
+<li>Implemnetazione del controllo sulle schede tecniche che non permette la duplica o modifica se esiste una scheda tecnica con prodotto e stagione di vendita già presenti</li>
+<li>E' stato risolto il blocco della pagina degli avanzamenti di produzione</li>
+<li>Magazzino CF: visualizzati anche i capi che hanno una giacenza negativa in&nbsp;vista e selezione.</li>
+<li>Documenti clienti: import lista libera con prezzo.</li>
+<li>Valorizzazione CF: velocizzata la procedura di analisi e di elaborazione degli strati.</li>
+<li>Magazzino CF: rimosso filtro tipo materiale in vista e selezione.</li>
+<li>Documenti clienti: aggiunto materiale con barcode recuperato il prezzo come se fosse una riga manuale.</li>
+<li>E' stato ottimizzata la selezione ByPrority nella v2 della assegnazione</li>
+<li>UFR: risolta anomalia nel salvataggio configurazioni e scenari nelle tabelle statistiche Pivot della reportistica UFR</li>
+<li>Il copia sezione della scheda tecnica applica ora correttamente le regole dalla taglia base nel quadro misura</li>
+<li>Packing list: corretti i totali in testa al riepilogo lista.</li>
+<li>E' ora disponibile una versione della stampa conferma ordine fornitore materie prime senza prezzi</li>
+<li>Ordine Fornitore MP: in aggiunta riga manuale previsto il filtro dei colori associati al materiale.</li>
 </ol>]]></content>
         <author>
             <name>4SNE</name>
@@ -88,7 +196,17 @@ SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni p
 <p>L'aggiornamento include la gestione del conto vendita durante il versamento a magazzino e l'uniformazione degli input nelle fasi di distinta base e anagrafica materie prime. Sono state aggiunte nuove funzionalità alla packing list, come la riapertura del collo e il calcolo dei totali, e sono stati migliorati i campi nella situazione delle liste di spedizione. Inoltre, la procedura di valorizzazione del magazzino è stata velocizzata e sono state risolte anomalie nel salvataggio delle configurazioni nelle tabelle statistiche.</p>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-01-17#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
 <ol>
-<li>Versamento resi: contemplata la gestione del conto vendita in fase di versamento a magazzino, scaricando l'eventuale magazzino in c/v specificato (al momento solo manuale). 1. Uniformato input delle fasi e macrofasi su distinta base e anagrafica materie prime. 1. Packing list: aggiunta la funzione riapertura del collo per ri-elaborarne il contenuto + pulsante apertura barcode + totali per residuo/inscatolato + descrizioni mancanti. 1. Situazione liste spedizione: in griglia aggiunti i campi capi da sparare, sparati e in bolla. 1. Magazzino MP: la quantità da prelevare è la quantità disponibile (al netto dell'impegnato) e non più quella reale. 1. In tutti i punti dove è previsto un import da lista libera ora è possibile selezionare in base allo stato di prelevato  1. Ora è possibile l'import lista libera con prezzo anche nei documenti clienti 1. La procedura di valorizzazione di magazzino è stata velocizzata nel caso di grandi moli di dati 1. Rimosso filtro tipo materiale in vista e selezione di&nbsp;Gestione capi a magazzino 1. Se si carica una materia prima tramite il barcode in documenti cliente, il programma ora recupera il prezzo con gli stessi criteri con cui lo recupera inserendo la materia prima manualmente 1. Risolta anomalia nel salvataggio configurazioni e scenari nelle tabelle statistiche Pivot della reportistica UFR</li>
+<li>Versamento resi: contemplata la gestione del conto vendita in fase di versamento a magazzino, scaricando l'eventuale magazzino in c/v specificato (al momento solo manuale).</li>
+<li>Uniformato input delle fasi e macrofasi su distinta base e anagrafica materie prime.</li>
+<li>Packing list: aggiunta la funzione riapertura del collo per ri-elaborarne il contenuto + pulsante apertura barcode + totali per residuo/inscatolato + descrizioni mancanti.</li>
+<li>Situazione liste spedizione: in griglia aggiunti i campi capi da sparare, sparati e in bolla.</li>
+<li>Magazzino MP: la quantità da prelevare è la quantità disponibile (al netto dell'impegnato) e non più quella reale.</li>
+<li>In tutti i punti dove è previsto un import da lista libera ora è possibile selezionare in base allo stato di prelevato</li>
+<li>Ora è possibile l'import lista libera con prezzo anche nei documenti clienti</li>
+<li>La procedura di valorizzazione di magazzino è stata velocizzata nel caso di grandi moli di dati</li>
+<li>Rimosso filtro tipo materiale in vista e selezione di&nbsp;Gestione capi a magazzino</li>
+<li>Se si carica una materia prima tramite il barcode in documenti cliente, il programma ora recupera il prezzo con gli stessi criteri con cui lo recupera inserendo la materia prima manualmente</li>
+<li>Risolta anomalia nel salvataggio configurazioni e scenari nelle tabelle statistiche Pivot della reportistica UFR</li>
 </ol>]]></content>
         <author>
             <name>4SNE</name>
@@ -118,7 +236,10 @@ lavorazione le liste a MM) “in consolidamento” =&gt;
 packing completato e MM ha consegnato i colli a TWS (prevedere aggiornamento da
 “da consolidare” a “in consolidamento” con flusso da MM) “consolidato” =&gt; merce
 entrata e confermata in TWS (prevedere aggiornamento da “in consolidamento” a
-“consolidato” con flusso da TWS)    1. Versamento resi: contemplata la gestione del conto vendita in fase di versamento a magazzino, scaricando l'eventuale magazzino in c/v specificato (al momento solo manuale). 1. Documenti clienti: ottimizzato il recupero del listino di vendita per accelerarne i tempi. 1. Da testare tutte le esportazione per vedere che tutto funzioni&nbsp;</li>
+“consolidato” con flusso da TWS)</li>
+<li>Versamento resi: contemplata la gestione del conto vendita in fase di versamento a magazzino, scaricando l'eventuale magazzino in c/v specificato (al momento solo manuale).</li>
+<li>Documenti clienti: ottimizzato il recupero del listino di vendita per accelerarne i tempi.</li>
+<li>Da testare tutte le esportazione per vedere che tutto funzioni&nbsp;</li>
 </ol>]]></content>
         <author>
             <name>4SNE</name>
@@ -145,7 +266,21 @@ SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni p
 </ol>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202024-12-20#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
 <ol>
-<li>Documenti clienti e fornitori: aggiunta la possibilità di rendere provvisorio un documento definitivo purché sia manuale. 1. Fabbisogni: evidenziate le righe di semilavorato articolo. 1. Adesso durante la generazione la quantia verrà spalmata solo per le taglie presente nella riga dell'ordine e non su tutte le taglie abilitate sul modello. Dopo la generazione provare che la stampa vada correttamente a termine  1. Documenti clienti: ottimizzato il recupero del listino di vendita per accelerarne i tempi. 1. Liste libere: velocizzato l'import e accorpato per prodotto. 1. Liste spedizioni: spostata la funzione da dentro la manutenzione lista al menu a tendina della Situazione liste di spedizioni, rendendo più pratica la gestione e permettendo l'unione di liste anche già imballate. 1. Inventario: aggiunto l'export in excel del risultato. 1. Particolarità: aggiunta la possibilità di avere una gestione avanzata per le condizioni commerciali. 1. Ordine fornitore MP: al versamento ordine fornitore aggiunta la quantità amministrativa, sia nel totale che nel dettaglio bagno/pezza. 1. Controllo fatture fornitore: gestita la quantità amministrativa per le materie prime. 1. Documenti clienti: calcolo delle scadenze prevista la gestione del mese escluso su cliente. 1. Situazione liste spedizione: in griglia aggiunti i campi capi da sparare, sparati e in bolla. 1. Da Testare la dissassegnazione per vedere che funzioni tutto correttamente. In Chervo testare la dissassegnazione del ordine di conto lavoro 1. Situazione liste spedizione: abilitato l'export excel. 1. Scheda tecnica: contemplati i caratteri speciali nei codici materiali e di ricerca colori. 1. Ordine cliente: gestito il cliente di fatturazione anche se l'intestatario è NORMAL.</li>
+<li>Documenti clienti e fornitori: aggiunta la possibilità di rendere provvisorio un documento definitivo purché sia manuale. 1. Fabbisogni: evidenziate le righe di semilavorato articolo.</li>
+<li>Adesso durante la generazione la quantia verrà spalmata solo per le taglie presente nella riga dell'ordine e non su tutte le taglie abilitate sul modello. Dopo la generazione provare che la stampa vada correttamente a termine</li>
+<li>Documenti clienti: ottimizzato il recupero del listino di vendita per accelerarne i tempi.</li>
+<li>Liste libere: velocizzato l'import e accorpato per prodotto.</li>
+<li>Liste spedizioni: spostata la funzione da dentro la manutenzione lista al menu a tendina della Situazione liste di spedizioni, rendendo più pratica la gestione e permettendo l'unione di liste anche già imballate.</li>
+<li>Inventario: aggiunto l'export in excel del risultato.</li>
+<li>Particolarità: aggiunta la possibilità di avere una gestione avanzata per le condizioni commerciali.</li>
+<li>Ordine fornitore MP: al versamento ordine fornitore aggiunta la quantità amministrativa, sia nel totale che nel dettaglio bagno/pezza.</li>
+<li>Controllo fatture fornitore: gestita la quantità amministrativa per le materie prime.</li>
+<li>Documenti clienti: calcolo delle scadenze prevista la gestione del mese escluso su cliente.</li>
+<li>Situazione liste spedizione: in griglia aggiunti i campi capi da sparare, sparati e in bolla.</li>
+<li>Da Testare la dissassegnazione per vedere che funzioni tutto correttamente. In Chervo testare la dissassegnazione del ordine di conto lavoro</li>
+<li>Situazione liste spedizione: abilitato l'export excel.</li>
+<li>Scheda tecnica: contemplati i caratteri speciali nei codici materiali e di ricerca colori.</li>
+<li>Ordine cliente: gestito il cliente di fatturazione anche se l'intestatario è NORMAL.</li>
 </ol>]]></content>
         <author>
             <name>4SNE</name>
@@ -178,14 +313,37 @@ SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni p
 </ol>
 <h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202024-12-13#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
 <ol>
-<li>Documenti clienti: spostati in prima pagina e sempre visibili i campi relativi alle movimentazioni di magazzino. 1. Documenti clienti e fornitori: aggiunta la possibilità di rendere provvisorio un documento definitivo purché sia manuale. 1. Adesso durante la generazione la quantia verrà spalmata solo per le taglie presente nella riga dell'ordine e non su tutte le taglie abilitate sul modello. Dopo la generazione provare che la stampa vada correttamente a termine  1. Documento cliente: aggiunta paginazione su righe materiali per un utilizzo più fluido. 1. Aggiungere in “Monitor
-Spedizioni” una colonna con 3 status possibili:  “da consolidare” =&gt; è ancora
+<li>Documenti clienti: spostati in prima pagina e sempre visibili i campi relativi alle movimentazioni di magazzino.</li>
+<li>Documenti clienti e fornitori: aggiunta la possibilità di rendere provvisorio un documento definitivo purché sia manuale.</li>
+<li>Adesso durante la generazione la quantia verrà spalmata solo per le taglie presente nella riga dell'ordine e non su tutte le taglie abilitate sul modello. Dopo la generazione provare che la stampa vada correttamente a termine</li>
+<li>Documento cliente: aggiunta paginazione su righe materiali per un utilizzo più fluido.</li>
+<li>Aggiungere in “Monitor Spedizioni” una colonna con 3 status possibili:  “da consolidare” =&gt; è ancora
 in lav in MM&nbsp; (4S ha inviato in
 lavorazione le liste a MM) “in consolidamento” =&gt;
 packing completato e MM ha consegnato i colli a TWS (prevedere aggiornamento da
 “da consolidare” a “in consolidamento” con flusso da MM) “consolidato” =&gt; merce
 entrata e confermata in TWS (prevedere aggiornamento da “in consolidamento” a
-“consolidato” con flusso da TWS)    1. Disassegnazione ordine: se a parità di chiave (ordine-riga-frazio) esistono righe in spedizione o già bollettate, la disassegnazione genera una nuova riga ordine. 1. Uniformato input delle fasi e macrofasi su distinta base e anagrafica materie prime. 1. Documenti clienti: ottimizzato il recupero del listino di vendita per accelerarne i tempi. 1. Liste libere: velocizzato l'import e accorpato per prodotto. 1. Liste spedizioni: spostata la funzione da dentro la manutenzione lista al menu a tendina della Situazione liste di spedizioni, rendendo più pratica la gestione e permettendo l'unione di liste anche già imballate. 1. Inventario: aggiunto l'export in excel del risultato. 1. Particolarità: aggiunta la possibilità di avere una gestione avanzata per le condizioni commerciali. 1. Documenti clienti: ottimizzato il calcolo delle scadenze, migliorando il tempo di salvataggio. 1. Aspetto beni: aggiunta traduzione. 1. Versamento resi: riportato sui movimenti il cliente. 1. Ordine fornitore MP: al versamento ordine fornitore aggiunta la quantità amministrativa, sia nel totale che nel dettaglio bagno/pezza. 1. Controllo fatture fornitore: gestita la quantità amministrativa per le materie prime. 1. Versamento capi a magazzino:&nbsp;esteso input alfanumerico su numero documento (anche caratteri speciali). 1. Documenti clienti: calcolo delle scadenze prevista la gestione del mese escluso su cliente. 1. Situazione liste spedizione: in griglia aggiunti i campi capi da sparare, sparati e in bolla. 1. Documenti clienti: inserita la modalità "Aggiungi da Barcode&nbsp;MP". 1. Situazione liste spedizione: abilitato l'export excel. 1. Documenti clienti: spostati i bottoni di azione (aggiorna e allinea su righe) dal centro alla sidebar laterale. 1. Magazzino MP: la quantità da prelevare è la quantità disponibile (al netto dell'impegnato) e non più quella reale. 1. Scheda tecnica: contemplati i caratteri speciali nei codici materiali e di ricerca colori. 1. Azioni pagine contenenti Sidebar (ordini, documenti, resi, ..): è possibile da ora modificare, spostare, nascondere e salvare tali modifiche per singolo utente ed ambiente.1. Ordine cliente: gestito il cliente di fatturazione anche se l'intestatario è NORMAL.</li>
+“consolidato” con flusso da TWS)</li>
+<li>Disassegnazione ordine: se a parità di chiave (ordine-riga-frazio) esistono righe in spedizione o già bollettate, la disassegnazione genera una nuova riga ordine.</li>
+<li>Uniformato input delle fasi e macrofasi su distinta base e anagrafica materie prime.</li>
+<li>Documenti clienti: ottimizzato il recupero del listino di vendita per accelerarne i tempi.</li>
+<li>Liste libere: velocizzato l'import e accorpato per prodotto.</li>
+<li>Liste spedizioni: spostata la funzione da dentro la manutenzione lista al menu a tendina della Situazione liste di spedizioni, rendendo più pratica la gestione e permettendo l'unione di liste anche già imballate.</li>
+<li>Inventario: aggiunto l'export in excel del risultato.</li>
+<li>Particolarità: aggiunta la possibilità di avere una gestione avanzata per le condizioni commerciali.</li>
+<li>Documenti clienti: ottimizzato il calcolo delle scadenze, migliorando il tempo di salvataggio.</li>
+<li>Aspetto beni: aggiunta traduzione. 1. Versamento resi: riportato sui movimenti il cliente.</li>
+<li>Ordine fornitore MP: al versamento ordine fornitore aggiunta la quantità amministrativa, sia nel totale che nel dettaglio bagno/pezza.</li>
+<li>Controllo fatture fornitore: gestita la quantità amministrativa per le materie prime.</li>
+<li>Versamento capi a magazzino:&nbsp;esteso input alfanumerico su numero documento (anche caratteri speciali).</li>
+<li>Documenti clienti: calcolo delle scadenze prevista la gestione del mese escluso su cliente.</li>
+<li>Situazione liste spedizione: in griglia aggiunti i campi capi da sparare, sparati e in bolla.</li>
+<li>Documenti clienti: inserita la modalità "Aggiungi da Barcode&nbsp;MP".</li>
+<li>Situazione liste spedizione: abilitato l'export excel.</li>
+<li>Documenti clienti: spostati i bottoni di azione (aggiorna e allinea su righe) dal centro alla sidebar laterale.</li>
+<li>Magazzino MP: la quantità da prelevare è la quantità disponibile (al netto dell'impegnato) e non più quella reale.</li>
+<li>Scheda tecnica: contemplati i caratteri speciali nei codici materiali e di ricerca colori.</li>
+<li>Azioni pagine contenenti Sidebar (ordini, documenti, resi, ..): è possibile da ora modificare, spostare, nascondere e salvare tali modifiche per singolo utente ed ambiente.1. Ordine cliente: gestito il cliente di fatturazione anche se l'intestatario è NORMAL.</li>
 </ol>]]></content>
         <author>
             <name>4SNE</name>
