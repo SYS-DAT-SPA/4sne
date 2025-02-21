@@ -4,10 +4,68 @@
         <title>4Seasons Next Edition Blog</title>
         <link>https://sys-dat-spa.github.io/4sne/blog</link>
         <description>4Seasons Next Edition Blog</description>
-        <lastBuildDate>Fri, 14 Feb 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 21 Feb 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Release note 258]]></title>
+            <link>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-02-21</link>
+            <guid>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-02-21</guid>
+            <pubDate>Fri, 21 Feb 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[4Seasons Next]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-02-21#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
+<p>La seguente versione 258 del 21/02/2025 riporta i seguenti aggiornamenti</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p><p>Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-02-21#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
+<h1>35</h1>
+<p>Ecco un riepilogo delle principali novità dell'aggiornamento software:</p>
+<ol>
+<li>È stata migliorata l'interfaccia utente con l'aggiunta di paginazione nei documenti cliente e la gestione degli errori nei movimenti di magazzino.</li>
+<li>Sono state implementate nuove funzionalità, come la possibilità di modificare i dati del documento in modo più flessibile e l'ottimizzazione della valorizzazione dei materiali e dei capi a magazzino.</li>
+<li>Sono stati aggiornati i report e le schede tecniche, con controlli per evitare duplicazioni e miglioramenti nella gestione delle traduzioni e dei documenti fornitori.</li>
+</ol>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-02-21#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
+<ol>
+<li>Documento cliente: aggiunta paginazione su righe materiali per un utilizzo più fluido.</li>
+<li>Cambia dati documento: divisa la possibilità di cambiare numero/data oppure clienti, con l'eventuale nuova numerazione della spedizione in caso di cambio cliente spedizione.</li>
+<li>Gestione estensione prodotto ordine fornitori capi finiti</li>
+<li>Produzione: è ora possibile avanzare al laboratorio anche una quantità maggiore rispetto alla commessa.</li>
+<li>Valorizzazione MP: velocizzata la procedura nei controlli.</li>
+<li>Scheda tecnica: controllo che non permette la duplica o modifica se esiste una scheda tecnica con prodotto e stagione di vendita già presenti.</li>
+<li>Magazzino CF: visualizzati anche i capi che hanno una giacenza negativa in&nbsp;vista e selezione.</li>
+<li>Valorizzazione CF: velocizzata la procedura di analisi e di elaborazione degli strati.</li>
+<li>Configurazioni report: gestita l'espansione righe e loghi per tutti i moduli presenti</li>
+<li>Nuova versione ASN con gestione arrivi da commessa</li>
+<li>Revisione layout scheda misura nella scheda tecnica</li>
+<li>Ordine fornitore MP: in aggiunta riga manuale previsto il filtro dei colori associati al materiale.</li>
+<li>Ristampa documenti clienti: aggiunta possibilità di stampare un unico pdf per tipo documento.</li>
+<li>Gestione capi a magazzino: migliorata la gestione degli errori nei movimenti manuali; in caso di errore, il programma ora rimane nella pagina senza perdere i dati immessi, evitando il ritorno all'inizio.</li>
+<li>Ordini fornitore Materiali: attivando il flag di chiusura, la quantità residua viene azzerata e, se riattivato, viene ricalcolata; impedita la modifica o eliminazione di righe con quantità ricevuta maggiore di zero; rimosso il pulsante "Aggiungi" dalla lista libera per favorire l'inserimento manuale; eliminata la visualizzazione delle pagine di dettaglio evidenziate nelle righe.</li>
+<li>Movimentazione magazzino: nella pagina di movimentazione manuale materiali, inibita la selezione del tipo C, mantenendo il campo visibile ma protetto anche dai GUI contracts; il tipo viene ora valorizzato automaticamente a P, indipendentemente dal percorso di accesso alla pagina.</li>
+<li>Aggiunto campo Pagina del Book negli abbinamenti di vendita</li>
+<li>Workflow scheda tecnica: ripristinata la gestione del workflow nelle schede tecniche, precedentemente assente dopo l'ultimo rilascio; il riquadro dedicato è ora nuovamente visibile.</li>
+<li>Sistemazione del caricamento dei dati dei quadri della scheda tecnica</li>
+<li>Documenti cliente: migliorata la chiarezza dei messaggi di errore quando si tenta di rendere provvisorio un DDT generato da ordine cliente; ora viene mostrato un messaggio esplicativo: "Un documento generato da ordine cliente non si può rendere provvisorio, procedere con l'eliminazione".</li>
+<li>Documenti cliente da ordini cliente: esposti solo tipo documenti collegati a clienti</li>
+<li>ASN: gestito tutto il flusso con l'estensione del prodotto (etichetta, cartellino..)</li>
+<li>Ottimizzata la gestione degli errori</li>
+<li>Cartella colore: in fase di creazione rimossa gestione colore NONE</li>
+<li>Valorizzazione MP: in fase di stampa salvati i dati sulla tabella dei valori fiscali</li>
+<li>Documenti cliente: aggiunti il campo "bagno" e il riferimento alla commessa nei report DDTLAB e DDTLIN; la modifica è ora standard.</li>
+<li>Assegnazione capi ordine: aggiunto alert deprecated</li>
+<li>Filtri preimpostati: attivato il salvataggio per tutti gli utenti</li>
+<li>Wip: ottimizzato il calcolo</li>
+<li>Ordini cliente: quando un ordine contiene almeno un capo assegnato, i campi cliente, cliente di spedizione e cliente di fatturazione sono ora in sola lettura e non possono più essere modificati.</li>
+<li>UFR: il salvataggio scenari pivot ora salva anche la tipologia di layout compact</li>
+<li>Risultati lanci di produzione: aggiunti campi mancanti del codice prodotto nella griglia, inclusa la cartella; valutata la possibilità di gestire l'intera chiave completa con personalizzazione dei campi visibili.</li>
+<li>Traduzioni: è ora possibile aggiungere lingue aggiuntive e relative traduzioni</li>
+<li>Salti di taglie in scalarino prodotti: verificata la corretta gestione delle fasce prezzo in "Taglie", migliorata la duplicazione di prodotti con cambio cdtaglia quando il modellitaglie originale è più ampio del nuovo, e ottimizzata la visualizzazione delle righe prodotto (giacenza, documenti, ordini) in presenza di buchi di taglie.</li>
+<li>Documenti fornitore: corretto il problema che impediva il salvataggio del documento e la visualizzazione di messaggi quando veniva aggiunta una spesa.</li>
+</ol>]]></content:encoded>
+            <category>4SNE</category>
+        </item>
         <item>
             <title><![CDATA[Release note 257]]></title>
             <link>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-02-14</link>
