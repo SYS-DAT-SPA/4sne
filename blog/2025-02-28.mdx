@@ -1,0 +1,84 @@
+---
+slug: Release note 2025-02-28
+title: Release note 259
+authors: [4sne]
+tags: [4sne]
+---
+
+# Release note 259
+
+### 4Seasons Next
+
+La seguente versione 259 del 28/02/2025 riporta i seguenti aggiornamenti
+
+:::warning
+
+Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.
+
+Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.
+
+:::
+
+
+<!-- truncate -->
+
+### Aggiornamenti:        
+
+#  43
+
+Le principali novità dell'aggiornamento software riguardano:
+
+1. È stata migliorata l'interfaccia utente con l'aggiunta di paginazione nei documenti cliente e la separazione delle opzioni di modifica per numero/data e clienti. Inoltre, sono state ottimizzate le procedure di gestione dei resi e dei filtri di ricerca.
+
+2. Sono state implementate nuove funzionalità nella gestione della produzione, come la possibilità di avanzare quantità superiori rispetto alla commessa e il ripristino del workflow nelle schede tecniche. È stata anche migliorata la gestione degli errori nei movimenti di magazzino.
+
+3. Infine, sono state apportate modifiche significative ai documenti cliente e fornitore, inclusa la possibilità di stampare documenti in formato PDF unificato e la correzione di problemi di salvataggio.
+
+
+##### Release notes
+
+1. Documento cliente: aggiunta paginazione su righe materiali per un utilizzo più fluido. 
+1. Cambia dati documento: divisa la possibilità di cambiare numero/data oppure clienti, con l'eventuale nuova numerazione della spedizione in caso di cambio cliente spedizione. 
+1. Gestione estensione prodotto ordine fornitori capi finiti 
+1. Velocizzazione dell gestione reso e dell'filtro di ricerca per aggiungere le rgihe da documento 
+1. Interfaccia contabile SAM: integrata con le principali anagrafiche interessate. 
+1. Produzione: è ora possibile avanzare al laboratorio anche una quantità maggiore rispetto alla commessa. 
+1. Valorizzazione MP: velocizzata la procedura nei controlli. 
+1. Scheda tecnica: controllo che non permette la duplica o modifica se esiste una scheda tecnica con prodotto e stagione di vendita già presenti.  
+1. E' stato risolto il blocco della pagina degli avanzamenti di produzione 
+1. Magazzino CF: visualizzati anche i capi che hanno una giacenza negativa in&nbsp;vista e selezione. 
+1. Valorizzazione CF: velocizzata la procedura di analisi e di elaborazione degli strati. 
+1. Configurazioni report: gestita l'espansione righe e loghi per tutti i moduli presenti 
+1. Ottimizzazione dell'avanzamento per parte modello.&nbsp; 
+1. Nuova versione ASN con gestione arrivi da commessa 
+1. Revisione layout scheda misura nella scheda tecnica 
+1. Ordine fornitore MP: in aggiunta riga manuale previsto il filtro dei colori associati al materiale. 
+1. Sono stati revisionati interamente i campi di input testuale, numerico, booleano e tendinato nella gestione dei default. Ora è possibile impostare obbligatorietà, valore default, visibilità e mask anche ai campi non legati a tabelle, ovvero tutti quei parametri funzionali presenti nelle pagine operative. Questa estensione è estremamente impattante e permetterà di configurarsi autonomamente la quasi totalità degli elementi a schermo. 
+1. Ristampa documenti clienti: aggiunta possibilità di stampare un unico pdf per tipo documento. 
+1. Gestione capi a magazzino: migliorata la gestione degli errori nei movimenti manuali; in caso di errore, il programma ora rimane nella pagina senza perdere i dati immessi, evitando il ritorno all'inizio. 
+1. Ordini fornitore Materiali: attivando il flag di chiusura, la quantità residua viene azzerata e, se riattivato, viene ricalcolata; impedita la modifica o eliminazione di righe con quantità ricevuta maggiore di zero; rimosso il pulsante &quot;Aggiungi&quot; dalla lista libera per favorire l'inserimento manuale; eliminata la visualizzazione delle pagine di dettaglio evidenziate nelle righe. 
+1. Movimentazione magazzino: nella pagina di movimentazione manuale materiali, inibita la selezione del tipo C, mantenendo il campo visibile ma protetto anche dai GUI contracts; il tipo viene ora valorizzato automaticamente a P, indipendentemente dal percorso di accesso alla pagina.  
+1. Aggiunto campo Pagina del Book negli abbinamenti di vendita 
+1. Workflow scheda tecnica: ripristinata la gestione del workflow nelle schede tecniche, precedentemente assente dopo l'ultimo rilascio; il riquadro dedicato è ora nuovamente visibile. 
+1. Sistemazione del caricamento dei dati dei quadri della scheda tecnica 
+1. Documenti cliente: migliorata la chiarezza dei messaggi di errore quando si tenta di rendere provvisorio un DDT generato da ordine cliente; ora viene mostrato un messaggio esplicativo: &quot;Un documento generato da ordine cliente non si può rendere provvisorio, procedere con l'eliminazione&quot;. 
+1. Documenti cliente da ordini cliente: esposti solo tipo documenti collegati a clienti 
+1. Gestione della quantità impegnata distinta dalla quantità inviata sui buoni di prelievo 
+1. ASN: gestito tutto il flusso con l'estensione del prodotto (etichetta, cartellino..) 
+1. Ottimizzata la gestione degli errori 
+1. Cartella colore: in fase di creazione rimossa gestione colore NONE 
+1. Valorizzazione MP: in fase di stampa salvati i dati sulla tabella dei valori fiscali 
+1. Documenti cliente: aggiunti il campo &quot;bagno&quot; e il riferimento alla commessa nei report DDTLAB e DDTLIN; la modifica è ora standard.  
+1. Assegnazione capi ordine: aggiunto alert deprecated 
+1. Filtri preimpostati: attivato il salvataggio per tutti gli utenti 
+1. Wip: ottimizzato il calcolo 
+1. Ordini cliente: quando un ordine contiene almeno un capo assegnato, i campi cliente, cliente di spedizione e cliente di fatturazione sono ora in sola lettura e non possono più essere modificati.  
+1. UFR: il salvataggio scenari pivot ora salva anche la tipologia di layout compact 
+1. Risultati lanci di produzione: aggiunti campi mancanti del codice prodotto nella griglia, inclusa la cartella; valutata la possibilità di gestire l'intera chiave completa con personalizzazione dei campi visibili.  
+1. Traduzioni: è ora possibile aggiungere lingue aggiuntive e relative traduzioni  
+1. Salti di taglie in scalarino prodotti: verificata la corretta gestione delle fasce prezzo in &quot;Taglie&quot;, migliorata la duplicazione di prodotti con cambio cdtaglia quando il modellitaglie originale è più ampio del nuovo, e ottimizzata la visualizzazione delle righe prodotto (giacenza, documenti, ordini) in presenza di buchi di taglie.  
+1. Documenti clienti: contemplata la rivalsa iva 
+1. Documenti fornitore: corretto il problema che impediva il salvataggio del documento e la visualizzazione di messaggi quando veniva aggiunta una spesa.  
+1. Quando viene eseguito il cambio prodotto all'interno delle righe ordine tornando in dietro sull'ordine mantiene la stessa pagina delle righe oridine . 
+
