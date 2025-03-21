@@ -1,0 +1,74 @@
+---
+slug: Release note 2025-03-21
+title: Release note 2511-beta
+authors: [4sne]
+tags: [4sne]
+---
+
+# Release note 2511-beta
+
+### 4Seasons Next
+
+La seguente versione 2511-beta del 21/03/2025 riporta i seguenti aggiornamenti
+
+:::warning
+
+Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.
+
+Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.
+
+:::
+
+
+<!-- truncate -->
+
+### Aggiornamenti:        
+
+#  39
+
+Il recente aggiornamento del software ha introdotto diverse migliorie significative. Tra le principali novità, è ora possibile creare documenti di trasporto singoli per gli ordini clienti e gestire in modo più efficiente le etichette e le richieste di confezionamento. Inoltre, sono stati implementati controlli automatici per gli ordini e miglioramenti nella gestione delle fatture e dei listini, rendendo il sistema più intuitivo e funzionale per gli utenti.
+
+
+##### Release notes
+
+1. Documenti clienti da ordine cliente: possibilità di creare il DDT singolo e non solo come genera massivo. 
+1. Magazzino CF: prevista l'estensione prodotto (etichetta/cartellino/richiesta confezione) nella maschera di movimento manuale.&nbsp; 
+1. Il lancio manuale del semilavorato articolo (modello SEMILAVORATO) propone ora una qta decimale e non la grid delle taglie
+1. Ordine Cliente: recuperato in automatico il tipo documento di spedizione dal cliente (prioritario) o dal tipo ordine, sia in fase di creazione dell'ordine sia in modifica con apposito alert di sovrascrittura. 
+1. Import-tool: aggiunta la tabella che copia gli argomenti-dto sul template, ciò permette di poter generare diversi template su lo stesso argomento. 
+1. Documenti clienti: spostati in prima pagina e sempre visibili i campi relativi alle movimentazioni di magazzino. 
+1. Documenti clienti da ordini clienti: ripristino il recupero del tipo documento da ordine ed ottimizzata la procedura. 
+1. In documento_estrazione fatto in modo che nelle scadenze esportasse impeffeur se valuta eur 
+1. Funzione sostituzione massiva distinta base aggiunti riferimento materia prima (codice e descrizione) nei risultati trovati alcuni bug legati alla selezione dei risultati, il fix quindi riguarda il modo in cui i dati vengono passati dal front-end. Tutte le funzioni massive sono affette da questa modifica. Una volta spostati nella pagina delle funzioni non è più possibile selezionare o deselezionare i record, per farlo occorre tornare nella pagina dei filtri. Una volta completata l'operazione (esito ok) la pagina viene ricaricata.&nbsp;&nbsp; Aggiunto filtro sulle select nuovo colore in modo che vengano visualizzati solo i colori appartenenti alla cartella selezionata.  
+1. Nella pagina degli Avanzamenti, aggiunta la funzione che permette di creare i buoni di prelievo. Selezionando il laboratorio e le commesse, con il tasto crea, verrà generato il buono. Si può navigare direttamente dentro il buono con il bottone di modifica. 
+1. Listini MP: aggiunto il filtro in listini solo per alcune colonne, oltre al filtro globale sopra. 
+1. Lancio commessa semilavorato-articoli: aggiunto un controllo delle righe che verifica l'esistenza degli abbinamenti di vendita e della DiBa per la stagione di vendita della testata.&nbsp;Lo stato di riga viene verificato all'inserimento/cambio del prodotto e/o della stagione della commessa.&nbsp;Le righe devono essere tutte verificate per poter lanciare la commessa. 
+1. Documento cliente: rivista la pagina dei colli che proponeva la lista delle righe capi mentre è stata sistemata proponendo i dati dei colli. 
+1. Aggiunta configurazione in azienda per la gestione delle etichette cartellino richieste su confezione. Le opzioni sono:&nbsp; &nbsp;solo nell'ordine cliente anche in approvvigionamento e magazzino   
+1. Gestione Etichetta Cartellino Richiesta Confezionamento in Richieste Lancio: In base alla selezione in azienda (Etichetta\Cartellino\Richiesta su Confezione), nei risultati si vedranno o meno le colonne dei campi Etichetta Cartellino Richiesta su Confezione.&nbsp; Il calcolo oltre a verificare la selezione in azienda verifica anche i flag singoli del prodotto, per raggruppare in caso di unito oppure semplicemente non considerare in caso di non unito. 
+1. Sono Stati inseriti i campi per inserire Etichetta, Cartellino e Richiesta su Confezione al lancio delle commesse manuali in base alle configurazioni dell'azienda del codice prodotto 
+1. In fase di sincronizzazione con CM, la categoria del prodotto deve essere preceduta da una categoria fittizia CM-SHOPIFY1. Questa categoria di fatto non esiste ma serve per creare un canale su CM.   
+1. Disassegnazione ordine: se a parità di chiave (ordine-riga-frazio) esistono righe in spedizione o già bollettate, la disassegnazione genera una nuova riga ordine. 
+1. Inventario: aggiunto l'export in excel del risultato. 
+1. Particolarità: aggiunta la possibilità di avere una gestione avanzata per le condizioni commerciali. 
+1. Ordine fornitore MP: al versamento ordine fornitore aggiunta la quantità amministrativa, sia nel totale che nel dettaglio bagno/pezza. 
+1. Controllo fatture fornitore: gestita la quantità amministrativa per le materie prime. 
+1. Gestione estensione prodotto ordine fornitori capi finiti 
+1. Valorizzazione MP: velocizzata la procedura nei controlli. 
+1. Scheda tecnica: controllo che non permette la duplica o modifica se esiste una scheda tecnica con prodotto e stagione di vendita già presenti.  
+1. Documenti clienti: import lista libera con prezzo. 
+1. Packing list: corretti i totali in testa al riepilogo lista. 
+1. Nuova versione ASN con gestione arrivi da commessa 
+1. Revisione layout scheda misura nella scheda tecnica 
+1. Ordine fornitore MP: in aggiunta riga manuale previsto il filtro dei colori associati al materiale. 
+1. Sono stati revisionati interamente i campi di input testuale, numerico, booleano e tendinato nella gestione dei default. Ora è possibile impostare obbligatorietà, valore default, visibilità e mask anche ai campi non legati a tabelle, ovvero tutti quei parametri funzionali presenti nelle pagine operative. Questa estensione è estremamente impattante e permetterà di configurarsi autonomamente la quasi totalità degli elementi a schermo. 
+1. Ordini fornitore Materiali: attivando il flag di chiusura, la quantità residua viene azzerata e, se riattivato, viene ricalcolata; impedita la modifica o eliminazione di righe con quantità ricevuta maggiore di zero; rimosso il pulsante &quot;Aggiungi&quot; dalla lista libera per favorire l'inserimento manuale; eliminata la visualizzazione delle pagine di dettaglio evidenziate nelle righe. 
+1. Aggiunto campo Pagina del Book negli abbinamenti di vendita 
+1. URGENTE SAPORETTI RICHIESTA DEL 7 FEB 2025, IN ATTESA APERTURA TICKET 
+1. Cartella colore: in fase di creazione rimossa gestione colore NONE 
+1. Valorizzazione MP: in fase di stampa salvati i dati sulla tabella dei valori fiscali 
+1. Assegnazione capi ordine: aggiunto alert deprecated 
+1. Risultati lanci di produzione: aggiunti campi mancanti del codice prodotto nella griglia, inclusa la cartella; valutata la possibilità di gestire l'intera chiave completa con personalizzazione dei campi visibili.  
+1. Salti di taglie in scalarino prodotti: verificata la corretta gestione delle fasce prezzo in &quot;Taglie&quot;, migliorata la duplicazione di prodotti con cambio cdtaglia quando il modellitaglie originale è più ampio del nuovo, e ottimizzata la visualizzazione delle righe prodotto (giacenza, documenti, ordini) in presenza di buchi di taglie.  
+
