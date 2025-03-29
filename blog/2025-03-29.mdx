@@ -1,0 +1,61 @@
+---
+slug: Release note 2025-03-29
+title: Release note 2511
+authors: [4sne]
+tags: [4sne]
+---
+
+# Release note 2511
+
+### 4Seasons Next
+
+La seguente versione 2511 del 29/03/2025 riporta i seguenti aggiornamenti
+
+:::warning
+
+Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.
+
+Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.
+
+:::
+
+
+<!-- truncate -->
+
+### Aggiornamenti:        
+
+#  22
+
+Ecco un riepilogo delle principali novità dell'aggiornamento software:
+
+1. È stata estesa la funzionalità del magazzino CF per includere etichette e richieste di confezionamento. 
+2. Nella pagina degli Avanzamenti, è stata aggiunta la possibilità di creare buoni di prelievo, con navigazione diretta per la modifica. 
+3. Sono stati implementati controlli per la gestione delle commesse e delle etichette, migliorando la sincronizzazione con CM e la gestione dei resi, oltre a ottimizzare la chiarezza dei messaggi di errore nei documenti clienti.
+
+
+##### Release notes
+
+1. Magazzino CF: prevista l'estensione prodotto (etichetta/cartellino/richiesta confezione) nella maschera di movimento manuale.&nbsp; 
+1. In documento_estrazione fatto in modo che nelle scadenze esportasse impeffeur se valuta eur 
+1. Nella pagina degli Avanzamenti, aggiunta la funzione che permette di creare i buoni di prelievo. Selezionando il laboratorio e le commesse, con il tasto crea, verrà generato il buono. Si può navigare direttamente dentro il buono con il bottone di modifica. 
+1. Lancio commessa semilavorato-articoli: aggiunto un controllo delle righe che verifica l'esistenza degli abbinamenti di vendita e della DiBa per la stagione di vendita della testata.&nbsp;Lo stato di riga viene verificato all'inserimento/cambio del prodotto e/o della stagione della commessa.&nbsp;Le righe devono essere tutte verificate per poter lanciare la commessa. 
+1. Aggiunta configurazione in azienda per la gestione delle etichette cartellino richieste su confezione. Le opzioni sono:&nbsp; &nbsp;solo nell'ordine cliente anche in approvvigionamento e magazzino   
+1. Gestione Etichetta Cartellino Richiesta Confezionamento in Richieste Lancio: In base alla selezione in azienda (Etichetta\Cartellino\Richiesta su Confezione), nei risultati si vedranno o meno le colonne dei campi Etichetta Cartellino Richiesta su Confezione.&nbsp; Il calcolo oltre a verificare la selezione in azienda verifica anche i flag singoli del prodotto, per raggruppare in caso di unito oppure semplicemente non considerare in caso di non unito. 
+1. Sono Stati inseriti i campi per inserire Etichetta, Cartellino e Richiesta su Confezione al lancio delle commesse manuali in base alle configurazioni dell'azienda del codice prodotto 
+1. In fase di sincronizzazione con CM, la categoria del prodotto deve essere preceduta da una categoria fittizia CM-SHOPIFY1. Questa categoria di fatto non esiste ma serve per creare un canale su CM.   
+1. Reso: velocizzazione della gestione del reso e del filtro di ricerca per aggiungere da documento 
+1. Scheda tecnica: controllo che non permette la duplica o modifica se esiste una scheda tecnica con prodotto e stagione di vendita già presenti.  
+1. Configurazioni report: gestita l'espansione righe e loghi per tutti i moduli presenti 
+1. Campi personalizzati: resi visibili di default dentro la griglia ma solo in coda 
+1. Ordine fornitore MP: in aggiunta riga manuale previsto il filtro dei colori associati al materiale. 
+1. Documenti clienti: migliorata la chiarezza dei messaggi di errore quando si tenta di rendere provvisorio un DDT generato da ordine cliente   
+1. URGENTE SAPORETTI RICHIESTA DEL 7 FEB 2025, IN ATTESA APERTURA TICKET 
+1. Buoni di prelievo:&nbsp;gestione della quantità impegnata distinta dalla quantità inviata 
+1. ASN: gestito tutto il flusso con l'estensione del prodotto (etichetta, cartellino..) 
+1. Salti di taglie in scalarino prodotti: verificata la corretta gestione delle fasce prezzo in &quot;Taglie&quot;, migliorata la duplicazione di prodotti con cambio cdtaglia quando il modellitaglie originale è più ampio del nuovo, e ottimizzata la visualizzazione delle righe prodotto (giacenza, documenti, ordini) in presenza di buchi di taglie.  
+1. Documenti clienti: contemplata la rivalsa iva 
+1. Sostituzione righe ordine cliente: fixato cambio statura su righe 
+1. Documenti cliente: cambiato l'inserimento prodotti (manuale, lista libera, magazzino) in documenti cliente 
+1. Documenti clienti: recupero provvigioni (oltre che l'agente) su riga manuale 
+
