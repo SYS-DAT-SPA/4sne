@@ -1,0 +1,44 @@
+---
+slug: Release note 2025-04-04
+title: Release note 2513-beta
+authors: [4sne]
+tags: [4sne]
+---
+
+# Release note 2513-beta
+
+### 4Seasons Next
+
+La seguente versione 2513-beta del 04/04/2025 riporta i seguenti aggiornamenti
+
+:::warning
+
+Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.
+
+Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.
+
+:::
+
+
+<!-- truncate -->
+
+### Aggiornamenti:        
+
+#  7
+
+Ecco un riepilogo dell'aggiornamento del software:
+
+Sono state apportate diverse migliorie, tra cui l'estensione del prodotto nella maschera di movimento manuale nel magazzino CF e l'aggiunta della funzione per creare buoni di prelievo nella pagina degli Avanzamenti. Inoltre, è stato implementato un controllo per la commessa semilavorato-articoli, che verifica l'esistenza degli abbinamenti di vendita, e sono stati introdotti filtri per i colori negli ordini fornitori. Infine, sono stati migliorati la gestione delle taglie e il recupero delle provvigioni sui documenti clienti.
+
+
+##### Release notes
+
+1. Magazzino CF: prevista l'estensione prodotto (etichetta/cartellino/richiesta confezione) nella maschera di movimento manuale.&nbsp; 
+1. Nella pagina degli Avanzamenti, aggiunta la funzione che permette di creare i buoni di prelievo. Selezionando il laboratorio e le commesse, con il tasto crea, verrà generato il buono. Si può navigare direttamente dentro il buono con il bottone di modifica. 
+1. Lancio commessa semilavorato-articoli: aggiunto un controllo delle righe che verifica l'esistenza degli abbinamenti di vendita e della DiBa per la stagione di vendita della testata.&nbsp;Lo stato di riga viene verificato all'inserimento/cambio del prodotto e/o della stagione della commessa.&nbsp;Le righe devono essere tutte verificate per poter lanciare la commessa. 
+1. Scheda tecnica: controllo che non permette la duplica o modifica se esiste una scheda tecnica con prodotto e stagione di vendita già presenti.  
+1. Ordine fornitore MP: in aggiunta riga manuale previsto il filtro dei colori associati al materiale. 
+1. Salti di taglie in scalarino prodotti: verificata la corretta gestione delle fasce prezzo in &quot;Taglie&quot;, migliorata la duplicazione di prodotti con cambio cdtaglia quando il modellitaglie originale è più ampio del nuovo, e ottimizzata la visualizzazione delle righe prodotto (giacenza, documenti, ordini) in presenza di buchi di taglie.  
+1. Documenti clienti: recupero provvigioni (oltre che l'agente) su riga manuale 
+
