@@ -4,10 +4,36 @@
         <title>4Seasons Next Edition Blog</title>
         <link>https://sys-dat-spa.github.io/4sne/blog</link>
         <description>4Seasons Next Edition Blog</description>
-        <lastBuildDate>Sat, 29 Mar 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 04 Apr 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Release note 2513-beta]]></title>
+            <link>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-04-04</link>
+            <guid>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-04-04</guid>
+            <pubDate>Fri, 04 Apr 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[4Seasons Next]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-04-04#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
+<p>La seguente versione 2513-beta del 04/04/2025 riporta i seguenti aggiornamenti</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p><p>Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-04-04#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
+<h1>7</h1>
+<p>Ecco un riepilogo dell'aggiornamento del software:</p>
+<p>Sono state apportate diverse migliorie, tra cui l'estensione del prodotto nella maschera di movimento manuale nel magazzino CF e l'aggiunta della funzione per creare buoni di prelievo nella pagina degli Avanzamenti. Inoltre, è stato implementato un controllo per la commessa semilavorato-articoli, che verifica l'esistenza degli abbinamenti di vendita, e sono stati introdotti filtri per i colori negli ordini fornitori. Infine, sono stati migliorati la gestione delle taglie e il recupero delle provvigioni sui documenti clienti.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-04-04#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
+<ol>
+<li>Magazzino CF: prevista l'estensione prodotto (etichetta/cartellino/richiesta confezione) nella maschera di movimento manuale.&nbsp;</li>
+<li>Nella pagina degli Avanzamenti, aggiunta la funzione che permette di creare i buoni di prelievo. Selezionando il laboratorio e le commesse, con il tasto crea, verrà generato il buono. Si può navigare direttamente dentro il buono con il bottone di modifica.</li>
+<li>Lancio commessa semilavorato-articoli: aggiunto un controllo delle righe che verifica l'esistenza degli abbinamenti di vendita e della DiBa per la stagione di vendita della testata.&nbsp;Lo stato di riga viene verificato all'inserimento/cambio del prodotto e/o della stagione della commessa.&nbsp;Le righe devono essere tutte verificate per poter lanciare la commessa.</li>
+<li>Scheda tecnica: controllo che non permette la duplica o modifica se esiste una scheda tecnica con prodotto e stagione di vendita già presenti.</li>
+<li>Ordine fornitore MP: in aggiunta riga manuale previsto il filtro dei colori associati al materiale.</li>
+<li>Salti di taglie in scalarino prodotti: verificata la corretta gestione delle fasce prezzo in "Taglie", migliorata la duplicazione di prodotti con cambio cdtaglia quando il modellitaglie originale è più ampio del nuovo, e ottimizzata la visualizzazione delle righe prodotto (giacenza, documenti, ordini) in presenza di buchi di taglie.</li>
+<li>Documenti clienti: recupero provvigioni (oltre che l'agente) su riga manuale</li>
+</ol>]]></content:encoded>
+            <category>4SNE</category>
+        </item>
         <item>
             <title><![CDATA[Release note 2511]]></title>
             <link>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-03-29</link>
@@ -876,19 +902,6 @@ SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni p
 <p>Sistemazione velocita di caricamento delle Abilitazione Clienti Crm e sistemaizone della duplica cosi da riportarsi il vari flag sul nuovo duplicato</p>
 </li>
 </ol>]]></content:encoded>
-            <category>4SNE</category>
-        </item>
-        <item>
-            <title><![CDATA[Aggiornamento documentazione]]></title>
-            <link>https://sys-dat-spa.github.io/4sne/blog/docs-update</link>
-            <guid>https://sys-dat-spa.github.io/4sne/blog/docs-update</guid>
-            <pubDate>Tue, 15 Oct 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[4Seasons Next]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="https://sys-dat-spa.github.io/4sne/blog/docs-update#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
-<p>È stata introdotta una nuova funzionalità per la documentazione del software 4Seasons Next.</p>
-<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>tip</div><div class="admonitionContent_BuS1"><p>La documentazione è stata aggiornata per includere nuove funzionalità e miglioramenti.</p></div></div>
-<!-- -->
-<button class="btn">Inizia!</button>]]></content:encoded>
             <category>4SNE</category>
         </item>
     </channel>
