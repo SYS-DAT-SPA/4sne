@@ -1,0 +1,74 @@
+---
+title: Gestione Magazzino MP - Viste e selezio e gestione magazzino
+description: Gestione Magazzino MP - Viste e selezio e gestione magazzino
+---
+
+**Gestione Magazzino “MP” (Materie Prime)**
+
+**1 - Gestione Magazzino MP. Guida All’Uso**
+
+Nel sistema ERP 4S Next Edition, il modulo Gestione Magazzino MP (Materie Prime) consente la tracciabilità e movimentazione di tessuti, accessori, etichette e altri materiali utilizzati nella produzione.
+
+Questa gestione è cruciale per:
+
+* controllare stock fisico e virtuale,
+* registrare movimenti di carico (es. entrata da fornitore),
+* facilitare il ri- approvvigionamento e il tracciamento lotti.
+
+***
+
+**2 - Significato dell’argomento + Esempi Pratici**
+
+Cosa si intende per “Gestione Magazzino MP”
+
+È l’insieme delle operazioni digitali che permettono di monitorare le quantità, posizioni, date e documenti relativi all’arrivo, allo spostamento e all’utilizzo delle materie prime (tessuti, filati, accessori, ecc.).
+
+**Esempi pratici**
+
+* Registrazione dell’ingresso di tessuto tagliato ricevuto dal fornitore con un DDT specifico.
+* Caricamento a magazzino di etichette provenienti da un laboratorio di stampa.
+* Verifica della disponibilità per articolo e variante prima di pianificare un taglio.
+
+***
+
+**3 - Guida Step- By- Step 4S Next**
+
+1. Accedi alla piattaforma tramite il link di 4 Next.
+2. Clicca sull’icona “+” o comando equivalente per aprire la schermata di creazione movimento.
+3. Seleziona il magazzino da utilizzare (es. MAGAZZINO\_MATERIE\_PRIME\_01).
+4. Clicca su "Filtra" per applicare eventuali criteri iniziali (opzionale).
+5. Avvia una nuova operazione cliccando sul bottone per inserimento da fornitore.
+6. Seleziona il tipo di movimento: "Entrata da FORNITORE".
+7. Nel campo di ricerca tipo documento, digita ddtf e seleziona dalla lista la voce "DDT da Fornitore".
+8. Inserisci il numero documento (es. 1) nel campo document Number.
+9. Compila la data del documento (es. 16/04/2025).
+10. Compila anche la data di registrazione del movimento (es. 16/04/2025).
+11. Inserisci la quantità in ingresso (es. 1) nel campo dedicato.
+12. Inserisci il codice articolo/materiale ricevuto (es. 0100) nel campo successivo.
+13. Clicca su "Conferma" per salvare il movimento di entrata.
+
+Al termine, la materia prima sarà visibile come "disponibile" nel magazzino selezionato, associata al fornitore e tracciabile tramite il numero DDT.
+
+***
+
+**4 - FAQ – Domande Frequenti**
+
+*1. Qual è la differenza tra “Entrata da fornitore” e “Carico manuale”?*
+
+L’entrata da fornitore è un movimento tracciato con riferimento a un DDT; il carico manuale è un’operazione libera, spesso usata per rettifiche o test.
+
+*2. Posso modificare una registrazione già salvata?*
+
+Dipende dal livello di autorizzazione. In genere sì, finché non è contabilizzata o integrata in cicli produttivi.
+
+*3. Cosa succede se inserisco un articolo non esistente?*
+
+Il sistema restituisce un errore: ogni articolo deve essere già anagraficamente presente nel database.
+
+*4. Posso gestire più lotti dello stesso materiale?*
+
+Sì, il sistema supporta la gestione lotti, utile per rintracciare la tracciabilità nei processi ISO o sostenibilità.
+
+*5. Come vedo l’inventario aggiornato?*
+
+Attraverso il modulo Visualizzazione Magazzino, con possibilità di filtrare per articolo, deposito, lotto, o disponibilità.
