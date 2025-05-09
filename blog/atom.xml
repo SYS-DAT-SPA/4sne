@@ -2,11 +2,58 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sys-dat-spa.github.io/4sne/blog</id>
     <title>4Seasons Next Edition Blog</title>
-    <updated>2025-04-12T00:00:00.000Z</updated>
+    <updated>2025-05-09T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sys-dat-spa.github.io/4sne/blog"/>
     <subtitle>4Seasons Next Edition Blog</subtitle>
     <icon>https://sys-dat-spa.github.io/4sne/img/logo.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Release note 2515]]></title>
+        <id>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-05-09</id>
+        <link href="https://sys-dat-spa.github.io/4sne/blog/Release note 2025-05-09"/>
+        <updated>2025-05-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[4Seasons Next]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-05-09#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
+<p>La seguente versione 2515 del 09/05/2025 riporta i seguenti aggiornamenti</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p><p>Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-05-09#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
+<h1>25</h1>
+<p>La nuova versione del software introduce diverse funzionalità e ottimizzazioni per migliorare l'efficienza e l'esperienza utente. Tra le principali novità, l'importazione degli ordini da CRM ora evita duplicati di codici sconto, mentre la gestione delle taglie è più precisa grazie a nuove regole antropometriche. Inoltre, è stata aggiunta una voce di menu per la "Diffusione Coloritura", che semplifica l'aggiornamento delle coloriture su larga scala, e sono stati implementati miglioramenti nella gestione degli ordini e nella tracciabilità dei prodotti.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-05-09#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
+<ol>
+<li>La nuova funzionalità di importazione degli ordini da CRM ora garantisce che i codici sconto esistenti vengano recuperati correttamente, evitando la creazione di codici duplicati e migliorando l'efficienza nella gestione degli ordini per gli utenti.</li>
+<li>Documenti clienti: aggiunta la possibilità di imputare manualmente il numero documento</li>
+<li>Produzione: ottimizzazione dell'avanzamento per parte modello</li>
+<li>La nuova funzionalità di controllo della scala taglia, in associazione con regole antropometriche, offre agli utenti una maggiore precisione nella scelta delle taglie, migliorando così l'esperienza di acquisto e garantendo una vestibilità ottimale.</li>
+<li>È stata introdotta una nuova voce di menu denominata "Diffusione Coloritura", accessibile direttamente dalla barra principale dell’applicazione. Cliccando su questa voce si apre una finestra dedicata che richiede obbligatoriamente la selezione di uno schema di coloritura da applicare. Nella stessa finestra è possibile impostare filtri specifici sul codice prodotto e sulla stagione di vendita, escludendo volutamente il filtro per colore. Una volta applicati i filtri, il sistema propone tutte le distinte base (DIBA) che corrispondono ai criteri selezionati. L’utente ha la possibilità di selezionare singolarmente ciascuna distinta oppure di selezionarle tutte insieme. Lo schema di coloritura scelto potrà quindi essere applicato in blocco a tutte le DIBA selezionate, semplificando e velocizzando l’operazione di aggiornamento delle coloriture su larga scala.</li>
+<li>La nuova funzionalità di inibizione dell'annullo in testata ordine consente agli utenti di gestire gli annulli solo a livello di riga, migliorando la precisione nella gestione degli ordini e riducendo il rischio di errori.</li>
+<li>La nuova funzionalità ROY consente di importare ordini direttamente dal cruscotto, garantendo un processo più efficiente per gli utenti quando il numero di contratto non riporta il cliente di fatturazione.</li>
+<li>Produzione: in lancio produzione aggiunta la possibilità di scegliere la stagione di commessa</li>
+<li>Carichi magazzino: ristretta la selezione alle sole causali di carico</li>
+<li>Produzione: in griglia consumi aggiunta possibilità di modificare i consumi per taglia</li>
+<li>Valorizzazione magazzino: revisione pagina movimenti e negativi materiali per una maggior leggibilità</li>
+<li>Configurazione azienda: per la descrizione prodotto aggiunti flag per gestire anche i campi prodotto addizionati (Etich/Cart/Modif)</li>
+<li>Documenti fornitori: fix sul campo ordine nelle materie prime</li>
+<li>Resi: aggiunta esposizione prezzo sull'inserimento manuale prodotti</li>
+<li>Produzione: scarico materiale a laboratorio riferimento documento su movimenti impegni</li>
+<li>Reporting: gestito filtro null/vuoto sulle dashboard</li>
+<li>La nuova release risolve il problema di cancellazione delle Diba create tramite scheda tecnica, garantendo un'esperienza utente più fluida e senza conflitti nel database, migliorando così l'efficienza operativa.</li>
+<li>La nuova funzionalità di gestione dell'inserimento manuale di un lotto nella pagina prodotti migliora la tracciabilità, consentendo agli utenti di salvare dettagli specifici del prodotto in modo semplice e diretto, garantendo un'esperienza più fluida e organizzata.</li>
+<li>La nuova pagina barcode offre agli utenti un accesso semplificato e veloce per la gestione e la scansione dei codici a barre, migliorando l'efficienza e l'esperienza complessiva.</li>
+<li>La nuova funzione massiva di sblocco commesse in STD offre agli utenti un notevole risparmio di tempo e una gestione semplificata delle operazioni, migliorando l'efficienza complessiva del processo.</li>
+<li>Entrando nella funzione di aggiornamento massivo righe per gli ordini cliente per i dati del cliente ora vengono mostrati i valori attuali presenti nell'ordine</li>
+<li>Documenti clienti: Aggiunto automatismo per l'applicazione del conto di scarico su tutte le righe</li>
+<li>La nuova release della pagina ASN Fornitori introduce filtri migliorati, consentendo agli utenti di trovare rapidamente le informazioni desiderate, ottimizzando così l'efficienza e la facilità d'uso.</li>
+<li>Ordini cliente - revisionato il calcolo del totale assegnato ed aggiunto il totale spedito per ordine, anche in griglia</li>
+<li>Movimenti da Giacenza non permette piu la movimentazione di quantità negative mostrando un messaggio d'errore. Inoltre cambiando la quantità negativa a 0 è possibile proseguire con il movimento</li>
+</ol>]]></content>
+        <author>
+            <name>4SNE</name>
+            <uri>https://www.sys-datgroup.com/</uri>
+        </author>
+        <category label="4SNE" term="4SNE"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Release note 2513]]></title>
         <id>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-04-12</id>
@@ -841,90 +888,6 @@ SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni p
 <li>Disassegnazione ordine: se a parità di chiave (ordine-riga-frazio) esistono righe in spedizione o già bollettate, la disassegnazione genera una nuova riga ordine.</li>
 <li>Ordine fornitore CF: fix import lista libera resa funzionante.</li>
 <li>Risolto, fare il test per verificare in caso di Lavaggio valorizzato se funziona l'estrazione.</li>
-</ol>]]></content>
-        <author>
-            <name>4SNE</name>
-            <uri>https://www.sys-datgroup.com/</uri>
-        </author>
-        <category label="4SNE" term="4SNE"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Release note 2443]]></title>
-        <id>https://sys-dat-spa.github.io/4sne/blog/Release note 2024-10-23</id>
-        <link href="https://sys-dat-spa.github.io/4sne/blog/Release note 2024-10-23"/>
-        <updated>2024-10-23T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[4Seasons Next]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202024-10-23#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
-<p>&nbsp;</p>
-<p>La seguente versione <strong>2443</strong> del 23/10/2024 riporta i seguenti aggiornamenti</p>
-<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p></div></div>
-<p>&nbsp;</p>
-<p>Aggiornamenti:</p>
-<h1>19</h1>
-<p>Il software è stato aggiornato con miglioramenti come la gestione dell'estensione prodotto, l'adattamento dei decimali nei costi, il recupero automatico del tipo documento di spedizione, l'aggiunta di una tabella per generare diversi template, e l'allargamento della descrizione della composizione. Altri miglioramenti includono la corretta visualizzazione dei riferimenti del documento, la gestione delle unità di misura alternativa, e la spalmatura della quantità solo sulle taglie presenti nell'ordine. Sono state apportate correzioni e aggiunte in vari processi come la gestione dei capi in magazzino, la creazione di documenti da reso, e la revisione delle pagine dei colli nei documenti clienti. Altri aggiornamenti riguardano l'importazione di liste libere, l'ordine fornitore MP, la gestione dei movimenti, e l'aggiornamento massivo dell'articolo con nuovi filtri e controlli strutturati.</p>
-<p>&nbsp;</p>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202024-10-23#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
-<ol>
-<li>
-<p>Gestione dell'estensione prodotto (etichetta/cartellino/richiesta confezione) nella maschera di movimento manuale.</p>
-</li>
-<li>
-<p>In gestione costi di distinta base, il numero massimo di decimali è stato adattato allo standard di 2.</p>
-</li>
-<li>
-<p>Ordine Cliente: recuperato in automatico il tipo documento di spedizione dal cliente (prioritario) o dal tipo ordine, sia in fase di creazione dell'ordine sia in modifica con apposito alert di sovrascrittura.</p>
-</li>
-<li>
-<p>Aggiunta la tabella che copia gli argomenti-dto sul template ciò permette di poter generare diversi template sullo stesso argomento.</p>
-</li>
-<li>
-<p>La descrizione della composizione è stata allargata per contenere descrizioni più ampie.</p>
-</li>
-<li>
-<p>I riferimenti del documento vengono ora correttamente riportati in fase di versamento autorizzazione al reso.</p>
-</li>
-<li>
-<p>Fix gestione unità di misura alternativa in fase di versamento materiali a magazzino da ordine fornitore.</p>
-</li>
-<li>
-<p>Adesso durante la generazione la quantità verrà spalmata solo per le taglie presenti nella riga dell'ordine e non su tutte le taglie abilitate sul modello.</p>
-</li>
-<li>
-<p>Dopo la generazione provare che la stampa vada correttamente a termine.</p>
-</li>
-<li>
-<p>Gestione capi a magazzino: ricerca movimenti aggiunto il filtro tipo documento.</p>
-</li>
-<li>
-<p>Documento cliente: fix materie prime mancava la paginazione e faceva vedere solo i primi 20.</p>
-</li>
-<li>
-<p>Ora è possibile filtrare le liste libere per totale capi direttamente in griglia.</p>
-</li>
-<li>
-<p>Crea documenti da reso: contemplata la spaccatura e il riporto del campo ScorpIva, prezzi incluso iva.</p>
-</li>
-<li>
-<p>Eliminato il controllo sull'articolo nella lista materiali della scheda tecnica così da permettere la creazione della diba con anche righe non valorizzate. Fatto un test e visto che non crea righe diba vuote.</p>
-</li>
-<li>
-<p>Documento cliente: rivista la pagina dei colli che proponeva la lista delle righe capi mentre è stata sistemata proponendo i dati dei colli.</p>
-</li>
-<li>
-<p>Aggiunto il campo totale quando si importa di lista libera, ed usato il campo totale della testata movimenti quando si selezionano e cambiano quantità.</p>
-</li>
-<li>
-<p>Ordine fornitore MP: fix se valorizzata l'unità misura alternativa non permetteva l'inserimento.</p>
-</li>
-<li>
-<p>Sistemata la gestione dei movimenti così da svuotare correttamente le input in caso di successo e lasciarle compilate in caso di errore.</p>
-</li>
-<li>
-<p>L'aggiornamento massivo dalla generalità dell'articolo funziona, è stato aggiunto il filtro per aggiornare anche la riga misura quando un materiale non è a misura.</p>
-</li>
-<li>
-<p>Aggiunti controlli più strutturati sul processo di inventario, diversificandolo dal rettifica.</p>
-</li>
 </ol>]]></content>
         <author>
             <name>4SNE</name>
