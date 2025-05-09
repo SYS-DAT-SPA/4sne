@@ -1,0 +1,60 @@
+---
+slug: Release note 2025-05-09
+title: Release note 2515
+authors: [4sne]
+tags: [4sne]
+---
+
+# Release note 2515
+
+### 4Seasons Next
+
+La seguente versione 2515 del 09/05/2025 riporta i seguenti aggiornamenti
+
+:::warning
+
+Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.
+
+Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.
+
+:::
+
+
+<!-- truncate -->
+
+### Aggiornamenti:        
+
+#  25
+
+La nuova versione del software introduce diverse funzionalità e ottimizzazioni per migliorare l'efficienza e l'esperienza utente. Tra le principali novità, l'importazione degli ordini da CRM ora evita duplicati di codici sconto, mentre la gestione delle taglie è più precisa grazie a nuove regole antropometriche. Inoltre, è stata aggiunta una voce di menu per la "Diffusione Coloritura", che semplifica l'aggiornamento delle coloriture su larga scala, e sono stati implementati miglioramenti nella gestione degli ordini e nella tracciabilità dei prodotti.
+
+
+##### Release notes
+
+1. La nuova funzionalità di importazione degli ordini da CRM ora garantisce che i codici sconto esistenti vengano recuperati correttamente, evitando la creazione di codici duplicati e migliorando l'efficienza nella gestione degli ordini per gli utenti.
+1. Documenti clienti: aggiunta la possibilità di imputare manualmente il numero documento 
+1. Produzione: ottimizzazione dell'avanzamento per parte modello 
+1. La nuova funzionalità di controllo della scala taglia, in associazione con regole antropometriche, offre agli utenti una maggiore precisione nella scelta delle taglie, migliorando così l'esperienza di acquisto e garantendo una vestibilità ottimale.
+1.  È stata introdotta una nuova voce di menu denominata &quot;Diffusione Coloritura&quot;, accessibile direttamente dalla barra principale dell’applicazione. Cliccando su questa voce si apre una finestra dedicata che richiede obbligatoriamente la selezione di uno schema di coloritura da applicare. Nella stessa finestra è possibile impostare filtri specifici sul codice prodotto e sulla stagione di vendita, escludendo volutamente il filtro per colore. Una volta applicati i filtri, il sistema propone tutte le distinte base (DIBA) che corrispondono ai criteri selezionati. L’utente ha la possibilità di selezionare singolarmente ciascuna distinta oppure di selezionarle tutte insieme. Lo schema di coloritura scelto potrà quindi essere applicato in blocco a tutte le DIBA selezionate, semplificando e velocizzando l’operazione di aggiornamento delle coloriture su larga scala.  
+1. La nuova funzionalità di inibizione dell'annullo in testata ordine consente agli utenti di gestire gli annulli solo a livello di riga, migliorando la precisione nella gestione degli ordini e riducendo il rischio di errori.
+1. La nuova funzionalità ROY consente di importare ordini direttamente dal cruscotto, garantendo un processo più efficiente per gli utenti quando il numero di contratto non riporta il cliente di fatturazione.
+1. Produzione: in lancio produzione aggiunta la possibilità di scegliere la stagione di commessa 
+1. Carichi magazzino: ristretta la selezione alle sole causali di carico 
+1. Produzione: in griglia consumi aggiunta possibilità di modificare i consumi per taglia 
+1. Valorizzazione magazzino: revisione pagina movimenti e negativi materiali per una maggior leggibilità 
+1. Configurazione azienda: per la descrizione prodotto aggiunti flag per gestire anche i campi prodotto addizionati (Etich/Cart/Modif) 
+1. Documenti fornitori: fix sul campo ordine nelle materie prime 
+1. Resi: aggiunta esposizione prezzo sull'inserimento manuale prodotti 
+1. Produzione: scarico materiale a laboratorio riferimento documento su movimenti impegni 
+1. Reporting: gestito filtro null/vuoto sulle dashboard 
+1. La nuova release risolve il problema di cancellazione delle Diba create tramite scheda tecnica, garantendo un'esperienza utente più fluida e senza conflitti nel database, migliorando così l'efficienza operativa.
+1. La nuova funzionalità di gestione dell'inserimento manuale di un lotto nella pagina prodotti migliora la tracciabilità, consentendo agli utenti di salvare dettagli specifici del prodotto in modo semplice e diretto, garantendo un'esperienza più fluida e organizzata.
+1. La nuova pagina barcode offre agli utenti un accesso semplificato e veloce per la gestione e la scansione dei codici a barre, migliorando l'efficienza e l'esperienza complessiva.
+1. La nuova funzione massiva di sblocco commesse in STD offre agli utenti un notevole risparmio di tempo e una gestione semplificata delle operazioni, migliorando l'efficienza complessiva del processo.
+1. Entrando nella funzione di aggiornamento massivo righe per gli ordini cliente per i dati del cliente ora vengono mostrati i valori attuali presenti nell'ordine 
+1. Documenti clienti: Aggiunto automatismo per l'applicazione del conto di scarico su tutte le righe 
+1. La nuova release della pagina ASN Fornitori introduce filtri migliorati, consentendo agli utenti di trovare rapidamente le informazioni desiderate, ottimizzando così l'efficienza e la facilità d'uso.
+1. Ordini cliente - revisionato il calcolo del totale assegnato ed aggiunto il totale spedito per ordine, anche in griglia 
+1. Movimenti da Giacenza non permette piu la movimentazione di quantità negative mostrando un messaggio d'errore. Inoltre cambiando la quantità negativa a 0 è possibile proseguire con il movimento 
+
