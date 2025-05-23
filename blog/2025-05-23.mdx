@@ -1,0 +1,67 @@
+---
+slug: Release note 2025-05-23
+title: Release note 2519
+authors: [4sne]
+tags: [4sne]
+---
+
+# Release note 2519
+
+### 4Seasons Next
+
+La seguente versione 2519 del 23/05/2025 riporta i seguenti aggiornamenti
+
+:::warning
+
+Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.
+
+Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.
+
+:::
+
+
+<!-- truncate -->
+
+### Aggiornamenti:        
+
+#  31
+
+L'aggiornamento del software introduce diverse nuove funzionalità e ottimizzazioni. Tra le principali aree coinvolte ci sono la produzione, con miglioramenti nella gestione delle taglie e nella tracciabilità dei lotti, e la gestione degli ordini, che ora include un processo più efficiente per l'importazione degli ordini e la creazione di documenti fornitori. Inoltre, sono stati implementati miglioramenti nell'interfaccia utente e nella reportistica, garantendo un'esperienza più fluida e una gestione semplificata delle operazioni.
+
+
+##### Release notes
+
+1. Produzione: ottimizzazione dell'avanzamento per parte modello 
+1. La nuova funzionalità di controllo della scala taglia, in associazione con regole antropometriche, offre agli utenti una maggiore precisione nella scelta delle taglie, migliorando così l'esperienza di acquisto e garantendo una vestibilità ottimale.
+1. La nuova funzionalità ROY consente di importare ordini direttamente dal cruscotto, garantendo un processo più efficiente per gli utenti quando il numero di contratto non riporta il cliente di fatturazione.
+1. Ordini di vendita: inibite le materie prime, sia in inserimento che in visualizzazione&nbsp; 
+1. **Release Note: Generazione DDT Semilavorati da Avanzamento Commessa**  
+Questa nuova funzione consente agli utenti di creare facilmente documenti fornitori per semilavorati direttamente dall'avanzamento della commessa, migliorando l'efficienza operativa e garantendo una gestione accurata delle informazioni relative ai capi e ai laboratori coinvolti.
+1. La nuova funzionalità di gestione della visibilità delle taglie nel quadro misure offre agli utenti un'esperienza più personalizzata e intuitiva, facilitando la selezione delle taglie più adatte alle loro esigenze.
+1. Produzione: aggiunta la gestione del pagellino lotto 
+1. La nuova release risolve il problema di cancellazione delle Diba create tramite scheda tecnica, garantendo un'esperienza utente più fluida e senza conflitti nel database, migliorando così l'efficienza operativa.
+1. La nuova funzionalità di gestione dell'inserimento manuale di un lotto nella pagina prodotti migliora la tracciabilità, consentendo agli utenti di salvare dettagli specifici del prodotto in modo semplice e diretto, garantendo un'esperienza più fluida e organizzata.
+1. Nella funzione ordini a fornitore da ordini cliente gestita l'etichetta cartellino e richiesta in base al parametro in azienda.  
+1. La risoluzione del problema relativo all'automatismo del cambio agenti per i documenti garantirà un'esperienza utente più fluida e senza interruzioni, migliorando l'efficienza operativa e riducendo i tempi di gestione.
+1. La nuova pagina barcode offre agli utenti un accesso semplificato e veloce per la gestione e la scansione dei codici a barre, migliorando l'efficienza e l'esperienza complessiva.
+1. La nuova funzione massiva di sblocco commesse in STD offre agli utenti un notevole risparmio di tempo e una gestione semplificata delle operazioni, migliorando l'efficienza complessiva del processo.
+1. Entrando nella funzione di aggiornamento massivo righe per gli ordini cliente per i dati del cliente ora vengono mostrati i valori attuali presenti nell'ordine 
+1. La nuova funzionalità di creazione liste libere da Excel garantisce che, in caso di matricola non trovata, il messaggio d'errore rimanga visibile, migliorando così l'esperienza utente e facilitando la risoluzione dei problemi.
+1. La chiusura delle commesse CHR offre agli utenti un processo semplificato e più efficiente per gestire le loro attività, garantendo una migliore organizzazione e un monitoraggio accurato dei progetti completati.
+1. La nuova release risolve l'anomalia di login, migliorando l'accesso degli utenti e garantendo un'esperienza più fluida e sicura.
+1. L'aggiornamento a Angular 18 offre agli utenti miglioramenti significativi in termini di prestazioni e nuove funzionalità, garantendo un'esperienza di sviluppo più fluida e reattiva.
+1. La nuova funzionalità di sostituzione righe su ordini consente agli utenti di gestire in modo più efficiente le modifiche agli ordini, migliorando la flessibilità e la precisione nella gestione degli acquisti.
+1. La nuova funzionalità di autorizzazione al reso ROY garantisce che, una volta confermata, l'autorizzazione non possa essere modificata, offrendo agli utenti maggiore sicurezza e chiarezza nel processo di gestione dei resi.
+1. Se nel documento , nella sezione documenti viene inserita una causale e non viene inserito il magazzino ora il sistema manda un messaggio d'errore.&nbsp;
+1. Documenti clienti: Aggiunto automatismo per l'applicazione del conto di scarico su tutte le righe 
+1. La nuova funzionalità di filtro per codice e ragione sociale fornitore nella visualizzazione dei movimenti MP offre agli utenti un modo più efficiente per cercare e gestire le informazioni, migliorando l'esperienza complessiva e facilitando l'accesso ai dati rilevanti.
+1. La nuova release della pagina ASN Fornitori introduce filtri migliorati, consentendo agli utenti di trovare rapidamente le informazioni desiderate, ottimizzando così l'efficienza e la facilità d'uso.
+1. Reportistica: la nuova funzionalità di caricamento delle dashboard vuote tramite flag permette agli utenti di aprire dashboard pesanti solo quando filtrate, onde evitare lunghe attese 
+1. Movimenti da Giacenza non permette piu la movimentazione di quantità negative mostrando un messaggio d'errore. Inoltre cambiando la quantità negativa a 0 è possibile proseguire con il movimento 
+1. Ordine cliente - La rimozione della validazione per la vendibilità di un modello in base alla stagione di vendita semplifica il processo di ordinazione per i clienti, offrendo maggiore flessibilità. 
+1. Aggiunta l'eliminazione della ModelliArticoliBarcode quando viene eliminato un abbinamento di vendita 
+1. La nuova funzionalità consente di visualizzare il numero di cellulare dei nuovi clienti nel CRM, migliorando la comunicazione e facilitando il follow-up.
+1. La nuova release risolve l'errore che si verificava durante l'apertura del prodotto, migliorando così l'esperienza utente e garantendo un accesso più fluido e senza interruzioni.
+1. Abbiamo gestito anche l'anullamento del materiale nel prodotto, se un materiale viene annullato completamente per tutte le stagioni , quando si va ad inserimento prodotto negli oridini il prodottu risulterà annullato 
+
