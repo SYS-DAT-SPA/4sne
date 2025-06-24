@@ -4,10 +4,41 @@
         <title>4Seasons Next Edition Blog</title>
         <link>https://sys-dat-spa.github.io/4sne/blog</link>
         <description>4Seasons Next Edition Blog</description>
-        <lastBuildDate>Fri, 06 Jun 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 20 Jun 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Release note 2523]]></title>
+            <link>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-06-20</link>
+            <guid>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-06-20</guid>
+            <pubDate>Fri, 20 Jun 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[4Seasons Next]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-06-20#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
+<p>La seguente versione 2523 del 20/06/2025 riporta i seguenti aggiornamenti</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p><p>Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-06-20#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
+<h1>13</h1>
+<p>La nuova versione del software introduce diverse funzionalità che migliorano l'efficienza e l'accuratezza nella gestione dei dati. Tra le principali novità, si evidenzia un miglioramento nel calcolo dei fabbisogni, la generazione di documenti fornitori direttamente dall'avanzamento della commessa, e la possibilità di annullare parzialmente le righe mantenendo i prezzi attivi. Inoltre, sono state apportate migliorie all'esperienza utente, come l'implementazione del dark-mode e la coloritura delle celle pivot per una migliore analisi dei dati.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-06-20#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
+<ol>
+<li>La nuova funzionalità migliora l'accuratezza del calcolo dei fabbisogni, garantendo che i dati non vengano più raggruppati per Fornitore, offrendo così agli utenti una visione più chiara e dettagliata delle loro esigenze.</li>
+<li>Scheda tecnica:&nbsp;espansione logica del flag in schema scheda tecnica "solo prodotti disponibili" su tutti i campi del codice prodotto finito.</li>
+<li>Generazione DDT da Avanzamento Commessa:&nbsp;questa nuova funzione consente agli utenti di creare facilmente documenti fornitori direttamente dall'avanzamento della commessa, migliorando l'efficienza operativa e garantendo una gestione accurata delle informazioni relative ai capi e ai laboratori coinvolti.</li>
+<li>La nuova funzionalità di annullamento parziale delle righe consente di mantenere il prezzo sulle righe attive.</li>
+<li>Modifica gestione filtri default: migliorata l'esperienza utente nell'entrata e uscita dalla maschera in presenza dei filtri default.</li>
+<li>Nell'inserimento riga materie prime ordine fornitore vengono ora mostrate le fasce prezzo dell'articolo.</li>
+<li>La nuova funzionalità di ordinamento della griglia ordini a fornitore MP migliora l'efficienza degli utenti, consentendo una gestione più rapida e intuitiva degli ordini.</li>
+<li>La nuova funzionalità di gestione dell'ordinamento di default sulle tabelle FE migliora l'esperienza utente, consentendo una navigazione più intuitiva e un accesso rapido ai dati più rilevanti.</li>
+<li>Conferma ordine cliente: aggiunta la paginazione.</li>
+<li>Stampa barcode: se selezionata origine ordine cliente aggiunta la possibilità di recuperare le quantità degli ordini clienti residuo e archiviato.</li>
+<li>Stampe barcode: aggiunta la possibilità di poter utilizzare più serie barcode per lo stesso capo.</li>
+<li>Aggiunto il dark-mode layout.</li>
+<li>La nuova funzionalità di coloritura delle celle pivot offre agli utenti un modo intuitivo per evidenziare e analizzare i dati, migliorando la leggibilità e facilitando l'individuazione delle informazioni chiave.</li>
+</ol>]]></content:encoded>
+            <category>4SNE</category>
+        </item>
         <item>
             <title><![CDATA[Release note 2521]]></title>
             <link>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-06-06</link>
@@ -788,50 +819,6 @@ SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni p
 <li>Documenti clienti: riportato il flag "Esegui movimenti di magazzino" ereditandolo dal tipo documento.</li>
 <li>Snellita la paginazione nell'inserimento righe autorizzazione&nbsp;da documento</li>
 <li>Situazione liste spedizione: abilitato l'export excel.</li>
-</ol>]]></content:encoded>
-            <category>4SNE</category>
-        </item>
-        <item>
-            <title><![CDATA[Release note 2447]]></title>
-            <link>https://sys-dat-spa.github.io/4sne/blog/Release note 2024-11-20</link>
-            <guid>https://sys-dat-spa.github.io/4sne/blog/Release note 2024-11-20</guid>
-            <pubDate>Wed, 20 Nov 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[4Seasons Next]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202024-11-20#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
-<p>La seguente versione 2447 del 20/11/2024 riporta i seguenti aggiornamenti</p>
-<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p><p>Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
-SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202024-11-20#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
-<h1>22</h1>
-<ol>
-<li>È stata estesa la funzionalità del magazzino CF per includere nuove opzioni di etichettatura e gestione dei documenti, come la possibilità di rendere provvisori documenti definitivi e il ripristino del recupero del tipo documento da ordini.</li>
-<li>Sono stati implementati miglioramenti nell'importazione dei dati, con l'aggiunta di nuove tabelle e la velocizzazione del processo, oltre a ottimizzazioni nel calcolo delle scadenze e nel recupero dei listini di vendita.</li>
-<li>Infine, sono state ampliate le opzioni di gestione delle etichette e delle richieste di confezionamento, con nuove configurazioni aziendali e controlli più strutturati per il processo di inventario.</li>
-</ol>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202024-11-20#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
-<ol>
-<li>Magazzino CF: prevista l'estensione prodotto (etichetta/cartellino/richiesta confezione) nella maschera di movimento manuale.&nbsp;</li>
-<li>Clienti: abilitata la possibilità di avere lo storico del campo blocco cliente nel tempo di un determinato cliente.</li>
-<li>Import-tool: aggiunta la tabella che copia gli argomenti-dto sul template, ciò permette di poter generare diversi template su lo stesso argomento.</li>
-<li>Documenti clienti e fornitori aggiunta la possibilità di rendere provvisorio un documento definitivo purché sia manuale.</li>
-<li>Documenti clienti da ordini clienti: ripristino il recupero del tipo documento da ordine ed ottimizzata la procedura.</li>
-<li>Composizioni: è stata allargata la descrizione della composizione.</li>
-<li>Modelli: nella gestione per l'automazione del codice modello è stata inserita la gestione del contatore alfanumerico (ad oggi era solo numerico).</li>
-<li>Ordini fornitori MP: fix conversione della quantità della UM alternativa.</li>
-<li>Ora è possibile filtrare le liste libere per totale capi direttamente in griglia</li>
-<li>Crea documenti da reso: contemplata la spaccatura e il riporto del campo ScorpIva, prezzi incluso iva.</li>
-<li>Aggiunta configurazione in azienda per la gestione delle etichette cartellino richieste su confezione. Le opzioni sono:&nbsp; &nbsp;solo nell'ordine cliente anche in approvvigionamento e magazzino</li>
-<li>Gestione Etichetta Cartellino Richiesta Confezionamento in Richieste Lancio: In base alla selezione in azienda (Etichetta\Cartellino\Richiesta su Confezione), nei risultati si vedranno o meno le colonne dei campi Etichetta Cartellino Richiesta su Confezione.&nbsp; Il calcolo oltre a verificare la selezione in azienda verifica anche i flag singoli del prodotto, per raggruppare in caso di unito oppure semplicemente non considerare in caso di non unito.</li>
-<li>Sono Stati inseriti i campi per inserire Etichetta, Cartellino e Richiesta su Confezione al lancio delle commesse manuali in base alle configurazioni dell'azienda del codice prodotto</li>
-<li>Versamento resi: contemplata la gestione del conto vendita in fase di versamento a magazzino, scaricando l'eventuale magazzino in c/v specificato (al momento solo manuale).</li>
-<li>Inventario: aggiunti controlli più strutturati sul processo di inventario, diversificandolo dal rettifica.</li>
-<li>Disassegnazione ordine: se a parità di chiave (ordine-riga-frazio) esistono righe in spedizione o già bollettate, la disassegnazione genera una nuova riga ordine.</li>
-<li>Richieste fabbisogno: eliminati filtri sui materiali presenti nella sezione magazzino. Risultati fabbisogno: aggiunta la possibilità di filtrare per fornitore ed estrazione csv.</li>
-<li>Stampa barcode: quando viene forzato un listino viene messo il prezzo del listino trovato, 0 se il listino non esiste.</li>
-<li>Packing list: aggiunta la funzione riapertura del collo per ri-elaborarne il contenuto + pulsante apertura barcode + totali per residuo/inscatolato + descrizioni mancanti.</li>
-<li>Documenti clienti: ottimizzato il recupero del listino di vendita per accelerarne i tempi.</li>
-<li>Velocizzato l'import inoltre modificato l'import che adesso accorpa le righe per prodotto</li>
-<li>Documenti clienti: ottimizzato il calcolo delle scadenze, migliorando il tempo di salvataggio.</li>
 </ol>]]></content:encoded>
             <category>4SNE</category>
         </item>

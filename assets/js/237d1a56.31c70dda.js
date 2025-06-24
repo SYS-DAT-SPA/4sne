@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkinsighter=self.webpackChunkinsighter||[]).push([[7892],{9660:e=>{e.exports=JSON.parse('{"tags":[{"label":"4SNE","permalink":"/4sne/blog/tags/4sne","description":"Release","count":26}]}')}}]);
