@@ -1,0 +1,31 @@
+# Grafico a Torta Sunburst
+
+Il grafico Sunburst è una variamte del grafico a torta ed è ideale per mostrare diversi livelli gerarchici. Si compone di una serie di cerchi (settori) in cui si va dalle categorie più ampie a quelle più dettagliate.
+
+![immagine_2022-12-07_160103.png](/UFR/imgs/immagine_2022-12-07_160103.png)
+
+Ogni fetta di ogni settore è legata ad una fetta del livello inferiore e rappresenta un nodo, mentre il legame sono i link.
+
+Selezione tipo del grafico Questo tipo di grafico si attiva selezionando l'opzione "Formato Sunburst PieChart" nel campo formato report.
+
+![formato_grafico_sunburst.jpg](/UFR/imgs/formato_grafico_sunburst.jpg)
+
+### Definizione SQL
+
+La query SQL va costruita in maniera tale da restituire i livelli del grafico, i nodi ed i relativi valori di comparazione.
+Facendo riferimento al grafico presente nella parte introduttiva, occorre strutturare la query SQL affinchè possa restituire qualcosa simile a quanto segue.  
+ | | PoloLogistico | Magazzino |
+|---|---------------|-----------|  
+ | 1 | HUB IT | V52 |  
+ | 2 | HUB IT | V52 |
+| 3 | HUB CH | V04 |
+
+                Il polo logistico la categoria più ampia che viene poi dettagliata dal magazzino.     ` SELECT Logistic,        Warehouse,         Value from...         `
+
+### Attributi.
+
+Affinché il sistema recepisca i livelli occorre definire gli attributi.
+
+![attributo0.jpg](/UFR/imgs/attributo0.jpg)
+
+![grafico_sunburst_attributi.jpg](/UFR/imgs/grafico_sunburst_attributi.jpg)

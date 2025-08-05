@@ -1,0 +1,47 @@
+# Grafico a Barre
+
+Con questa tipologia di grafico il dato viene visualizzato sotto forma di un classico grafico a barre.
+
+    La forma e complessità del grafico è in funzione della configurazione che viene assegnata.    
+
+ Selezione tipo del grafico Questo tipo di grafico si attiva selezionando l'opzione "Formato Grafico a Barre" nel campo formato report.   
+
+![formato_grafico_barre.jpg](/UFR/imgs/formato_grafico_barre.jpg)
+
+   
+
+ Definizione SQL  Supponiamo di voler costruire il grafico sotto riportato.    
+
+![grafico_barre.jpg](/UFR/imgs/grafico_barre.jpg)
+
+      In linea generare la query SQL che alimenta il grafico deve restituire i segmenti da visualizzare ed i relativi valori di comparazione.           ` Select top 10 *,   Value/Scontrini as scontrinomedio,    'Negozi top 10 '  as Title,    'Ultimi 6 mesi ' as SubTitle from  ( select  M.WhsCode as Name,sum (T.totsco) as 'Value' ,count (*) scontrini   from TD1_VEN_T T   left join OWHS M on M.WhsCode=T.CODMAG where T.rttype ='V' and id_locale not in (select ID_STORNATO from TD1_VEN_T where CODMAG =CODMAG ) and T.datsco >=GETDATE()- 480 group by  M.WhsCode  ) as Tab order by Tab.Value desc` 
+
+### Definizione Attributi (barre/segmenti). 
+
+Per indivcare al sistema quali sono i segmenti da visualizzare occorre configurare gli attributi. 
+
+![attributo0.jpg](/UFR/imgs/attributo0.jpg)
+
+  Ripercorrendo l'esempio i parametri sono:  
+
+![grafico_barre_attributi.jpg](/UFR/imgs/grafico_barre_attributi.jpg)
+
+ 
+
+Esempio 2  
+
+![grafico_barre2.jpg](/UFR/imgs/grafico_barre2.jpg)
+
+ 
+
+### SQL 
+
+![grafico_barre_2_sql.jpg](/UFR/imgs/grafico_barre_2_sql.jpg)
+
+  `select   cast(isnull(Valuta,'') as varchar(300)) as Valuta, sum(Valore) as  Value  from  (select Anno, Stagione, cast(isnull(Valuta,'') as varchar(300)) as Valuta, cast(isnull(Valore,0) as decimal(10,2)) as valore from [SVILUPPO_ODBC].[E70F984W].[CLIFILEWG].[UF05W] ) as Tab  Group by Valuta`
+
+### Attributi     
+
+![grafico_barre_2_attributi.jpg](/UFR/imgs/grafico_barre_2_attributi.jpg)
+
+

@@ -1,0 +1,90 @@
+# Definizione di un filtro.
+
+ In questo modulo troverai le specifiche per definire un filtro di selezione. Un filtro può essere inserito in uno specifico Report o in una Dashboard per essere applicato a tutti i report presenti in tale dashboard.  La definizione di un filtro necessita della compilazione dei campi descritti di seguito.   
+
+![dashboard_filtri_edit.jpg](/UFR/imgs/dashboard_filtri_edit.jpg)
+
+  
+
+**Nome filtro** Indicare il nome che si vuole attribuire al filtro. Usare il pulsante Translate per tradurre il nome del filtro nelle lingue disponibili. 
+
+![dashboard_filtro_nome.jpg](/UFR/imgs/dashboard_filtro_nome.jpg)
+
+  --- 
+
+**Definizione Provenienza** In questa parte della configurazione occorre indicare a quale campo del Data Base si fa riferimento.  
+
+![dashboard_filtro_provenienza.jpg](/UFR/imgs/dashboard_filtro_provenienza.jpg)
+
+
+
+### Provenienza 
+
+![filtro_provenienza.jpg](/UFR/imgs/filtro_provenienza.jpg)
+
+ Questo campo definisce come recuperare le informazioni legate al filtro. Sono possibili 3 opzioni:  - **Filtro da Script** In questo caso i dati selezionabili dall'utente saranno recuperati tramite uno script che serve a recuperare le possibili opzioni da applicare al filtro. Esempio. Volendo creare un filtro Magazzino, si potrebbe creare uno script che recupera tutti i Magazzini in maniera tale che l'utenta non debba scrivere a mano il codice del magazzino da filtrare ma lo andrà a selezionare da una lista. 
+
+![filtro_provenienza_script2.jpg](/UFR/imgs/filtro_provenienza_script2.jpg)
+
+  Selezionando questo tipo di provenienza occorre indicare lo script con il qiale recuperare i dati di interesse. Lo script deve sempre recuperare un Codice ed una Descrizione. 
+
+![filtro_provenienza_script.jpg](/UFR/imgs/filtro_provenienza_script.jpg)
+
+ - **Filtro libero** In questo caso il filtro agisce direttamente sul campo del data base. Questo campo deve esistere nella tabella gestita dal report o da tutti i report che fanno capo ad una dashboard. - **Filtro da Servizio** Attualmente non disponibile. 
+
+### Nome tabella
+
+ In questo campo occorre indicare la tabella alla quale applicare il filtro SQL. Questa tabella deve essere gestita all'interno del report o all'interno di tutti i report che fanno capo ad una dashboard. Esempio. In questo caso il filtro fa riferimento alla tabella denominata *tab* 
+
+![filtro_tabella.jpg](/UFR/imgs/filtro_tabella.jpg)
+
+ 
+
+### Nome campo
+
+ In questo campo occorre indicare il nome del campo della tabella sul quale deve agire il filtro SQL. Questo campo deve essere gestito all'interno del report o all'interno di tutti i report che fanno capo ad una dashboard. Esempio. In questo caso il filtro è sul campo del codice di magazzino. 
+
+![filtro_campo.jpg](/UFR/imgs/filtro_campo.jpg)
+
+ 
+
+Definizione Proprietà
+
+### Tipo proprietà
+
+ Questo campo serve per indicare che tipologia di dato dovrà gestire il filtro. Sono disponibili le seguenti opzioni. 
+
+![filtro_proprietà_tipo.jpg](/UFR/imgs/filtro_proprietà_tipo.jpg)
+
+
+
+### Descrizione 
+
+Indicare una descrizione da attribuire al filtro. Questo campo è disponibile solo per i filtri di tipo Script. 
+
+Predefinito Questa parte della configurazione serve ad attribuire ed attivare un filtro di default. I filtri di default vengono applicati al report o alla dashbord nel momento in cui l'utente li richiama.  
+
+![filtro_default1.jpg](/UFR/imgs/filtro_default1.jpg)
+
+ Per attivare il filtro di default occorre selezionare il tasto "Applica di default". 
+
+### Operazione di default
+
+Questo parametro definisce quale operazione di comparazione deve essere applicata al filtro. Sono disponibili le seguenti opzioni. 
+
+![filtro_default2.jpg](/UFR/imgs/filtro_default2.jpg)
+
+ 
+
+### Valori (Value1 - Value2) 
+
+In questa sezione occorre indicare quali sono i valori di default da proporre all'attivazione del report o della dashboard. In base alla tipologia di Operazione il sistema richiederà uno o due valori. Nel caso di due valori è inteso che tali valori saranno utilizzati come intervallo (minimo - massimo). Esempio. Volendo applicare un filtro per data, con una data compresa tra una settimana indietro rispetto alla data corrente e 2 giorni in avanti rispetto alla data odierna, i due valori da inserire in configurazione potrebbero essere i seguenti.  
+
+![filtro_default3.jpg](/UFR/imgs/filtro_default3.jpg)
+
+ **Attenzione!** Le Query SQL di estrazione dei valori di default devono contentere una ed una sola colonna chiamata row. 
+
+Conferma Per salvare in maniera definitiva tutti i parametri di definizione del filtro premere sul pulsante Conferma. 
+
+![conferma.jpg](/UFR/imgs/conferma.jpg)
+

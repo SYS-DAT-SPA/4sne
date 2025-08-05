@@ -1,0 +1,34 @@
+# Grafico ad Albero (Sankey)  
+
+In questo tipo di grafico il dato è mostrato sotto forma di albero a nodi.     
+
+![immagine_2022-11-22_143237.png](/UFR/imgs/immagine_2022-11-22_143237.png)
+
+     
+
+ Selezione tipo del grafico Questo tipo di grafico si attiva selezionando l'opzione "Formato Grafco ad Albero" nel campo formato report.  
+
+![formato_grafico_albero.jpg](/UFR/imgs/formato_grafico_albero.jpg)
+
+ 
+
+ ### Definizione SQL 
+ 
+ Per creare il grafico occorre indicare al sistema quali sono i **nodi** ed i **livelli** di appartenenza. L'ordine in cui vengono dichiarati i nodi ed i livelli determina anche la profondità nell'albero: il primo livello dichiarato fungerà da radice, mentre l'ultimo livello sarà quello delle foglie.   Supponiamo di voler costruire il grafico sotto riportato.  
+
+![grafico_albero.jpg](/UFR/imgs/grafico_albero.jpg)
+
+ Occorre costruire una query SQL che fornisce i livelli ed il valore da attribuire ad ogni livello. I campi da fornire sono: nodo, livello e valore.  I nomi dei nodi e livelli possono essere gestiti a piacere mentre il campo del valore deve chiamarsi **Value**. Seguendo l'esempio preso in considerazione ci occorre costruire i riferimenti dei due nodi Esposizione : Esposizione e Backlog. A questi due nodi vanno attribute le foglie (ossia lo stato dell'esposizione). Per ogni ramo infine occorre indicare il valore di riferimento. **Esempio**:  
+
+![grafico_albero2.jpg](/UFR/imgs/grafico_albero2.jpg)
+
+  Pertanto una possibile query SQL può essere:  `select 'Esposizione' as Esposizione, 'Aperto' as Stato, sum(cast(isnull(F2IMPAN,0) as decimal(10,2))) as Value from [SVILUPPO_ODBC].[E70F984W].[CLIFILEWG].[SDESP00F] Tab union  select 'Esposizione' as Esposizione, 'Scaduto' as Stato, sum(cast(isnull(F2ASCA,0) as decimal(10,2))) as Value from [SVILUPPO_ODBC].[E70F984W].[CLIFILEWG].[SDESP00F] Tab1 Union select 'Esposizione' as Esposizione, 'Pagamenti Futuri' as Stato, sum(cast(isnull(F2PAGF,0) as decimal(10,2))) as Value from [SVILUPPO_ODBC].[E70F984W].[CLIFILEWG].[SDESP00F] Tab2 union select 'Backlog' as Esposizione, 'Ordinato Aperto' as Stato, sum(cast(isnull(F2ORDI,0) as decimal(10,2))) as Value from [SVILUPPO_ODBC].[E70F984W].[CLIFILEWG].[SDESP00F] Tab3 union select 'Backlog' as Esposizione, 'Bolle Emesse' as Stato, sum(cast(isnull(F2BOLLE,0) as decimal(10,2))) as Value from [SVILUPPO_ODBC].[E70F984W].[CLIFILEWG].[SDESP00F] Tab4 union select 'Backlog' as Esposizione, 'Da Contabilizzare' as Stato, sum(cast(isnull(F2FATT,0) as decimal(10,2))) as Value from [SVILUPPO_ODBC].[E70F984W].[CLIFILEWG].[SDESP00F] Tab5 union select 'Backlog' as Esposizione, 'Da Bollettare' as Stato, sum(cast(isnull(F2IMPE,0) as decimal(10,2))) as Value from [SVILUPPO_ODBC].[E70F984W].[CLIFILEWG].[SDESP00F] Tab6`  Si può inserire il campo **Legend** per la legenda tooltip. Alla query va aggiunta la clausola $$Filter$$ nel caso debbano essere gestiti eventuali filtri dinamici. 
+
+### Nodi. Come accenato nei paragrafi precedenti oltre a fornire i dati relativi ai nodi ed i livelli, questi vanno dichiararati nella configurazione del report. Questa configurazione viene assegnata con il pulsante ATTRIBUTO. 
+
+![attributo.jpg](/UFR/imgs/attributo.jpg)
+
+ In questa finestra di congiurazione vanno elecanti i nomi dei nodi: devono coincidere con i nomi dei campi della query SQL. Ripercorrendo l'esempio proposto, i campi sono:  
+
+![attributo2.jpg](/UFR/imgs/attributo2.jpg)
+

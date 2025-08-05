@@ -1,0 +1,13 @@
+# Grafico gauge
+
+  L'informazione viene rappresentata come grafico gauge (cruscotto).    
+
+![immagine_2022-11-22_144046.png](/UFR/imgs/immagine_2022-11-22_144046.png)
+
+     
+
+ Selezione tipo del grafico Questo tipo di grafico si attiva selezionando l'opzione "Formato Grafico Gauge" nel campo formato report.   
+
+![formato_grafico_gauge.jpg](/UFR/imgs/formato_grafico_gauge.jpg)
+
+    Per realizzare questo tipo di rappresentazione occorre definire una Query SQL che restituisce: - il valore di inizio-scala chiamato "**min**"  - un unico valore di fondoscala chiamato "**max**"  - il valore da presentare chiamato "**value**"  Si può inserire un ulteriore campo denominato **Legend** per visualizzare la legenda.  ---  **Esempio**.  Il grafico riportato sopra è stato cotruito estranedo i dati con una Query SQL simile a quella sotto.  `select  min,  max,  round(v / 3600,2) as value,  cast(cast(v/86400 as int) as varchar(30))+' days ' +convert(varchar(30),cast(v%86400/3600 as int))+' hours  +convert(varchar(30),cast(v%3600/60 as int))+' mins' as legend  from ( *****  `   In conclusione, qualsiasi sia la fonte dati dalla quale si stanno estraendo i dati, l'importante è avere le tre variabili di output indicate sopra.
