@@ -1,0 +1,18 @@
+# Mappa 
+
+ Il sistema espone una mappa geografica nella quale sono indicati i paesi per i quali si sono forniti dei valori di riferimento.    
+
+![immagine_2022-11-22_143257.png](/UFR/imgs/immagine_2022-11-22_143257.png)
+
+   
+
+ Selezione tipo del grafico Questo tipo di grafico si attiva selezionando l'opzione "Formato Singolo Valore" nel campo formato report.  
+
+![formato_grafico_mappa.jpg](/UFR/imgs/formato_grafico_mappa.jpg)
+
+  
+
+ Definizione SQL Per ottenere questo tipo di grafico è necessario fornire al sistema almeno 2 parametri:  - Il nome del paese. Questo parametro deve essere in inglese (esempio "Italy" o "Germany") fornito tramite il campo **Name**. Il nome del paese deve essere fornito con un Trim. - Il valore numerico. Viene passato tramite campo **Value**.  Un parametro aggiuntivo non obbligarotio è il campo **Legend** per la legenda tooltip.  Una query SQL di esempio può essere la seguente.  `select cast(trim(isnull(Nazione,'')) as varchar(300)) as Name,  sum(cast(isnull(Ordinato,0) as decimal(10,2))) as Value  from [SVILUPPO_ODBC].[E70F984W].[CLIFILEWG].[UF11W] as Tab  group by nazione  having nazione <>''`  Alla query va aggiunta la clausola $$Filter$$ nel caso debbano essere gestiti eventuali filtri dinamici (vedi sotto).  
+
+![grafico_mappa.jpg](/UFR/imgs/grafico_mappa.jpg)
+

@@ -1,0 +1,216 @@
+# Gestione Report
+
+![report_icona.jpg](/UFR/imgs/report_icona.jpg)
+
+ Gestione Reports Il **Report** è la omponente del tool che definisce e rappresenta il tipo di risultato. Con un report è possibile configurare stampe, reportistica, tabelle e grafici dinamici a partire da differenti basi di dati. Ogni report può essere inserito a menu per essere utilizzato dagli utenti oppure essere inserito all'interno di una [**Dashboard**](/UFR/imgs/Dashboard/UFR_Creare_gestire_dashboard). --- Possono essere configurate le seguenti tipologie di report. 
+
+![elenco_reports.jpg](/UFR/imgs/elenco_reports.jpg)
+
+ --- In questa sezione troverai le informazioni per poter [**gestire un Report**](/UFR/imgs/Report/Gestione_Reports)
+
+
+# Avviare la creazione di un nuovo report.  Per aggiungere un nuovo report su Next occorre: 
+
+ 1. Selezionare la voce di menù **Configurazione > Configurazione stampe** come mostrato nella figura sotto.  
+
+![ufr_configurazione_menu.png](/UFR/imgs/ufr_configurazione_menu.png)
+
+ 
+
+ 2. Premere sul pulsate **Nuovo** come indicato in giallo nella figura sotto, che compare nella pagina di elenco dei report esistenti.  
+
+![ufr_nuovo_report.jpg](/UFR/imgs/ufr_nuovo_report.jpg)
+
+ 
+
+ 3. Il sistema apre la pagina di configurazione del report nella quale andranno definiti tutti gli elementi necessari per la creazione del report. Questa pagina è dettagliata nel capitolo [Configurazione di un Report.](/UFR/imgs/Report/UFR_Cinfigurazione_Report) 
+
+![ufr_nuovo_report_02.jpg](/UFR/imgs/ufr_nuovo_report_02.jpg)
+
+
+
+# Accedere in modifica di un report esistente.   Per modificare un report su Next occorre: 
+
+ 1. Selezionare la voce di menù **Configurazione > Configurazione stampe** come mostrato nella figura sotto.  
+
+![ufr_configurazione_menu.png](/UFR/imgs/ufr_configurazione_menu.png)
+
+ 
+
+ 2. Il sistema espone l'elenco dei report esistenti. Individuare il report che si intende modificare ed in corrispondenza di tale report premere sul pulsante **modifica** 
+
+![pulsante_modifica.jpg](/UFR/imgs/pulsante_modifica.jpg)
+
+come mostrato nella figura sotto.  
+
+![ufr_configurazione_elenco_modifica.png](/UFR/imgs/ufr_configurazione_elenco_modifica.png)
+
+ 
+
+ 3. Il sistema apre la pagina di configurazione del report nella quale andranno apportate le eventuali modifiche ed aggiornamenti. Questa pagina è dettagliata nel capitolo [Configurazione di un Report.](/UFR/imgs/Report/UFR_Cinfigurazione_Report) 
+
+![ufr_nuovo_report_02.jpg](/UFR/imgs/ufr_nuovo_report_02.jpg)
+
+
+
+# Come eliminare un report esistente.  Per eliminare un report su Next occorre: 
+
+ 1. Selezionare la voce di menù **Configurazione > Configurazione stampe** come mostrato nella figura sotto.  
+
+![ufr_configurazione_menu.png](/UFR/imgs/ufr_configurazione_menu.png)
+
+ 
+
+ 2. Il sistema espone l'elenco dei report esistenti. Individuare il report che si intende rimuovere ed in corrispondenza di tale report premere sul pulsante **menu** 
+
+![pulsante_menu.jpg](/UFR/imgs/pulsante_menu.jpg)
+
+ come mostrato nella figura sotto. 
+
+![ufr_configurazione_elenco_menu.png](/UFR/imgs/ufr_configurazione_elenco_menu.png)
+
+ 
+
+ 3. Il sistema apre il menù a tendina dal quale occorre premere sul pulsante **elimina** 
+
+![icona_elimina.jpg](/UFR/imgs/icona_elimina.jpg)
+
+. 
+
+![pulsante_menu_espanso.jpg](/UFR/imgs/pulsante_menu_espanso.jpg)
+
+ 
+
+ 4. Il sistema chiede conferma per procedere con la rimozione del report. Per confermare premere **OK**. 
+
+![conferma_elimina.jpg](/UFR/imgs/conferma_elimina.jpg)
+
+  La rimozione di un report è un'operazione irreversibile: non è possibile ripristinare report rimossi. 
+
+# Configurazione e manutenzione di un report.  
+
+In questa sezione troverai informazioni relative alla configurazione di un report.  ---   La configurazione di un report prevedete una parte di definizione ed una parte di comportamento. La parte di definizione serve a indicare la tipologia di report, caratteristiche e la fonte dati. Mentre la parte comportamentale intoduce elementi quali: filtri, filtri di default, eventuale ordinamento dell'output.  
+
+![ufr_nuovo_report_02.jpg](/UFR/imgs/ufr_nuovo_report_02.jpg)
+
+
+
+Dati generali - Identificazione report  Alla creazione di un report occorre inserire un codice (non modificabile successivamente), ed una descrizione. Questi due elementi identificano il report e lo rendono ricercabile all'interno del sistema.   
+
+![ufr_report_codice.jpg](/UFR/imgs/ufr_report_codice.jpg)
+
+ 
+
+Dati Applicativi Ad un report deve essere associato un **ApplicationModule**. Questo dato permette di raggruppare i report per modulo applicativo di Next; Consente inoltre l'estrazione e l'esecuzione individuale del report all'indirizzo reports/application-module-name.    
+
+![ufr_report_application.jpg](/UFR/imgs/ufr_report_application.jpg)
+
+ Opzionalmente, è possibile specificare codice azienda di riferimento.  Inoltre, con il campo dell'immagine sotto è possibile caricare un file per la reportistica creata con *Crystal Report*. 
+
+![ufr_report_cristal.jpg](/UFR/imgs/ufr_report_cristal.jpg)
+
+   
+
+Tipo e Formato report       
+
+![ufr_report_tipologia.jpg](/UFR/imgs/ufr_report_tipologia.jpg)
+
+
+
+###   Definizione del tipo report Il tipo report rdefinisce la sorgente dei dati dalla quale dovranno essere estratti i dati da elaborare.    
+
+ 1. Provider Servizio: i dati vengono estratti tramite chiamata REST ad un service, estraendo da un dataset di cui si richiede la tipologia, definiendo l'indirizzo del Service, l'URL ed il metodo HTTP.  
+
+ 2. Provider Database: i dati vengono estratti da un DB. Vanno perciò definiti i parametri per l'apertura della connessione  
+
+ 3. Provider comando SQL: i dati vengono estratti da una query definita dall'utente nel DB  4SNE dell'azienda. Con questa tipologia di report è quindi necessario gestire opportunamente una [**Query SQL**](/UFR/imgs/Report/Gestione_Report_Comandi_SQL).  
+
+ 4. Provider DataSet Diretto:     
+
+### Definizione del Formato:   Il formato rappresenta la tipologia di presentazione dell'informazione. Attualmente sono supportati i seguenti formati:     
+
+ 1. [**Excel**](/UFR/imgs/Report/Report_Excel): l'informazione viene rappresentata come tabella all'interno di un foglio Microsoft Excel (estensione xlsx).  
+
+ 2. [**PDF**](/UFR/imgs/Report/Report_PDF): l'informazione viene rappresentata come documento PDF.   
+
+ 3. [**Tabella**](/UFR/imgs/Report/Report_Tabella): l'informazione viene rappresentata come tabella interattiva.    
+
+ 4. [**Tabella e collegamento**:](/UFR/imgs/Report/Report_Tabella_Collegata) l'informazione viene rappresentata come tabella interattiva con la possibilità di aprire una sottotabella di **drill-down**.
+
+ 1.   [**Tabella Pivot**](/UFR/imgs/Report/Tabella_pivot): l'informazione viene rappresentata in una tabella Pivot già formattata.
+
+ 5.   [**Grafico**](/UFR/imgs/Report/Tipologie_Grafici). L'informazione viene esposta sotto forma di grafico.         
+
+  Gestione filtri   In questa sezione vengono definiti gli eventuali campi di filtro che l'utente potrà applicare durante l'utilizzo del report.    
+
+![dashboard_filtri.jpg](/UFR/imgs/dashboard_filtri.jpg)
+
+
+
+### Aggiunta di un filtro Per inserire un filtro premere sul pulsante aggiungi della barra dei filtri. Il sistema apre la finestra di [**definizione del filtro**](/UFR/imgs/Dashboard/Definizione_Filtro). 
+
+![dashboard_aggiungi.jpg](/UFR/imgs/dashboard_aggiungi.jpg)
+
+ 
+
+### Eliminare un filtro Per rimuovere un filtro dal report o dalla dashboard premere il pulsante 
+
+![incona_rimuovi.jpg](/UFR/imgs/incona_rimuovi.jpg)
+
+in corrispondenza del filtro da rimuovere nell'elenco dei filtri. 
+
+![filtro_rimozione.jpg](/UFR/imgs/filtro_rimozione.jpg)
+
+  
+
+### Modificare un filtro Per modificare un filtro premere il pulsante 
+
+![icona_modifica.jpg](/UFR/imgs/icona_modifica.jpg)
+
+in corrispondenza del filtro da gestire nell'elenco dei filtri. 
+
+![filtro_modifica.jpg](/UFR/imgs/filtro_modifica.jpg)
+
+  Premuto il pulsante di modifica il sistema apre la finestra di [**gestione del filtro**](/UFR/imgs/Dashboard/Definizione_Filtro).      
+
+  Gestione Permessi   Tramite questo paragrafo è possibile aggiungere trigger per l'invio mail del report (esportazione singola alla pagine `report/`, non in dashboard). E' sufficiente dichiarare l'azienda, l'utente mittente esecutore, il gruppo utente, le e-mail dei destinatari e l'oggetto della mail.     
+
+Salvataggio del report. Per salvare la configurazione del report premere sul pulsante **Salva**. 
+
+![salva.jpg](/UFR/imgs/salva.jpg)
+
+ Per salvare il report ed avere l'anteprima del risultato premere sul pulsante "**Salva e Anteprima**". 
+
+![salva_preview.jpg](/UFR/imgs/salva_preview.jpg)
+
+    
+
+# Come copiare un report esistente.  Per duplicare un report esistente occorre: 
+
+ 1. Selezionare la voce di menù **Configurazione > Configurazione stampe** come mostrato nella figura sotto.  
+
+![ufr_configurazione_menu.png](/UFR/imgs/ufr_configurazione_menu.png)
+
+ 
+
+ 2. Il sistema espone l'elenco dei report esistenti. Individuare il report che si intende copiare ed in corrispondenza di tale report premere sul pulsante **menu** 
+
+![pulsante_menu.jpg](/UFR/imgs/pulsante_menu.jpg)
+
+ come mostrato nella figura sotto. 
+
+![ufr_configurazione_elenco_menu.png](/UFR/imgs/ufr_configurazione_elenco_menu.png)
+
+ 
+
+ 3. Il sistema apre il menù a tendina dal quale occorre premere sul pulsante **Duplica** 
+
+![duplica.jpg](/UFR/imgs/duplica.jpg)
+
+ 
+
+![pulsante_menu_espanso.jpg](/UFR/imgs/pulsante_menu_espanso.jpg)
+
+ 
+
+ 4. Il sistema aprirà la pagina di gestione del nuovo report nella quale occorre indicare il nuovo codice report e relativa descrizione. Il nuovo report è soggetto a tutte le regole di gestione descritte nel capitolo di [**Configurazione di un Report**](/UFR/imgs/Report/UFR_Cinfigurazione_Report)  

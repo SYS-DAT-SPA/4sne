@@ -1,0 +1,33 @@
+# Gestione SQL 
+
+ Selezionando come tipo report "**Provider comando SQL**" è necessario indicare al sistema il comando SQL da eseguire. 
+
+# Campo SQL Il sistema si predispone aprendo il campo dell'immagine sotto, nel quale scrivere la stringa SQL. 
+
+![ufr_report_sql.jpg](/UFR/imgs/ufr_report_sql.jpg)
+
+  Esempio 
+
+![ufr_report_sql_esempio.jpg](/UFR/imgs/ufr_report_sql_esempio.jpg)
+
+ 
+
+TAG SQL Nell'utilizzo dell'estrazione tramite comando SQL, per alcuni formati di output è necessario utilizzare dei tag specifici dell'UFR. Questi tag servono ad indicare al sistema come reperire eventuali filtri dinamici ed altre operazioni. Tutti i tag disponibili sono elencati a destra del campo destinato alla stringa SQL.  
+
+![ufr_report_sql_tag.jpg](/UFR/imgs/ufr_report_sql_tag.jpg)
+
+    I tag attualmente supportati sono elencati di seguito.      `$\$Fields$\$`: inizio area dichiarazione campi (da utilizzare SOLO per formato tabella e tabella collegamento). Serve ad indicare all'UFR dove si trova la parte di selezione dei campi da riportare in tabella per attivare i filtri sulle colonne.   `$/$Fields$/$`: fine area dichiarazione campi (da utilizzare SOLO per formato tabella e tabella collegamento)   Esempio 1   
+
+![sql_tag_filtri.png](/UFR/imgs/sql_tag_filtri.png)
+
+   Esempio 2   
+
+![sql_tag_filtri2.png](/UFR/imgs/sql_tag_filtri2.png)
+
+      `$$UserId$$`: inject della variabile di sistema contenente l'id utente   `$$UserName$$`: inject della variabile di sistema contenente il nome utente      `$$Filter$$`: variabile che applica i filtri selezionati dall'utente fra quelli definiti per il report oppure fra quelli indicati nella dashboard (da utilizzare ogni qual volta si necessita di filtrare).  Viene sostituita dalla clausola `where` perciò, quando non vi sono filtri, `$$Filter$$` = `where 1=1`, mentre quando valorizzata con uno o più Predicate del SearchContract `$$Filter$$` = `where <campo> <operatore> <valori> and ...`. Si può integrare con filtri hardcoded come segue: se il filtro fisso è `filtro`, allora è possibile scrivere `$$Filter$$ and <filtro>` che equivarrà ad avere un query `where 1=1/[filtri] and <filtro>`. Un altro modo per aggiungere filtri fissi è quello di usare il box "Condizioni where" nella pagina.    Esempio 1   
+
+![sql_tag_filtri3.png](/UFR/imgs/sql_tag_filtri3.png)
+
+       `$$Paging$$`: variabile che imposta il paging (da utilizzare SOLO per formato tabella e tabella collegamento)   `@$@VariabileUtente@$@` variabile utente configurabile in anagrafica utente      l'assenza di tali tag, qualora richiesti, o errori nel posizionamento o nella sintassi non vengono evidenziati immediatamente, tuttavia portano al fallimento della query. Per avere contezza di eventuali errori, usare il bottone `</>` sopra il report (quando esportato). Tale bottone restituisce l'esatta query eseguita con i vari tag sostituiti: sarà così possibile capire  se qualche tag è mal posizionato o mancante. (N.B. per visualizzare `</>` occorre essere un utente di tipo Sviluppatore e bisogna entrare nell'anteprima del report o aggiungere il report ad una dashboard)     
+
+### Nome campi      Nel caso in cui si stia creando un report tabella o tabella con collegamento, i campi inclusi tra i tag `$\$Fields$\$` e `$/$Fields$/$` vengono poi estratti singolarmente ed è possibile aggiungere le varie traduzioni dei campi nella tabella sottostante appena dopo aver salvato il report.    

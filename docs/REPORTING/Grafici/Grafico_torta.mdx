@@ -1,0 +1,90 @@
+# Grafico a Torta  
+
+![ufr_grafico_torta_01.png](/UFR/imgs/ufr_grafico_torta_01.png)
+
+
+
+Definizione query SQL   La query che alimenta il grafico deve restituire **2 campi**:
+
+ 1. Il nome da attribuire al singolo spicchio (Classe) che compone il grafico
+
+ 1. Il valore da attribuire a ciascuna classe (frequenza).  **Esempio.** Volendo costruire il grafico proposto nell'immagine sopra, la query SQL che estrae i dati dovrà essere strutturata come segue:  `Select Area as Name, Sum(x) as Value FROM Mia_Tabella`  Il risultato della query dovrà essere simile al seguente:  
+
+![ufr_grafico_torta_01_valori.png](/UFR/imgs/ufr_grafico_torta_01_valori.png)
+
+  Ciascuna ricorrenza estrapolata rappresenza una sezione del grafico. L'informazione della colonna Name è il nome della classe; La colonna Value cotiene il valore (Frequenza) da attribuire alla corripondente Classe. 
+
+Definizione query SQL con legenda. Questo tipo di Query alimenta anche la legenda del grafico; La legenda si visulizza attraverso il mouse-over sul grafico. Nell'esempio sotto la legenda è quella visualizzata nel rettangolo.  
+
+![piechart2.png](/UFR/imgs/piechart2.png)
+
+  Strutturando opportunamente la Query SQL è possibile: 1) **Inserire il testo della legenda** In questo caso il nome del campo da includere è **Legend**. 2) **Impostare il colore per ogni slide** In questo caso il nome del campo da includere è **Color** 3) **Impostare un titolo dinamico al grafico** In questo caso il nome del campo da includere è **Title**  L'esempio sotto riporta una query SQL completa di tutti i campi necessari a realizzare il grafico riportato sopra. **Esempio** 
+  
+  ```sql
+  SELECT 
+    AreaCode + ' - ' + Tab.comparison AS Name,
+    COUNT(*) AS Value,
+    CASE 
+        WHEN threshold IS NULL THEN 'No threshold' 
+        ELSE 
+            CASE 
+                WHEN comparison = 'OK' THEN 'Below ' 
+                ELSE 'Above ' 
+            END + CAST(threshold AS VARCHAR) 
+    END AS Legend,
+    CASE 
+        WHEN comparison = 'OK' THEN '#4CAF50' 
+        ELSE '#F44336' 
+    END AS Color,
+    'Pick and Pack lead time - ' + Area AS Title
+FROM (
+    SELECT 
+        OT.cd_ana,
+        A.ragsoc,
+        A.cd_nazione AS Cd_Nazione,
+        OT.NVersa,
+        OT.cd_MagCap AS Cd_MagCap,
+        OT.DataIns AS ArrivalDate,
+        D.DtaEPack,
+        DATEDIFF(SECOND, OT.DataIns, D.DtaEPack) AS Secondi,
+        AB.Descrizion AS Area,
+        K.Valore AS threshold,
+        CASE 
+            WHEN DATEDIFF(SECOND, OT.DataIns, D.DtaEPack) / 3600 > K.Valore THEN 'KO' 
+            ELSE 'OK' 
+        END AS comparison,
+        'A1' AS AreaCode,
+        CASE 
+            WHEN mg.codlogi = 'TWS' THEN 'HUB IT' 
+            WHEN mg.codlogi = 'NEI' THEN 'HUB CH' 
+            ELSE mg.codlogi 
+        END AS Logistics
+    FROM 
+        (SELECT * FROM ordinetes WITH (NOLOCK) WHERE cd_tras NOT LIKE '%XP%') OT
+    INNER JOIN 
+        Anagrafe A WITH (NOLOCK) 
+        ON A.cd_ana = OT.cd_ana 
+        AND A.tipoana = OT.tipoana 
+        AND A.Cd_AreaBus = 'A1'
+    LEFT JOIN 
+        AreaBusiness AB WITH (NOLOCK) 
+        ON A.Cd_AreaBus = AB.Cd_AreaBus
+    LEFT JOIN 
+        MagazzinoCF Mg WITH (NOLOCK) 
+        ON OT.cd_magcap = mg.Cd_Magcap
+    LEFT JOIN 
+        KpiComparison K WITH (NOLOCK) 
+        ON A.Cd_AreaBus = K.Cd_AreaBus 
+        AND K.Cd_Perform = 'LOU_OUTBOUND_KPI1'
+    LEFT JOIN 
+        DetLstSpd D WITH (NOLOCK) 
+        ON OT.NVersa = D.nversa 
+        AND D.DtaEPack IS NOT NULL
+) AS Tab
+$$Filter$$
+GROUP BY 
+    Tab.Area, 
+    Tab.comparison, 
+    Tab.threshold, 
+    Tab.AreaCode;  
+    ```  
