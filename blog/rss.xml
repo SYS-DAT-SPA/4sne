@@ -39,6 +39,7 @@ SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni p
 <li>Annullamento capi da ordine cliente: aggiunta la percentuale di annullo in base all'ordinato.</li>
 <li>Capi al taglio implementata la possibilità di ridurre i capi in commessa.</li>
 <li>La modifica cliente su ordine ora include l'elenco completo delle destinazioni.</li>
+<li>Nella creazione di documenti da ordine non è più possibile procedere con i filtri tipici di prodotto, in quanto potevano creare inconsistenza di dati come la creazione di documenti, e quindi la registrazione della spedizione di parziali di scatola.</li>
 <li>Documenti fornitori: in aggiunta spese recuperata l'iva dalla configurazione della spesa.</li>
 <li>Documenti fornitori: aggiunto il seleziona tutto nell'import da giacenza.</li>
 <li>Nei report tabellari UFR, il filtro dei campi data è in totale gestione dell'editor delle query e non più automaticamente troncato dall'applicativo.</li>
