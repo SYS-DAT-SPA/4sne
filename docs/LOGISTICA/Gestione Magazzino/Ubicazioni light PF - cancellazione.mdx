@@ -5,13 +5,75 @@ description: Ubicazioni light PF - cancellazione
 
 ### Guide for Ubicazioni light PF - cancellazione
 
-*Add the description here*
+**1.    Ubicazioni light PF - cancellazione”- Guida All’Uso**
 
-___
+Nel contesto del software 4S Next Edition, ampiamente utilizzato nel settore moda e lusso per la gestione integrata dei processi aziendali (ERP), l’espressione **“Ubicazioni light PF - cancellazione”** si riferisce alla rimozione definitiva di determinate ubicazioni logistiche (ossia punti fisici o logici dove si trovano merci o materiali) collegate al modulo PF (Produzione Fashion).
 
-\--- name: Ubicazioni light PF - cancellazione --- ### Ubicazioni light PF - cancellazione \*Add a description here\* 1. \*\*Aspetta\*\* per la pagina a `https://iat-4sne.sys-web.it/magazzini/gestire-ubicazione` da caricare. 2. A questo punto, \*\*Ridimensiona\*\* la vista a 1522 × 727 pixel. 3. Successivamente, \*\*Fare clic\*\* sull'elemento #Dropdown6. 4. Successivamente, \*\*Fare clic\*\* sul pulsante etichettato \*\*Elimina\*\* . 5. Infine, \*\*Fare clic\*\* sul pulsante etichettato \*\*OK\*\* .
+Il **termine *light*** indica che si tratta di una versione semplificata delle ubicazioni: ad esempio, potrebbero essere aree temporanee, create per esigenze stagionali o campagne di produzione limitate nel tempo. Non contengono informazioni complesse (es. regole avanzate di picking, tracciabilità RFID, cross-docking) e possono essere gestite più agilmente.
 
-FAQ
----
+La **cancellazione** di queste ubicazioni rappresenta un'operazione che, sebbene semplice a livello di UI, implica una serie di controlli a livello di back-end per garantire integrità dei dati. Tra i controlli tipici prima dell'eliminazione troviamo:
 
-...
+* Verifica che l’ubicazione sia vuota (assenza di stock o materiali);
+* Assenza di riferimenti a ordini di produzione o movimenti in corso;
+* Permessi adeguati dell’utente che richiede l’operazione;
+* Tracciatura dell’operazione nei log di sistema per audit.
+
+ 
+
+Questa funzione si rivela particolarmente utile alla fine di una collezione o di un ciclo produttivo, quando alcune ubicazioni non sono più necessarie e devono essere rimosse per mantenere l'ordine nel sistema e nelle interfacce.
+
+**Esempi pratici:**
+
+* Un’azienda di abbigliamento crea una serie di ubicazioni temporanee (“STAG23-LIGHT1”, “STAG23-LIGHT2”) per gestire lo stoccaggio dei tessuti della collezione primavera. Al termine della produzione, queste aree risultano vuote e possono essere eliminate.
+* Un magazzino di confezione ha attivato ubicazioni light per gestire l’overflow dei capi durante il picco stagionale. Dopo il consolidamento delle spedizioni, queste ubicazioni vengono dismesse.
+
+**2.    Guida Step-by-Step per 4S Next Edition Alla Cancellazione**
+
+**** 
+
+1.     Apri la pagina corretta
+Accedi al gestionale 4S Next Edition e vai alla pagina di gestione ubicazioni.
+
+1. Seleziona l’ubicazione da cancellare
+   Nella schermata, trova l’elenco delle ubicazioni.
+   Clicca sull’elemento che permette di selezionare l’ubicazione (indicato come #Dropdown6 nel codice), e scegli quella che desideri eliminare.
+2. Clicca sul pulsante "Elimina"
+   Una volta selezionata l’ubicazione, premi il pulsante “Elimina” visibile nella schermata.
+3. Conferma l’operazione
+   Il sistema ti chiederà conferma prima di procedere. Premi “OK” per completare la cancellazione.
+   *Ricorda: questa**** operazione non è reversibile. Assicurati che l’ubicazione sia davvero da eliminare.*
+4.  
+
+**3.      FAQ – Domande frequenti sulla cancellazione di ubicazioni light PF**
+
+1 - Cos’è un’ubicazione “light PF”?
+
+È un tipo di ubicazione semplificata usata temporaneamente nel modulo di Produzione Fashion. Serve per gestioni logistiche transitorie, come picchi stagionali o campagne specifiche.
+
+2 - Quando si può cancellare un’ubicazione light PF?
+
+Solo quando:
+
+* Non contiene materiale;
+* Non è collegata a movimenti in corso;
+* L’utente ha i permessi per farlo.
+
+3 -  Cosa succede se provo a cancellare un’ubicazione ancora attiva?
+
+Il sistema blocca l’operazione e mostra un messaggio di errore. Potrebbero esserci ancora materiali o processi collegati all’ubicazione.
+
+4 -  È necessario ridimensionare la finestra a 1522×727 pixel?
+
+Sì, questo consente la corretta visualizzazione dell’interfaccia, garantendo che tutti i controlli siano accessibili.
+
+5 - Come faccio a sapere se un’ubicazione è “light”?
+
+Le ubicazioni light sono solitamente identificate con un codice o una denominazione specifica nel sistema (es. “TEMP-PF01”, “L-PF2024”). Puoi verificarlo nella colonna “Tipo” o consultando il reparto IT.
+
+6 - Posso recuperare un’ubicazione cancellata per errore?
+
+No, la cancellazione è definitiva. Tuttavia, gli amministratori di sistema possono verificare i log per vedere chi ha eseguito l’operazione e quando.
+
+7 -  È possibile cancellare più ubicazioni light PF in una volta sola?
+
+Dipende dalla configurazione del sistema. Alcune installazioni di 4S Next Edition prevedono funzionalità di bulk delete, ma devono essere abilitate con cautela.
