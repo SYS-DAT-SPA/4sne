@@ -4,10 +4,47 @@
         <title>4Seasons Next Edition Blog</title>
         <link>https://sys-dat-spa.github.io/4sne/blog</link>
         <description>4Seasons Next Edition Blog</description>
-        <lastBuildDate>Fri, 01 Aug 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 15 Sep 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Release note 2535]]></title>
+            <link>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-09-15</link>
+            <guid>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-09-15</guid>
+            <pubDate>Mon, 15 Sep 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[4Seasons Next]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-09-15#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
+<p>La seguente versione 2535 del 15/09/2025 riporta i seguenti aggiornamenti</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p><p>Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-09-15#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
+<h1>19</h1>
+<p>La nuova versione del software introduce importanti aggiornamenti, tra cui l'implementazione dell'inventario delle materie prime e l'aggiornamento del framework a .NET Core 8.0. Sono state migliorate diverse funzionalità, come la gestione delle fatture proforma, l'invio mail agli agenti, il filtro per lotto nei buoni di prelievo e la possibilità di annullare documenti contabilizzati. Inoltre, è stata aggiunta una pagina Centro Notifiche per centralizzare le comunicazioni e ottimizzate le operazioni di importazione ordini e gestione documenti clienti per una maggiore efficienza e chiarezza.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-09-15#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
+<ol>
+<li>Fattura proforma: in creazione proforma da ordine aggiunte le materie prime</li>
+<li>Aggiornato Framework a .NET Core 8.0</li>
+<li>Implementato l'inventario delle materie prime.</li>
+<li>La nuova release introduce la possibilità di aggiungere il tipo dato nella configurazione dello schema.</li>
+<li>Allineate tutti campi numerici con virgola al posto del punto.</li>
+<li>Buoni di prelievo: aggiunto il filtro per lotto.</li>
+<li>Commesse saldate possibilità di riaprire nuova lista arrivi</li>
+<li>Documento cliente manuale gestito il cambio.</li>
+<li>Nei moduli per l'Invio mail aggiunta la possibilità di inviare agli agenti.</li>
+<li>Versamento ordine fornitore gestito il costo a magazzino comprendendo gli sconti.</li>
+<li>Fattura fornitore: recuperata l'entrata merce al netto degli sconti dell'ordine fornitore.</li>
+<li>Import listini nell'export excel con dati aggiunta la possibilità di togliere i modelli annullati.</li>
+<li>Gestione delle traduzione in import tool.</li>
+<li>Contabilizzazione clienti aggiunta la possibilità di annullare un documento contabilizzato.</li>
+<li>Aggiunta la pagina Centro Notifiche centralizzando tutte le comunicazioni importanti.</li>
+<li>La nuova funzionalità consente agli utenti di accedere rapidamente ai campi prefiltrati, migliorando l'efficienza e la precisione nella gestione dei dati.</li>
+<li>Velocizzato l'import ordini cliente.</li>
+<li>La revisione delle righe dei documenti clienti migliora la precisione e la chiarezza delle informazioni, garantendo un'esperienza utente più efficiente e affidabile.</li>
+<li>La nota su prebolla ora rimane sempre visibile sulla pagina, migliorando la chiarezza e la continuità delle informazioni per l'utente.</li>
+</ol>]]></content:encoded>
+            <category>4SNE</category>
+        </item>
         <item>
             <title><![CDATA[Release note 2529]]></title>
             <link>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-08-01</link>
@@ -728,43 +765,6 @@ entrata e confermata in TWS (prevedere aggiornamento da “in consolidamento” 
 <li>Versamento resi: contemplata la gestione del conto vendita in fase di versamento a magazzino, scaricando l'eventuale magazzino in c/v specificato (al momento solo manuale).</li>
 <li>Documenti clienti: ottimizzato il recupero del listino di vendita per accelerarne i tempi.</li>
 <li>Da testare tutte le esportazione per vedere che tutto funzioni&nbsp;</li>
-</ol>]]></content:encoded>
-            <category>4SNE</category>
-        </item>
-        <item>
-            <title><![CDATA[Release note 2451]]></title>
-            <link>https://sys-dat-spa.github.io/4sne/blog/Release note 2024-12-20</link>
-            <guid>https://sys-dat-spa.github.io/4sne/blog/Release note 2024-12-20</guid>
-            <pubDate>Fri, 20 Dec 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[4Seasons Next]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202024-12-20#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
-<p>La seguente versione 2451 del 20/12/2024 riporta i seguenti aggiornamenti</p>
-<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p><p>Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
-SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202024-12-20#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
-<h1>16</h1>
-<ol>
-<li>È stata introdotta la possibilità di rendere provvisori i documenti definitivi manuali e ottimizzato il recupero del listino di vendita per i documenti clienti.</li>
-<li>Le liste spedizioni sono state migliorate con una gestione più pratica e la possibilità di unire liste già imballate, mentre l'inventario ora consente l'export in Excel.</li>
-<li>Sono state aggiunte funzionalità avanzate per la gestione delle condizioni commerciali e miglioramenti nel calcolo delle scadenze e nella gestione delle quantità amministrative per ordini e fatture.</li>
-</ol>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202024-12-20#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
-<ol>
-<li>Documenti clienti e fornitori: aggiunta la possibilità di rendere provvisorio un documento definitivo purché sia manuale. 1. Fabbisogni: evidenziate le righe di semilavorato articolo.</li>
-<li>Adesso durante la generazione la quantia verrà spalmata solo per le taglie presente nella riga dell'ordine e non su tutte le taglie abilitate sul modello. Dopo la generazione provare che la stampa vada correttamente a termine</li>
-<li>Documenti clienti: ottimizzato il recupero del listino di vendita per accelerarne i tempi.</li>
-<li>Liste libere: velocizzato l'import e accorpato per prodotto.</li>
-<li>Liste spedizioni: spostata la funzione da dentro la manutenzione lista al menu a tendina della Situazione liste di spedizioni, rendendo più pratica la gestione e permettendo l'unione di liste anche già imballate.</li>
-<li>Inventario: aggiunto l'export in excel del risultato.</li>
-<li>Particolarità: aggiunta la possibilità di avere una gestione avanzata per le condizioni commerciali.</li>
-<li>Ordine fornitore MP: al versamento ordine fornitore aggiunta la quantità amministrativa, sia nel totale che nel dettaglio bagno/pezza.</li>
-<li>Controllo fatture fornitore: gestita la quantità amministrativa per le materie prime.</li>
-<li>Documenti clienti: calcolo delle scadenze prevista la gestione del mese escluso su cliente.</li>
-<li>Situazione liste spedizione: in griglia aggiunti i campi capi da sparare, sparati e in bolla.</li>
-<li>Da Testare la dissassegnazione per vedere che funzioni tutto correttamente. In Chervo testare la dissassegnazione del ordine di conto lavoro</li>
-<li>Situazione liste spedizione: abilitato l'export excel.</li>
-<li>Scheda tecnica: contemplati i caratteri speciali nei codici materiali e di ricerca colori.</li>
-<li>Ordine cliente: gestito il cliente di fatturazione anche se l'intestatario è NORMAL.</li>
 </ol>]]></content:encoded>
             <category>4SNE</category>
         </item>
