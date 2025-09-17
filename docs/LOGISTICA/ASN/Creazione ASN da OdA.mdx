@@ -1,17 +1,91 @@
----
-title: Creazione ASN da OdA
-description: Creazione ASN da OdA
----
+### **1 -  Creazione ASN da ODA – Guida all’Uso**
 
-### Guide for Creazione ASN da OdA
+**Descrizione tecnica per professionisti IT nel settore moda**
 
-*Add the description here*
+Nel contesto della gestione dei flussi logistici nel settore moda, **ASN (Advanced Shipping Notice)** e **ODA (Ordine di Acquisto)** sono due entità fondamentali.
 
-___
+* **ODA (Ordine di Acquisto)**: rappresenta l'impegno formale all'acquisto di beni o servizi da un fornitore. Include dettagli come articoli ordinati, quantità, prezzi, date di consegna previste e indirizzi di spedizione.
+* **ASN (Advanced Shipping Notice)**: è un documento elettronico inviato dal fornitore all'acquirente prima della spedizione effettiva della merce. L'ASN notifica la spedizione in arrivo, includendo informazioni come numero di colli, articoli spediti, date e vettori.
 
-\--- name: Creazione ASN da OdA --- ### Creazione ASN da OdA \*Add a description here\* 1. Quindi, \*\*Aspetta\*\* per la pagina a per caricare. 2. Successivamente, \*\*Ridimensiona\*\* la vista a 1522 × 779 pixel. 3. Quindi, \*\*Fare clic\*\* sull'elemento #Select2-0Mec-Container. 4. Successivamente, \*\*Tipo\*\* `00226` nell'input con valore \*\*00226\*\* . 5. Per continuare, \*\*Fare clic\*\* sull'elemento contenente il testo \\\*\\\*pel \\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\* . 6. Successivamente, \*\*Fare clic\*\* sul pulsante etichettato \*\*Filtra\*\* . 7. A questo punto, \*\*Fare clic\*\* sull'elemento #Select2-OVVB-Container. 8. Per continuare, \*\*Fare clic\*\* sull'elemento contenente il testo \\\*\\\*C/V \\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\* . 9. \*\*Fare clic\*\* sull'elemento #Select2-IMFK-Container. 10. Successivamente, \*\*Fare clic\*\* sull'elemento contenente il testo \\\*\\\*A0001 - C/V \\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\*\\\* . 11. Successivamente, \*\*Fare clic\*\* sull'elemento con attributo Register dati uguale a \*\*True\*\* . 12. Successivamente, \*\*Fare clic\*\* sull'elemento contenente il testo \*\*Aggiungi\*\* . 13. Successivamente, \*\*Scroll\*\* la pagina di (0, -400) pixel. 14. Successivamente, \*\*fai clic\*\* sull'elemento con il ruolo di attributo uguale a \*\*Switch\*\* . 15. Una volta fatto ciò, \*\*Fare clic\*\* sul pulsante etichettato \*\*AVANTI\*\* . 16. Una volta fatto ciò, \*\*Fare clic su\*\* sull'elemento con l'attributo ID test è uguale a \*\*DeliveryNote\*\* . 17. \*\*Tipo\*\* `1` nell'input con valore \*\*1\*\* . 18. Immediatamente dopo, \*\*Tipo\*\* `15` nell'input con valore \*\*15\*\* . 19. \*\*Premi\*\* Il tasto `Tab`. 20. Successivamente, \*\*Tipo\*\* `15/09/2025` nell'input con valore \*\*15/09/2025\*\* . 21. \*\*Fare clic\*\* sull'elemento #null. 22. Successivamente, \*\*Tipo\*\* `test` nel elemento contenente il testo \*\*test\*\* . 23. Infine, \*\*Fare clic\*\* sull'elemento contenente il testo \*\*Conferma\*\* . 24. Infine, \*\*Ridimensiona\*\* la vista a 1522 × 727 pixel. 25. Infine, \*\*Ridimensiona\*\* la vista a 1522 × 779 pixel.
+**Cosa significa “Creazione ASN da ODA”**
 
-FAQ
----
+Significa generare un documento ASN **basato su un ordine di acquisto esistente**, estrapolando i dati necessari (articoli, quantità, date, destinatario, ecc.) per notificare l’invio della merce.
 
-...
+Questo processo è spesso **automatizzato o semi-automatizzato** in ERP o piattaforme gestionali come **4S Next Edition**, per garantire coerenza tra ordine e spedizione, migliorare la tracciabilità e ridurre errori manuali.
+
+ 
+
+**Esempi pratici (Use Case)**
+
+1. **Scenario 1: Fabbrica calzature**
+   * L'ufficio acquisti inserisce un ODA per 1000 suole in gomma.
+   * Il fornitore, prima di spedire, crea un ASN da quell’ODA.
+   * L’ASN indica che verranno spedite 1000 suole suddivise in 10 colli.
+   * Il magazzino ricevente potrà così prepararsi e automatizzare la ricezione.
+2. **Scenario 2: Brand abbigliamento**
+   * Un brand invia un ODA per 500 camicie da ricevere in 3 settimane.
+   * Il fornitore invia un ASN indicando che una parte (300 camicie) verrà spedita prima.
+   * Il sistema aggiorna l’ERP con le date e quantità effettive, permettendo pianificazione realistica.
+
+ 
+
+**2 - Guida Step - by Step – per 4S Next Edition**
+
+**Step operativi**
+
+1. **Attendi il caricamento della pagina.**
+2. **Imposta la finestra del browser**.
+3. Clicca sul menu a discesa relativo al campo "Cliente" e digita **00226** (codice cliente).
+4. Seleziona il risultato che appare (es: **pel...**).
+5. Premi sul pulsante **Filtra** per visualizzare gli ordini disponibili.
+6. Seleziona la vista **C/V** e poi il campo **A0001 - C/V** (tipo di movimento).
+7. Clicca sul pulsante con scritto **Aggiungi** per iniziare la creazione dell’ASN.
+8. Scorri la pagina verso l’alto per trovare lo switch di attivazione e attivalo.
+9. Clicca su **AVANTI**.
+10. Inserisci il numero della bolla nel campo **DeliveryNote** (es: 1).
+11. Inserisci la quantità (es: 15), premi **TAB** e poi inserisci la **data di spedizione** (es: 15/09/2025).
+12. Nel campo note, scrivi ad esempio: **test**.
+13. Infine, clicca su **Conferma** per salvare l’ASN.
+14. Reimposta eventualmente la visualizzazione a 1522 × 727 o 779 pixel.
+
+ 
+
+**Nota importante**
+
+Le etichette e i codici (es. 00226, A0001) sono personalizzati in base al cliente e alla configurazione di sistema. In caso di dubbi, contattare l'amministratore del sistema o l'ufficio IT.
+
+ 
+
+**3 -  FAQ**
+
+**1. Cos'è un ASN?**
+
+Un ASN (Advanced Shipping Notice) è un documento elettronico che anticipa le informazioni su una spedizione in arrivo, come articoli, quantità e date.
+
+**2. Perché creare un ASN da un ODA?**
+
+Per assicurare che le informazioni sulla spedizione siano coerenti con l’ordine originale e per facilitare la ricezione a magazzino.
+
+**3. Posso modificare un ASN dopo averlo confermato?**
+
+Dipende dalla configurazione del sistema. In molti casi sì, ma solo prima dell’invio definitivo. Controlla con l’amministratore.
+
+**4. Cosa succede se i dati dell’ASN non coincidono con quelli dell’ODA?**
+
+Il sistema potrebbe segnalare una discrepanza. In tal caso, l’ASN può essere corretto oppure si procederà a una verifica manuale.
+
+**5. Chi può creare un ASN in 4S Next Edition?**
+
+Solo gli utenti con permessi adeguati (es. operatori logistici, fornitori autorizzati). I ruoli sono gestiti dall’amministratore di sistema.
+
+**6. È possibile automatizzare la creazione dell’ASN da ODA?**
+
+Sì, in ambienti avanzati è possibile precompilare l’ASN con script o API in base agli ODA presenti, riducendo il lavoro manuale.
+
+**7. Quanto tempo ci vuole per creare un ASN manualmente?**
+
+Con questa guida, l’operazione dura in media 2-5 minuti.
+
+ 
+
+##
