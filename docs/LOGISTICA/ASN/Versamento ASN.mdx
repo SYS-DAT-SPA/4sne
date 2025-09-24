@@ -1,17 +1,90 @@
----
-title: Versamento ASN
-description: Versamento ASN
----
+### **1 - Versamento ASN- Guida all’Uso**
 
-### Guide for Versamento ASN
+Nel sistema gestionale **4S Next Edition**, il **Versamento ASN** rappresenta il processo digitale con cui un’**ASN (Advanced Shipping Notice)** precedentemente generata viene **registrata come entrata fisica** nel magazzino dell’azienda cliente (tipicamente un brand del settore moda).
 
-*Add the description here*
+In termini informatici, questo processo equivale alla **finalizzazione del flusso inbound**, ovvero il completamento della ricezione della merce precedentemente annunciata dal fornitore, trasformando l’ASN in un **movimento logistico reale e tracciato** (es. entrata di magazzino, generazione DDT, aggiornamento stock).
 
-___
+ 
 
-\--- name: Versamento ASN --- ### Versamento ASN \*Add a description here\* 1. Successivamente, \*\*Aspetta\*\* per la pagina a `https://iat-4sne.sys-web.it/fornitori-ordini/asn-receiving` per caricare. 2. Successivamente, \*\*Ridimensiona\*\* la vista a 1920 × 957 pixel. 3. Una volta fatto ciò, \*\*Fare clic\*\* sul pulsante etichettato \*\*Filtra\*\* . 4. \*\*Fare clic\*\* sull'elemento con l'attributo ID test è uguale a \*\*gwarehousereason\*\* contenente attributo uguale a "gwarehous. 5. Successivamente, \*\*Fare clic\*\* sull'elemento contenente il testo \*\*C01 - Entrata da Fornitore\*\* . 6. A questo punto, \*\*Fare clic\*\* sull'elemento con l'attributo ID test è uguale a \*\*GDocumentType\*\* contenente attributo uguale a "GDocumentTyp. 7. Quindi, \*\*Fare clic\*\* sull'elemento contenente il testo \*\*ddtfor - ddt da fornitore\*\* . 8. Per continuare, \*\*Fare clic\*\* sull'elemento con l'attributo ID test è uguale a \*\*DocumentNumber\*\* . 9. Successivamente, \*\*Tipo\*\* `01` nell'input con valore \*\*01\*\* . 10. Quindi, \*\*Fare clic\*\* sull'elemento con l'attributo ID test è uguale a \*\*Gwarehouse\*\* contenente attributo uguale a \*\*Gwarehouse\*\* . 11. A questo punto, \*\*Tipo\*\* `e` nell'input con valore \*\*e\*\* . 12. Una volta fatto, \*\*Fare clic\*\* sull'elemento contenente il testo \*\*E - ESI \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* . 13. Successivamente, \*\*Fare clic\*\* sull'elemento con ID test .Row contenente .col-12 contenente. Attributo. Progetto è uguale a \*\*Gurrency\*\* c. 14. Una volta fatto ciò, \*\*TIPO\*\* `Eur` nell'input con valore \*\*EUR\*\* . 15. Una volta fatto ciò, \*\*Fare clic\*\* sull'elemento contenente il testo \*\*Euro\*\* . 16. Immediatamente dopo, \*\*Fare clic\*\* sull'elemento con lo stile di attributo è uguale a \*\*Vertical-Align: Middle;\*\* . 17. Successivamente, \*\*Fare clic\*\* sul pulsante etichettato \*\*Applica\*\* . 18. Infine, \*\*Scroll\*\* la pagina di (0, 1900) pixel. 19. Infine, \*\*fai clic\*\* sul pulsante etichettato \*\*Salva\*\* .
+ **Cosa si intende con “Versamento ASN”**
 
-FAQ
----
+È l’ultima fase del flusso ASN. Si effettua **all'arrivo fisico della merce**, e serve a:
 
-...
+* Validare che ciò che è arrivato corrisponda a quanto comunicato nel preavviso (ASN)
+* Associare un documento di trasporto (es. DDT) al movimento
+* Registrare formalmente l’entrata nel sistema ERP/magazzino
+
+**** 
+
+ **Esempi pratici**
+
+* **Caso 1**: Il fornitore ha creato un ASN con 100 cappotti modello X. La merce arriva al magazzino centrale. L’operatore logistico entra nel portale 4SNE, accede alla sezione **Versamento ASN**, verifica i dati, associa il DDT e conferma il versamento. Lo stock viene aggiornato.
+* **Caso 2**: Il magazzino riceve merce da due fornitori diversi. Grazie al pre-carico ASN, l’operatore filtra per ASN aperte, seleziona quella giusta, inserisce il numero documento (DDT), valuta la motivazione del movimento (es. “Entrata da Fornitore”) e finalizza il versamento per rendere effettiva l’entrata merci.
+
+ 
+
+**2 - Guida Step- by- Step per 4S Next Edition**
+
+**Obiettivo:** Completare la ricezione della merce annunciata via ASN, confermando l’entrata nel sistema.
+
+**Accedi al portale Versamento ASN**:
+
+1. **Attendi il caricamento completo della pagina.**
+2. **Imposta la visualizzazione** (consigliata: **1920×957 px** per migliore usabilità).
+3. **Clicca sul pulsante “Filtra”** per visualizzare le ASN in attesa di versamento.
+4. **Seleziona la causale del movimento**:
+   * Clicca sul campo “Motivazione Magazzino”
+   * Scegli **“C01 – Entrata da Fornitore”**
+5. **Seleziona il tipo di documento**:
+   * Clicca su “Tipo Documento”
+   * Scegli **“ddtfor – DDT da fornitore”**
+6. **Inserisci il numero documento (DDT)**:
+   * Clicca nel campo **Numero Documento**
+   * Inserisci ad es. **01**
+7. **Seleziona il magazzino di destinazione**:
+   * Clicca su “Magazzino”
+   * Digita ad esempio **e**, e scegli la voce **“E – ESI …”**
+8. **Seleziona la valuta**:
+   * Clicca sull’area dedicata alla valuta
+   * Digita **EUR**
+   * Seleziona la voce **“Euro”**
+9. **Conferma la selezione della riga ASN**:
+   * Clicca sull’area con allineamento verticale centrale per selezionare la riga associata all’ASN
+10. **Applica le impostazioni**:
+    * Clicca su **“Applica”** per aggiornare la visualizzazione
+11. **Scrolla verso il basso (circa 1900 pixel)** per accedere al fondo pagina
+12. **Clicca su “Salva”** per finalizzare il versamento ASN.
+
+ 
+
+**3 - FAQ**
+
+**4 - Cos’è il “Versamento ASN”?**
+
+È la registrazione ufficiale dell’arrivo fisico della merce presso il magazzino, partendo da una ASN creata in precedenza.
+
+**5 - Il versamento va fatto solo dopo che la merce è arrivata?**
+
+Sì. Il versamento si effettua **solo al momento della ricezione fisica della merce**, per validare i dati comunicati nel preavviso.
+
+**6 - Cosa succede se ci sono discrepanze tra ASN e merce ricevuta?**
+
+In caso di differenze (es. quantità errata o codice articolo sbagliato), è necessario segnalare l'anomalia e **non versare** fino alla risoluzione.
+
+**7 - È possibile modificare i dati durante il versamento?**
+
+Puoi modificare solo i campi del movimento (es. numero documento, magazzino, causale), ma **non i dati dell’ASN**, che devono essere corretti a monte.
+
+**8 - Posso fare più versamenti per la stessa ASN?**
+
+Dipende dalla configurazione del sistema. In molti casi è possibile effettuare **versamenti parziali**, ma devono essere gestiti con attenzione per evitare doppi carichi.
+
+**9 - Il versamento genera documenti ufficiali?**
+
+Sì. Al termine del versamento, il sistema genera un movimento interno e può **associare o creare un DDT**, aggiornando lo stato dei materiali in magazzino.
+
+ 
+
+**10 - Vuoi che impagini questa guida in un formato PDF o Word per uso interno?**
+
+Posso preparare un manuale o una mini-guida formativa pronta per la distribuzione. Fammi sapere il formato desiderato!
