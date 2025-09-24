@@ -3,15 +3,77 @@ title: Creazione ASN da OdP
 description: Creazione ASN da OdP
 ---
 
-### Guide for Creazione ASN da OdP
+**1 - Creazione ASN da OdP- Guida all’Uso**
 
-*Add the description here*
+Nel contesto dei sistemi informatici per la produzione moda, **"Creazione ASN da OdP"** (Advanced Shipping Notice da Ordine di Produzione) si riferisce al processo digitale tramite il quale un fornitore o terzista comunica anticipatamente al sistema del committente (brand o azienda moda) le informazioni relative a una spedizione di merci derivanti da un ordine di produzione.
 
-___
+L’ASN (Avviso di Spedizione Avanzato) contiene dati cruciali per la ricezione delle merci in magazzino, come ad esempio:
 
-\--- name: Creazione ASN da OdP --- ### Creazione ASN da OdP \*Add a description here\* 1. \*\*Aspetta\*\* per la pagina a `https://iat-4sne.sys-web.it/fornitore-order/asn-v2` per caricare. 2. Successivamente, \*\*Ridimensiona\*\* la vista a 1920 × 1009 pixel. 3. Quindi, \*\*Fare clic\*\* sull'elemento contenente il testo \*\*Ordine di Produzioni\*\* . 4. Per continuare, \*\*digitare\*\* `on` nell'input con valore". 5. \*\*Fare clic\*\* sull'elemento #Select2-A01P-Container. 6. \*\*Tipo\*\* `00340` nell'input con valore \*\*00340\*\* . 7. Successivamente, \*\*Fare clic\*\* sull'elemento contenente il testo "tramite E \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*, 30036 Sant \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* (ve) IT ". 8. Per continuare, \*\*Fare clic\*\* sul pulsante etichettato \*\*Filtra\*\* . 9. \*\*Fare clic\*\* sull'elemento #Select2-L1t7-Container. 10. \*\*Fare clic\*\* sull'elemento contenente il testo \*\*c/v \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* . 11. Successivamente, \*\*Fare clic\*\* sull'elemento #Select2-Sr5W-Container. 12. Successivamente, \*\*Fare clic\*\* sull'elemento contenente il testo \*\*A0002 - C/V \*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* . 13. Per continuare, \*\*Fare clic\*\* sull'elemento con lo stile di attributo è uguale a \*\*allineamento verticale: medio;\*\* . 14. \*\*Fare clic\*\* sul pulsante etichettato \*\*Attiungi\*\* . 15. Successivamente, \*\*Fare clic\*\* sul pulsante etichettato \*\*Seleziona Tuttu\*\* . 16. Infine, \*\*Fare clic\*\* sul pulsante etichettato \*\*Avanti\*\* . 17. Infine, \*\*fai clic\*\* sul pulsante etichettato \*\*Conferma\*\* .
+* numero OdP (Ordine di Produzione)
+* codice articolo
+* quantità spedite
+* data prevista di consegna
+* informazioni logistiche (es. colli, etichette SSCC)
 
-FAQ
----
+Questo processo, quando integrato in piattaforme come **4S Next Edition**, consente una tracciabilità immediata, una riduzione dei tempi di registrazione merci in entrata e un allineamento in tempo reale tra fornitori e clienti.
 
-...
+ 
+
+ **Cosa si intende con "Creazione ASN da OdP"**
+
+In termini pratici, un OdP (Ordine di Produzione) viene assegnato a un fornitore. Quando quest’ultimo ha terminato la produzione ed è pronto per spedire la merce, accede al portale gestionale (es. 4SNE) e genera un ASN che anticipa digitalmente il contenuto della spedizione.
+
+**** 
+
+**Esempi pratici**
+
+* **Caso 1**: Un produttore di abbigliamento a Prato riceve un OdP per 500 pantaloni. Dopo la produzione, accede al sistema 4SNE e crea un ASN in cui dichiara: "500 pantaloni modello XY, spedizione prevista il 26/09/2025". Il magazzino centrale riceve l’ASN e prepara lo scarico automatizzato.
+* **Caso 2**: Un fornitore esterno in Turchia ha terminato un lotto di 300 camicie. Prima della spedizione, tramite il portale ASN, comunica al brand italiano (cliente) l’avviso di spedizione. Il cliente, tramite ASN, può preparare il magazzino, emettere pre-bolle ed evitare errori in fase di ricevimento.
+
+ 
+
+**2 – Guida Step by Step per 4S Next Season**
+
+**Obiettivo:** Creare un Avviso di Spedizione (ASN) partendo da un Ordine di Produzione (OdP), attraverso il portale 4S Next Edition.
+
+1. Attendi il caricamento completo della pagina.
+2. Clicca su **“Ordini di Produzione”**.
+3. Nel campo di ricerca, inizia a digitare il codice OdP (es: 00340) e seleziona quello corretto.
+4. Seleziona il fornitore corretto dalla lista (es: **Tramite E..., Sant..., VE**).
+5. Clicca su **Filtra** per visualizzare i risultati.
+6. Seleziona il conto lavoro (c/v) corretto tra le opzioni proposte.
+7. Seleziona il deposito o punto di carico (es: **A0002 – C/V...**).
+8. Una volta caricati i dettagli, clicca sul simbolo di selezione con allineamento verticale medio (solitamente una riga selezionabile).
+9. Clicca su **“Aggiungi”**.
+10. Poi su **“Seleziona Tutto”** per includere tutte le righe disponibili.
+11. Clicca su **“Avanti”**.
+12. Infine, clicca su **“Conferma”** per completare la creazione dell’ASN.
+
+**** 
+
+**3-FAQ**
+
+**1 - Cos’è un ASN?**
+
+Un ASN (Advanced Shipping Notice) è una comunicazione digitale che anticipa i dati di una spedizione verso un cliente. Serve per ottimizzare il ricevimento delle merci.
+
+**2 - A cosa serve creare un ASN da un OdP?**
+
+Permette di avvisare il committente dell’imminente spedizione dei prodotti ordinati, garantendo che la ricezione fisica della merce sia già preparata nel sistema gestionale.
+
+**3 - Posso creare un ASN anche se non ho ancora spedito la merce?**
+
+Sì, l’ASN si crea **prima della spedizione**. È proprio un avviso anticipato.
+
+**4 - Cosa succede se sbaglio a inserire i dati nell’ASN?**
+
+Dovresti annullare l’ASN se possibile (in base alle funzionalità del portale), oppure contattare l’ufficio logistico del committente per segnalare l’errore.
+
+**5 - Posso modificare un ASN dopo averlo confermato?**
+
+Dipende dalle autorizzazioni del sistema 4SNE. In genere, dopo la conferma l’ASN non è modificabile, a meno di un annullamento e creazione ex-novo.
+
+**6 - Che differenza c’è tra ASN e DDT?**
+
+* L’ASN è un documento **digitale** di preavviso.
+* Il DDT (Documento di Trasporto) è **fisico** e accompagna la merce durante la spedizione.
