@@ -1,0 +1,82 @@
+---
+title: Fasi di Lavorazione - Eliminazione
+description: Fasi di Lavorazione - Eliminazione
+---
+
+**1- Fasi di Lavorazione – Eliminazione**
+
+Nel contesto dei sistemi gestionali per la produzione moda, le **"Fasi di Lavorazione"** rappresentano le attività operative pianificate all'interno di un **Ordine di Produzione (OdP)**. Queste fasi, che possono includere operazioni come **taglio, cucitura, lavaggio, stiro, controllo qualità, confezionamento**, ecc., vengono gestite in piattaforme come **4S Next Edition** per consentire:
+
+* la tracciabilità completa del ciclo produttivo;
+* la pianificazione delle risorse produttive;
+* la consuntivazione di tempi e costi.
+
+L’**eliminazione** di una fase di lavorazione è un’operazione **gestionale e tecnica** che si rende necessaria quando:
+
+* una fase è stata inserita per errore;
+* il ciclo produttivo è stato modificato (es. eliminazione di un'attività);
+* la lavorazione viene accorpata ad altre attività.
+
+Dal punto di vista IT, l'eliminazione deve avvenire **senza compromettere i dati storici, i riferimenti incrociati agli OdP, né gli stati avanzamento di produzione.**
+
+ 
+
+**Che cosa si intende per “Eliminazione Fasi di Lavorazione”**
+
+Con questa operazione si **rimuove una fase (o più fasi) dal ciclo di produzione** associato a un articolo, un OdP o a un profilo standard. È una modifica strutturale che ha impatti sulla pianificazione, i costi e i dati operativi.
+
+**** 
+
+**Esempi pratici**
+
+* **Caso 1**: Un capo previsto con fase “lavaggio industriale” viene modificato in corso d’opera e il cliente decide di **saltare il lavaggio**. L’operatore elimina la fase dal ciclo, evitando la generazione di attività superflue o inconsistenze nella reportistica.
+* **Caso 2**: Un tecnico inserisce per errore una fase duplicata (“cucitura finale”) in un ciclo. Grazie all’eliminazione manuale, è possibile correggere prima che l'OdP venga lanciato in produzione.
+
+ 
+
+**2-Guida step-by-step (4S Next Edition**
+
+1. **Attendi il caricamento della pagina**
+2. **Ricerca il ciclo o articolo da modificare**
+   Usa il campo di ricerca per trovare il ciclo di lavorazione (es. codice articolo o nome del processo).
+3. **Seleziona il ciclo** che contiene la fase da eliminare
+4. **Visualizza l'elenco delle fasi**
+5. **Individua la fase da eliminare**
+   Scorri fino alla riga corrispondente (es. “Stiro”, “Controllo qualità”, “Cucitura”, ecc.)
+6. **Clicca sull’icona di cancellazione (🗑️)** accanto alla fase
+7. **Conferma l’eliminazione** quando richiesto (popup o dialog box)
+8. **Salva le modifiche**
+   Clicca su **“Salva”** per applicare la rimozione
+
+ 
+
+**3-FAQ**
+
+**1 - Posso eliminare una fase da un ciclo di lavorazione già utilizzato?**
+
+Sì, ma **solo se non è in stato avanzato** (cioè se non sono già state eseguite o consuntivate lavorazioni relative a quella fase). In caso contrario, la fase può essere **solo disattivata** o modificata tramite varianti.
+
+**2 - L’eliminazione della fase cancella i dati storici?**
+
+No. I dati storici (su OdP già emessi o completati) **rimangono invariati**. L’eliminazione agisce solo su **nuove generazioni** del ciclo.
+
+**3 - Posso ripristinare una fase eliminata per errore?**
+
+No, non esiste una funzione “annulla” automatica. Tuttavia, puoi **ricreare la fase manualmente** inserendola di nuovo nella posizione desiderata.
+
+**4 - Chi può eliminare una fase di lavorazione?**
+
+Solo utenti con **permessi di gestione ciclo** o **utenti amministratori** del sistema. Gli operatori standard non possono modificare i cicli.
+
+**5 - L’eliminazione influisce sui costi del prodotto?**
+
+Sì. Ogni fase è legata a un tempo e un costo standard. L’eliminazione **aggiorna automaticamente** la valorizzazione del ciclo.
+
+**6 - Quando è preferibile eliminare una fase e quando invece disattivarla?**
+
+* **Elimina**: se la fase non serve più e non è mai stata usata.
+* **Disattiva (o escludi)**: se è stata già utilizzata o se potresti volerla riattivare in futuro.
+
+**7 - Hai bisogno anche della guida alla creazione delle fasi (come da titolo originario)?**
+
+Fammi sapere e posso generarti anche il flusso di **creazione** delle fasi di lavorazione, oppure fornirti entrambe (creazione + eliminazione) in **PDF** o **Word**, pronte per la distribuzione interna o per la formazione degli utenti.
