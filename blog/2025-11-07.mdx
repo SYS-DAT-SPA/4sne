@@ -1,0 +1,60 @@
+---
+slug: Release note 2025-11-07
+title: Release note 2541
+authors: [4sne]
+tags: [4sne]
+---
+
+# Release note 2541
+
+### 4Seasons Next
+
+La seguente versione 2541 del 07/11/2025 riporta i seguenti aggiornamenti
+
+:::warning
+
+Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.
+
+Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.
+
+:::
+
+
+<!-- truncate -->
+
+### Aggiornamenti:        
+
+#  25
+
+La nuova versione del software introduce miglioramenti significativi in diverse aree, tra cui la gestione avanzata delle commesse con la generazione di documenti per i fornitori, una distribuzione più efficiente dei materiali tramite buoni di prelievo e la correzione di bug relativi a versamenti e ordini. Sono state ottimizzate le stampe fiscali di magazzino, la valorizzazione delle materie prime, la gestione dei cambi nei documenti fornitori e l’inserimento di informazioni aggiuntive nella ricerca prodotti. Inoltre, la release risolve anomalie nei processi di lancio, filtri per barcode e calcoli di produzione, garantendo un accesso più rapido e affidabile alle informazioni per migliorare l’efficienza operativa.
+
+
+##### Release notes
+
+1. Avanzamento commessa: possibilità di generare un documento a fornitore a fronte di ogni avanzamento di commessa. 
+1. Buoni di Prelievo: prevista una miglior distribuzione dei materiali sulle commesse. 
+1. Rettifica versamento materiali ordini fornitore: implementata la possibilità di aggiungere i default. 
+1. Stampe fiscali di magazzino: previste in una nuova reportistica ad hoc. 
+1. Risultati Fabbisogni: definite le larghezze delle colonne in modo da unificare la visualizzazione delle pagine. 
+1. Valorizzazione Materie Prime: implementata la correzione del prezzo. 
+1. Documenti Fornitori: implementata la gestione del cambio. 
+1. Versamento materiali a magazzino ordini fornitore: corretto bug della data movimento non popolata. 
+1. Anticipi su vendite (1/2): implementati gli anticipi su clienti per stagione, gestione manuale dentro il cliente, fattura di anticipo e scalabilità sulla fattura accompagnatoria. 
+1. Ordini Clienti: gestito lo sconto pagamento sull'ordine. 
+1. Ordine Fornitore MP: valorizzato in automatico il cambio in fase di versamento a magazzino. 
+1. Inserimento Prodotti: aggiunta l'info della cartella colori nel box di ricerca prodotto. 
+1. Richieste Fabbisogni: migliorata la visualizzazione dello stato della richiesta una volta lanciato il calcola. 
+1. Ordini Fornitori CF: valorizzato in automatico il cambio in fase di versamento a magazzino. 
+1. Rettifica materiale ordini fornitori: gestita la quantità amministrativa. 
+1. Ordine Cliente: all'aggiunta di una spesa viene recuperato il conto e l'iva inserito nella spesa stessa. 
+1. Buoni di Prelievo: i documenti creati dai buoni di prelievo non possono essere eliminati ma si deve gestire il tutto dalla procedura di scarico/rientro materiali per una gestione puntuale di impegni/movimenti. 
+1. Autorizzazione Reso: corretto il bug che non ricalcolava in visualizzazione il totale della riga una volta modificata. 
+1. Rettifica Ordine CF: ottimizzata la procedura ed i tempi di risposta. 
+1. Conferma Ordine: corretta la visualizzazione dei risultati una volta che si rientrava la seconda volta. 
+1. La nuova release risolve il problema del mancato reperimento materiali nella scheda tecnica, garantendo agli utenti un accesso più rapido e affidabile alle informazioni necessarie per ottimizzare i processi di lavoro.
+1. La nuova release risolve l'anomalia nelle richieste di lancio, garantendo un processo più fluido e affidabile per l'utente.
+1. La nuova release corregge i filtri nell’estrazione del barcode per stagione di vendita, garantendo agli utenti risultati più precisi e affidabili.
+1. STD - Corretto errore nel calcolo del lancio in produzione.
+1. COL - Risolto il problema nel recupero dell'unità di misura alternativa nel ciclo commessa.
+
