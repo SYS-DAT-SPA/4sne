@@ -1,0 +1,216 @@
+---
+title: Documenti Fornitore - creazione
+description: Documenti Fornitore - creazione
+---
+
+### Guide for Documenti Fornitore - creazione
+
+ **Documenti Fornitore – Creazione – Guida all’Uso**
+
+Nel contesto dei sistemi ERP dedicati alla moda, la funzione **Documenti Fornitore – Creazione** consente di registrare, processare e contabilizzare documenti provenienti dai fornitori, come:
+
+* DDT di lavorazione (conto lavoro / decentrato)
+* DDT di rientro materiali
+* Fatture accompagnatorie
+* Movimenti di magazzino provenienti da terzisti
+* Movimentazioni per lavorazioni esterne (taglio, cucito, finissaggio, ecc.)
+
+ 
+
+Questi documenti rappresentano un nodo critico dell’integrazione tra:
+
+* gestione fornitori,
+* logistica inbound,
+* controllo avanzamento di produzione,
+* gestione terzisti e magazzini esterni,
+* contabilizzazione e tracciamento.
+
+ 
+
+Per i professionisti ICT del fashion manufacturing, la creazione di un documento fornitore implica:
+
+* selezione del tipo documento (es. DDT conto lavoro),
+* associazione al fornitore,
+* definizione dei flussi di magazzino (entrata/uscita materiali),
+* associazione a stagione, articolo, magazzino,
+* eventuale generazione di movimenti automatici,
+* consolidamento e stampa dei documenti ufficiali.
+
+**** 
+
+**Esempi Pratici**
+
+**Esempio 1 — DDT conto lavoro in uscita**
+
+Un’azienda invia tessuti al terzista.
+La funzione permette di registrare un documento **DDTLAB**, selezionare il magazzino di uscita, gli articoli e stampare il documento da allegare allo spedito.
+
+ 
+
+**Esempio 2 — Rientro lavorazioni**
+
+Il terzista restituisce i capi tagliati.
+L’operatore crea un documento fornitore di rientro, seleziona:
+
+* ingresso materiali nel magazzino dedicato,
+* articoli lavorati,
+* quantità,
+* eventuale collegamento all’ordine di produzione.
+
+ 
+
+**Esempio 3 — Movimenti massivi automatizzati**
+
+Se l’azienda gestisce grandi volumi (es. spedizioni a decentrati), l’opzione *Movimenti massicci → Effettua movimenti quando rendi documento definitivo* consente di generare automaticamente entrate/uscite materiale senza intervento manuale.
+
+ 
+
+**2-Guida step-by-step per 4S Next Edition**
+
+ 
+
+**Creazione Documento Fornitore in 4S Next Edition**
+
+Clicca sul pulsante **Nuovo** per creare un nuovo documento fornitore.
+
+**** 
+
+1.     Nel campo **Tipo Documento** seleziona  ad esempio **DDTLAB**.
+
+2.     Nel campo **Fornitore** seleziona ad esempio **00150**.
+
+3.     Attendi qualche secondo affinché il sistema aggiorni i dati.
+
+ 
+
+ **Impostazioni movimenti**
+
+4.     Vai alla sezione **Movimenti massicci**.
+
+5.     Attiva l’opzione **Effettua movimenti quando rendi documento definitivo**.
+
+6.     Seleziona dal menu:
+
+1.     **Es: 0001** (magazzino di uscita)
+
+2.     **ES: 0002** (magazzino di entrata)
+
+7.     Attendi il caricamento.
+
+ 
+
+ **Aggiunta materiali al documento**
+
+8.     Clicca su **Aggiungi materiale magazzino**.
+
+9.     Nel campo **Magazzino** seleziona **1**.
+
+10.  Seleziona il magazzino desiderato dall’elenco (MAG\*\*\*\*\*\*\*\*\*\*\*\*\*\*).
+
+ **Selezione articolo**
+
+11.  Clicca su **Stagione**.
+
+12.  Clicca su **Articolo**.
+
+13.  Apri il selettore articoli (#select2-vxzk-container).
+
+14.  Digita **a0035** e seleziona l’articolo corrispondente.
+
+15.  Clicca sulla voce **LUCCH**\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* per confermare.
+
+16.  Premi il pulsante **FILTRA**.
+
+17.  Attendi il caricamento dei risultati.
+
+18.  Seleziona la riga del materiale (attributo *registratore-registrato=true*).
+
+**Salvataggio documento**
+
+19.  Clicca su **SALVA**.
+
+20.  Attendi alcuni secondi che il sistema completi l’elaborazione.
+
+**Stampa documento**
+
+21.  Clicca su **Stampa**.
+
+22.  Attendi il caricamento.
+
+23.  Se richiesto, clicca sull’elemento con *role=cambia*.
+
+24.  Premi **STAMPA**.
+
+25.  Conferma nuovamente con **STAMPA** se richiesto.
+
+**Inserimento numero documento e conferma finale**
+
+26.  Clicca sul campo **Numero**.
+
+27.  Inserisci **305**.
+
+28.  Premi **SALVA**.
+
+29.  Premi **STAMPA**.
+
+**Conferma righe selezionate**
+
+30.  Seleziona le righe desiderate (attributi *selectedRow\_*\*\*).
+
+31.  Digita “on” quando richiesto.
+
+32.  Conferma cliccando sulle righe e sugli elementi di selezione.
+
+33.  Premi ancora **STAMPA**.
+
+**Finalizzazione**
+
+34.  Scorri la pagina verso l’alto o il basso se richiesto.
+
+35.  Premi **SALVA** per salvare definitivamente.
+
+36.  Attendi il completamento.
+
+ 
+
+**3-FAQ**
+
+**1. Qual è la differenza tra un DDTLAB e un documento standard?**
+
+Il DDTLAB è un documento specifico per la gestione dei materiali verso/da fornitori di lavorazione (conto lavoro). Include logiche di magazzino e movimentazioni automatizzate tipiche del settore moda.
+
+**2. Perché è necessario selezionare due magazzini (entrata e uscita)?**
+
+Perché il flusso del conto lavoro prevede:
+
+* uscita materiali verso il terzista,
+* rientro materiali finiti/lavorati.
+  Il documento può gestire entrambi i movimenti.
+
+**3. Perché ci sono attese temporizzate (1000–20000 ms)?**
+
+Servono per garantire il completamento dei caricamenti asincroni, comuni in sistemi web complessi che gestiscono dati di magazzino e articoli.
+
+**4. Posso aggiungere più articoli nello stesso documento?**
+
+Sì. Basta ripetere la selezione per ogni articolo tramite il filtro.
+
+**5. Il numero documento (es. 305) va inserito manualmente?**
+
+Dipende dalla configurazione. In alcune installazioni viene generato automaticamente, in altre è gestito dall’utente.
+
+**6. Cosa succede se non attivo “movimenti massicci”?**
+
+Il documento non genera automaticamente il movimento di magazzino. I movimenti dovranno essere registrati manualmente.
+
+**7. È possibile stampare il documento più volte?**
+
+Sì, la piattaforma consente ristampe ed esportazioni, in base ai permessi.
+
+**8. Perché devo selezionare le righe (selectedRow\_\*) prima della stampa definitiva?\*\***
+
+Perché solo le righe selezionate vengono incluse nella stampa ufficiale e nei movimenti di magazzino.
+
+**9. Il documento può essere modificato dopo il salvataggio?**
+
+Sì, finché non viene reso definitivo o contabilizzato. Dopo tale stato, le modifiche potrebbero essere limitate.

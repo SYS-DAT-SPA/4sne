@@ -1,0 +1,195 @@
+---
+title: Gestione Magazzino CF - Movimenti da Giacenza
+description: Gestione Magazzino CF - Movimenti da Giacenza
+---
+
+### Guide for Gestione Magazzino CF - Movimenti da Giacenza
+
+*G***estione Magazzino MP – Movimenti da Giacenza**
+
+**** 
+
+**1-Gestione Magazzino CF – Movimenti da Giacenza**
+
+Nel contesto dei sistemi informativi per il settore **moda e produzione**, la funzionalità *“Gestione Magazzino CF – Movimenti da Giacenza”* consente di registrare e monitorare i movimenti delle merci direttamente dalla giacenza fisica o logica del magazzino.
+
+ 
+
+Questa operazione è fondamentale per:
+
+* tracciare correttamente i materiali in entrata e in uscita (tessuti, accessori, semilavorati, capi finiti);
+* aggiornare in tempo reale le disponibilità di magazzino;
+* generare documenti di movimentazione (carichi, scarichi, trasferimenti interni);
+* mantenere allineati i dati tra produzione, logistica e acquisti;
+* ridurre gli errori di inventario o movimentazione manuale.
+
+ 
+
+In parole semplici: **è la funzione che permette di dire al sistema “sto spostando materiale dal magazzino, registralo correttamente”**.
+
+ 
+
+**Esempi pratici**
+
+**** 
+
+**Cosa significa “Movimenti da Giacenza”**
+
+Si riferisce a tutte le operazioni che modificano le quantità disponibili in magazzino, effettuate partendo dalla giacenza attuale.
+
+
+È quindi un flusso operativo per:
+
+* caricare prodotti provenienti da fornitori;
+* scaricare prodotti verso produzione o spedizione;
+* trasferire merce da un magazzino a un altro;
+* correggere la giacenza in caso di inventario o differenze.
+
+**** 
+
+**Esempio 1 – Carico da fornitore (tessuti o accessori)**
+
+Un fornitore consegna 200 metri di tessuto.
+L’operatore usa *Movimenti da Giacenza* per:
+
+1. selezionare il fornitore;
+2. indicare il magazzino di carico;
+3. registrare il documento di consegna;
+4. caricare i 200 metri in giacenza.
+
+ 
+
+ **Esempio 2 – Prelievo per la produzione**
+
+Il reparto taglio richiede 50 metri di tessuto.
+L’operatore scarica dalla giacenza e attribuisce la movimentazione alla commessa di produzione.
+
+**** 
+
+**Esempio 3 – Trasferimento interno**
+
+Serve spostare 100 bottoni dal Magazzino A al Magazzino B.
+L’operatore registra un movimento interno di trasferimento senza modificare la giacenza totale, ma solo la distribuzione tra i magazzini.
+
+ 
+
+**Esempio 4 – Rettifica inventariale**
+
+Durante un controllo si scopre una differenza di 5 metri.
+Si registra una rettifica di magazzino per riallineare il sistema alla realtà.
+
+ 
+
+**2- Guida step-by-step per 4S Next Edition**
+
+ 
+
+**Apri la pagina dedicata**
+
+Accedi alla pagina:
+Gestione Magazzino CF → Movimenti da Giacenza di **4S Next**
+
+
+
+**Imposta i dati principali del movimento**
+
+1. **Seleziona il tipo di Business Partner**
+   * Dal menu “Fornitore” (campo **BPType**)
+2. **Scegli il fornitore**
+   * Seleziona **0001** (campo **BusinessPartner**)
+3. **Indica la motivazione del movimento**
+   * Seleziona **C01** (causale di carico, campo **ReasonForLoading**)
+4. **Scegli il magazzino di carico**
+   * Seleziona **E** (campo **LoadingWarehouse**)
+5. **Definisci il tipo di documento**
+   * Seleziona **DDTFOR** (campo **DocumentType**)
+
+ 
+
+**Inserisci i dati del documento**
+
+1. **Numero documento**
+   * Clicca sul campo **DocumentNumber**
+   * Digita: **1**
+2. **Data documento**
+   * Clicca su **DocumentDate**
+   * Inserisci: **16/04/2024**
+
+ 
+
+**Aggiungi i prodotti da caricare**
+
+1. Clicca su **Aggiungi Lista Prodotti**
+2. Nel campo di ricerca articoli, clicca e digita **E**
+3. Seleziona l'articolo **ESI**\*\*\*\*\*\*\*\*\*\*\*\*\* dalla lista
+4. Clicca su **FILTRA**
+5. Attendi il caricamento della lista prodotti.
+6. Seleziona il prodotto sulla riga con l’indicatore "registratore-dati = true"
+7. Nel campo quantità, digita **1**
+
+ 
+
+**Conferma il movimento**
+
+1. Clicca **CONFERMA**
+2. Clicca nuovamente **CONFERMA** per validare il movimento.
+
+Il carico di magazzino è ora registrato.
+
+ 
+
+**3- FAQ sull’argomento “Movimenti da Giacenza”**
+
+**1.A cosa serve la funzione Movimenti da Giacenza?**
+
+Serve a registrare entrate, uscite o trasferimenti di materiali partendo dalla giacenza del magazzino, aggiornando in tempo reale lo stock.
+
+**2. Quali tipi di movimentazioni posso registrare?**
+
+* Carichi da fornitore
+* Scarichi verso reparto o produzione
+* Trasferimenti tra magazzini
+* Rettifiche inventariali
+* Movimenti interni per ricollocazione merci
+
+**3. Posso movimentare più articoli contemporaneamente?**
+
+Sì, è possibile aggiungere una lista di prodotti e assegnare quantità diverse a ciascun articolo.
+
+**4. Cosa succede se inserisco una quantità errata?**
+
+Puoi:
+
+* modificare la riga prima della conferma, oppure
+* dopo la conferma effettuare una rettifica con un nuovo movimento.
+
+**5. Perché devo selezionare tipo documento e causale?**
+
+Perché determinano:
+
+* la natura del movimento (carico, scarico, trasferimento…),
+* la corretta contabilizzazione in magazzino,
+* eventuali vincoli o regole di processo.
+
+**6. Posso usare questa funzione anche per la produzione?**
+
+Sì: quando il reparto richiede materiale, puoi registrare uno **scarico per produzione** tramite le causali appropriate.
+
+**7. Il sistema aggiorna subito la giacenza?**
+
+Sì, la giacenza viene aggiornata immediatamente al momento della conferma.
+
+**8. La funzione permette l’importazione massiva di dati?**
+
+Dipende dalla configurazione aziendale. In molte installazioni 4SNE è disponibile l’import via file o API
+
+ 
+
+**9. Posso annullare un movimento confermato?**
+
+In genere no.
+È necessario registrare un movimento inverso (rettifica) mantenendo la tracciabilità.
+
+**10. Perché la ricerca articoli richiede un filtro?**
+
+Per ottimizzare prestazioni e velocità: riducendo la quantità di articoli mostrati, il sistema risponde più rapidamente.

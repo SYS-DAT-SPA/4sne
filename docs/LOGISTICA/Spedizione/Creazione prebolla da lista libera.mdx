@@ -5,13 +5,177 @@ description: Creazione prebolla da lista libera
 
 ### Guide for Creazione prebolla da lista libera
 
-*Add the description here*
 
-___
 
-\--- name: Creazione prebolla da lista libera --- ### Creazione prebolla da lista libera \*Add a description here\* 1. Successivamente, \*\*Attendere\*\* il caricamento della pagina su `https://iat-4sne.sys-web.it/accounting/customer-document-header`. 2. Successivamente, \*\*Ridimensiona\*\* la finestra a 1920×1009 pixel. 3. Subito dopo, \*\*Clicca\*\* sull'elemento con attributo classe uguale a \*\*fa fa-plus\*\* . 4. \*\*Fare clic\*\* sull'elemento con l'attributo test id uguale a \*\*gCdTipdoc\*\* contenente l'attributo uguale a \*\*gCdTipdoc\*\* . 5. Quindi, \*\*Digita\*\* `DDTST` nell'input con il valore \*\*DDTST\*\* . 6. Fatto ciò, \*\*Clicca\*\* sull'elemento contenente il testo \*\*DDT Vendita Clienti Standard\*\* . 7. Successivamente, \*\*fai clic\*\* sull'elemento con l'attributo test id uguale a \*\*gCdAna\*\* contenente l'attributo uguale a \*\*gCdAna\*\* . 8. Successivamente, \*\*Clicca\*\* sull'elemento contenente il testo "00318 - ERE\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* VIA G\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*, 40041 GAGG\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* (BO) IT". 9. \*\*Fare clic\*\* sull'elemento con l'attributo test id uguale a \*\*gCdStagion\*\* contenente l'attributo uguale a \*\*gCdStagion\*\* . 10. Subito dopo, \*\*Clicca\*\* sull'elemento contenente il testo \*\*SS25 - PRIMAVERA ESTATE 2025\*\* . 11. Successivamente, \*\*Clicca\*\* sul pulsante denominato \*\*SALVA\*\* . 12. Successivamente, \*\*Clicca\*\* sull'elemento contenente il testo \*\*Movimenti massicci\*\* . 13. Una volta fatto ciò, \*\*fai clic\*\* sull'elemento con attributo data-test uguale a \*\*MakeMovements\*\* . 14. Quindi, \*\*Clicca\*\* sull'elemento contenente il testo \*\*Movimenti massicci\*\* . 15. Successivamente, \*\*fai clic\*\* sul pulsante etichettato \*\*SALVA\*\* . 16. \*\*Fare clic\*\* sull'elemento con attributo classe uguale a \*\*fa-2x ng-tns-c855695751-34 far fa-plus-square\*\* . 17. \*\*Fare clic\*\* sull'elemento con attributo ruolo uguale a \*\*cambia\*\* . 18. Una volta fatto, \*\*fai clic\*\* sull'elemento #select2-fvn5-container. 19. Immediatamente dopo, \*\*Digita\*\* \*\*186\*\* nell'input con il valore \*\*186\*\* . 20. Quindi, \*\*Clicca\*\* sull'elemento contenente il testo \*\*186 - reb\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\* . 21. Subito dopo, \*\*Clicca\*\* sul pulsante con l'etichetta \*\*Filtra ed aggiungi tutti\*\* . 22. Successivamente, \*\*Fare clic\*\* sul pulsante etichettato \*\*FILTRA\*\* . 23. Fatto ciò, \*\*Clicca\*\* sull'elemento contenente il testo \*\*Stampa\*\* . 24. Successivamente, \*\*Clicca\*\* sul pulsante denominato \*\*SALVA\*\* . 25. Successivamente, \*\*fai clic\*\* sul pulsante etichettato \*\*NO\*\* . 26. \*\*Cliccare\*\* sull'elemento con attributo role uguale a \*\*cambia\*\* . 27. Subito dopo, \*\*Clicca\*\* sul pulsante con l'etichetta \*\*STAMPA\*\* .
+**Creazione Prebolla da Lista Libera**
 
-FAQ
----
+**** 
 
-...
+**1-  Creazione Prebolla da Lista Libera**
+
+Nel contesto dei sistemi gestionali per il settore moda, la funzione *“Creazione Prebolla da Lista Libera”* permette di generare un **documento preliminare di spedizione (prebolla)** senza dipendere da un ordine cliente preesistente.
+
+ 
+
+Questa funzionalità è utilizzata quando:
+
+* si devono spedire articoli non legati ad un ordine (es. campionari, sostituzioni, resi commerciali);
+* si necessita di creare una prebolla “aperta”, selezionando manualmente articoli e quantità;
+* si vogliono gestire **spedizioni massive** scegliendo prodotti da liste prefiltrate;
+* si deve stampare una prebolla in modo rapido, per poi procedere alla spedizione definitiva.
+
+ 
+
+Per i professionisti IT:
+si tratta di un workflow che attiva la creazione di un **document header** con attributi dinamici (tipo documento, cliente, stagione, righe massicce) e la generazione di movimenti di magazzino pre-confermati.
+
+ 
+
+**Esempi pratici**
+
+**Cos’è la “Prebolla da Lista Libera”?**
+
+È un documento di spedizione provvisorio creato **senza un ordine**, nel quale l’utente seleziona liberamente gli articoli da una lista filtrabile.
+È utile nei casi in cui il flusso logistico non parte da un ordine cliente (customer order), ma da una necessità operativa.
+
+ 
+
+ **Esempio 1 — Spedizione Campionario**
+
+Un agente richiede dei capi campione.
+Poiché non esiste un ordine cliente formale, l’operatore crea una **prebolla da lista libera**, selezionando articoli della stagione interessata.
+
+ 
+
+**Esempio 2 — Sostituzione articoli difettosi**
+
+Un cliente segnala difetti su articoli precedenti.
+L’azienda spedisce i sostituti tramite prebolla libera, senza generare un nuovo ordine.
+
+**** 
+
+ **Esempio 3 — Spedizione interna tra sedi**
+
+Per spostare capi tra showroom o negozi:
+la prebolla da lista libera consente di generare rapidamente il documento e la stampa necessaria.
+
+**Esempio 4 — Invio materiale promozionale**
+
+L’ufficio marketing richiede materiali o gadget:
+l’operatore crea una prebolla con articoli selezionati da una lista.
+
+ 
+
+**2-   Guida step-by-step migliorata (4S Next Edition)**
+
+**Aprire il modulo** di 4S Next pagina:
+
+
+
+Attendere il completo caricamento.
+
+ 
+
+ **Creare una nuova prebolla**
+
+1. Cliccare sull’icona **+** (classe: *fa fa-plus*) per creare un nuovo documento.
+2. Nel campo **Tipo Documento**  digitare **DDTST**.
+3. Selezionare dalla lista:
+   **DDT Vendita Clienti Standard**.
+
+ 
+
+**Selezionare il cliente**
+
+4.     Cliccare sul campo **Cliente**.
+
+1. Selezionare il cliente desiderato (es.:
+   *00318 – ... indirizzo ... BO*).
+
+ 
+
+**Impostare la stagione**
+
+6.     Cliccare sul campo **Stagione**.
+
+1. Selezionare:
+   **SS25 – PRIMAVERA ESTATE 2025**.
+2. Cliccare **SALVA**.
+
+ 
+
+**Movimenti massivi**
+
+9.     Cliccare su **Movimenti massicci**.
+
+1. Cliccare sul pulsante **MakeMovements** (data-test = MakeMovements).
+2. Cliccare nuovamente su **Movimenti massicci**.
+3. Cliccare **SALVA**.
+
+**** 
+
+**Aggiungere articoli alla prebolla**
+
+13.  Cliccare l’icona **fa-plus-square** per aggiungere nuovi articoli.
+
+1. Cliccare sul campo **cambia**.
+2. Aprire il menu (select2) cliccando su **#select2-fvn5-container**.
+3. Digitare **186**.
+4. Selezionare l’articolo:
+   **186 – ... descrizione completa ...**
+5. Cliccare **Filtra ed aggiungi tutti** per caricare gli articoli.
+6. Premere **FILTRA** per confermare.
+
+ 
+
+ **Stampa e salvataggio**
+
+1. Cliccare **Stampa**.
+2. Cliccare **SALVA**.
+3. Premere **NO** quando appare la richiesta successiva.
+4. Tornare sul campo **cambia**.
+5. Cliccare **STAMPA** per stampare la prebolla finale.
+6.  
+
+La prebolla è ora creata e pronta per essere utilizzata o trasformata in documento definitivo.
+
+ 
+
+**3-  FAQ – Creazione Prebolla da Lista Libera**
+
+**1. Quando si usa la prebolla da lista libera?**
+
+Quando non esiste un ordine cliente e si devono selezionare articoli liberamente.
+
+**2. Quali documenti posso generare tramite questa funzione?**
+
+Generalmente DDT standard, spedizioni campionarie, movimenti per showroom, sostituzioni.
+
+**3. Serve conoscere il codice articolo?**
+
+Non obbligatoriamente: puoi filtrare e scegliere articoli da liste pre-caricate.
+
+**4. Posso includere più articoli in un’unica prebolla?**
+
+Sì, la funzione “Filtra ed aggiungi tutti” permette di importare più articoli contemporaneamente.
+
+**5. La prebolla è un documento fiscale?**
+
+No.
+È un documento **preparatorio**. La bolla (DDT definitivo) viene generata successivamente.
+
+**6. Posso modificare la prebolla dopo averla salvata?**
+
+Dipende dalla configurazione aziendale. Di norma:
+
+4-    prima della stampa → sì
+
+5-    dopo la stampa → serve una nuova prebolla o una rettifica
+
+**7. La funzione gestisce anche stagioni e collezioni moda?**
+
+Sì, è possibile selezionare la stagione (SS, FW, Capsule, etc.) prima della generazione dei movimenti.
+
+**8. È possibile automatizzare la selezione articoli?**
+
+In molte installazioni sì, tramite filtri preimpostati (taglia, colore, stagione, linea, ecc.).
