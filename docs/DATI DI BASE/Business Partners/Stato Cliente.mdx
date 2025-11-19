@@ -5,13 +5,154 @@ description: Stato Cliente
 
 ### Guide for Stato Cliente
 
-*Add the description here*
+S**tato Cliente**
 
-___
+**** 
 
-\--- name: Stato Cliente --- ### Stato Cliente \*Add a description here\* 1. Subito dopo, \*\*Attendere\*\* il caricamento della pagina `https://iat-4sne.sys-web.it/general-data/business-partner-states`. 2. \*\*Ridimensiona\*\* la finestra a 1522×727 pixel. 3. Subito dopo, \*\*Clicca\*\* sull'elemento con attributo classe uguale a \*\*fa fa-plus\*\* . 4. Successivamente, \*\*fai clic\*\* sull'elemento con l'attributo test id uguale a \*\*CdStatocf\*\* . 5. Successivamente, \*\*Digita\*\* \*\*i\*\* nell'input con valore \*\*i\*\* . 6. \*\*Fare clic\*\* sull'elemento con l'attributo test id uguale a \*\*Descrizion\*\* . 7. \*\*Digita\*\* `intest` nell'input con il valore \*\*intest\*\* . 8. Successivamente, \*\*Clicca\*\* sull'elemento contenente il testo \*\*Stato contabilità\*\* . 9. Successivamente, \*\*fai clic\*\* sull'elemento con test id .selection contenente l'attributo uguale a \*\*gChkCont\*\* . 10. Successivamente, \*\*fai clic\*\* sull'elemento contenente il testo \*\*Normale\*\* . 11. Successivamente, \*\*fai clic\*\* sull'elemento con l'attributo test id uguale a \*\*gChkOrder\*\* contenente l'attributo uguale a \*\*gChkOrder\*\* . 12. Successivamente, \*\*fai clic\*\* sull'elemento contenente il testo \*\*Normale\*\* . 13. Successivamente, \*\*fai clic\*\* sull'elemento con l'attributo test id uguale a \*\*gChkMagDoc\*\* contenente l'attributo uguale a \*\*gChkMagDoc\*\* . 14. Subito dopo, \*\*Clicca\*\* sull'elemento contenente il testo \*\*Normale\*\* . 15. Quindi, \*\*Clicca\*\* sull'elemento #Messaggio. 16. \*\*Digita\*\* `intest` nell'elemento contenente il testo \*\*intest\*\* . 17. Successivamente, \*\*Scorri\*\* la pagina di (0, 900) pixel. 18. Infine, \*\*Fai clic\*\* sul pulsante etichettato \*\*SALVA\*\* .
+**1-Stato Cliente - Guida all'Uso**
 
-FAQ
----
+** 
 
-...
+Nel contesto ERP per il fashion (come 4S Next Edition), la sezione **Stato Cliente** rappresenta la configurazione dei **profili operativi** associabili ai clienti.
+
+
+Questi profili determinano il comportamento del cliente all’interno dei diversi processi aziendali:
+
+* **contabilità** (blocco amministrativo, condizioni di pagamento, limiti di credito);
+* **area ordini** (possibilità di inserire ordini, livello di controllo o blocco);
+* **magazzino e logistica** (blocco spedizioni, stato documentale);
+* **workflow di vendita** (gestione anomalie, controlli qualità cliente, richieste specifiche del mercato).
+
+ 
+
+Lo Stato Cliente funziona come un **set di regole** che definisce se un cliente è:
+
+* abilitato,
+* bloccato,
+* da verificare,
+* sospeso,
+* soggetto a controlli speciali,
+* oppure “normale”.
+
+ 
+
+Per gli ICT, questo modulo è fondamentale per:
+
+* gestire automatismi nei flussi B2B,
+* controllare l’inserimento ordini da agenti/app B2B,
+* prevenire problematiche contabili e logistiche,
+* definire politiche di gestione personalizzate.
+
+ 
+
+**Esempi Pratici**
+
+**Esempio 1 — Blocco contabile automatico**
+
+Un cliente supera il fido concesso:
+→ Stato contabilità passa a “Bloccato” → nessun ordine può essere confermato.
+
+**** 
+
+**Esempio 2 — Stato ordini “In verifica”**
+
+Per nuovi clienti appena acquisiti, si può definire uno stato che:
+→ permette l’inserimento ordini ma richiede approvazione amministrativa.
+
+ 
+
+**Esempio 3 — Cliente con anomalie documentali**
+
+Se un cliente non ha fornito documentazione (es. VIES, certificazioni), il suo stato può bloccare:
+→ spedizioni,
+→ listini particolari,
+→ accesso B2B.
+
+**** 
+
+**Esempio 4 — Stati dedicati a specifici canali o mercati**
+
+Un’azienda può creare stati come:
+
+* “Marketplace”,
+* “E-commerce B2C”,
+* “Boutique monomarca”,
+  → per influenzare logiche di pricing, documentazione, spedizioni.
+
+ 
+
+**3-Guida step-by-step migliorata per utenti non esperti**
+
+ 
+
+Apri la pagina di pagina di 4S Next  e **attendi il caricamento completo**.
+
+ **Creazione di un nuovo Stato Cliente**
+
+1.     Clicca sull’icona con classe **fa fa-plus** per creare un nuovo stato.
+
+1. Nel campo **Codice Stato Cliente** clicca e digita **i**
+   (è il codice identificativo dello stato).
+2. Nel campo **Descrizione** digita **intest**
+   (la descrizione leggibile per gli utenti).
+
+**Configurazione dei comportamenti del cliente**
+
+4.     Clicca sulla sezione **Stato contabilità**.
+
+1. Nel menu della contabilità seleziona **Normale**.
+2. Ora passa allo stato **Ordini**
+   e seleziona anche qui **Normale**.
+3. Passa allo stato **Documenti di Magazzino**
+   e seleziona **Normale**.
+
+**Inserimento di eventuali note**
+
+8.     Clicca sul campo **Messaggio**
+
+**Salvataggio**
+
+9.     Scorri la pagina verso il basso (circa 900 px).
+
+1. Clicca sul pulsante **SALVA** per confermare lo stato creato.
+
+ 
+
+**3-FAQ**
+
+**1. A cosa serve lo Stato Cliente?**
+
+Serve a definire le regole operative del cliente nei processi contabili, logistici e commerciali.
+
+**2. Posso impostare stati diversi per contabilità, ordini e magazzino?**
+
+Sì. Ogni area ha una propria sezione configurabile.
+
+**3. Cosa significa “Normale”?**
+
+Indica che non ci sono blocchi: il cliente può inserire ordini, ricevere spedizioni e non presenta problemi contabili.
+
+**4. Posso limitare l’inserimento ordini senza bloccare la contabilità?**
+
+Sì, configurando lo stato ordini come “In verifica”, “Bloccato”, o un valore personalizzato.
+
+**5. Il messaggio inserito nel campo “Messaggio” a cosa serve?**
+
+Serve come avviso operativo per gli utenti (es. amministrazione, vendite, logistica).
+
+**6. Lo Stato Cliente influisce sulla piattaforma B2B o sugli agenti?**
+
+Sì. Può impedire l’inserimento ordini da agenti esterni o dal portale.
+
+**7. Si possono creare stati personalizzati?**
+
+Sì, è una configurazione flessibile e può essere adattata alle esigenze aziendali.
+
+**8. Lo Stato Cliente può essere modificato in seguito?**
+
+Sì, purché non sia collegato a processi già consolidati o chiusi.
+Nella maggior parte delle installazioni può essere sempre aggiornato.
+
+ 
+
+##
