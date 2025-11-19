@@ -5,13 +5,125 @@ description: Tipi difetti - Crea
 
 ### Guide for Tipi difetti - Crea
 
-*Add the description here*
 
-___
 
-\--- name: Tipi difetti - Crea --- ### Tipi difetti - Crea \*Add a description here\* 1. \*\*Attendere\*\* il caricamento della pagina su `https://iat-4sne.sys-web.it/quality-check/defect-types`. 2. Per continuare, \*\*fare clic\*\* sull'attributo dell'elemento uguale a \*\*Nuovo\*\* . 3. A questo punto, \*\*fare clic\*\* sull'attributo dell'elemento uguale a \*\*CdTipDif\*\* . 4. \*\*Digita\*\* `TEST2` nell'elemento contenente il testo \*\*TEST2\*\* . 5. Per continuare, \*\*Fare clic\*\* sull'attributo dell'elemento uguale a \*\*Descrizione\*\* . 6. Per continuare, \*\*Digita\*\* \*\*TESTNW\*\* nell'elemento contenente il testo \*\*TESTNW\*\* . 7. Infine, \*\*Clicca\*\* sull'elemento contenente il testo \*\*Salva\*\* .
+**Guide per Tipi di Difetti**
 
-FAQ
----
+**** 
 
-...
+**1-    Guide per Tipi difetti – Crea – Guida all’Uso**
+
+Fa riferimento ai processi di configurazione all’interno di un sistema informativo (in questo caso **4S Next Edition**) dedicati alla **definizione e gestione delle tipologie di difetti** rilevati durante il controllo qualità dei prodotti moda.
+
+Nel settore fashion manufacturing, la classificazione standardizzata dei difetti è fondamentale per:
+
+* garantire **tracciabilità e uniformità** nelle rilevazioni del Quality Control;
+* consentire analisi statistiche su resi, difettosità, fornitori, fasi di produzione e materiali;
+* automatizzare flussi di revisione, accettazione o scarto;
+* supportare sistemi MES, PLM, ERP o Quality Management.
+
+La funzione **“Tipi difetti – Crea”** permette quindi di **inserire nuove categorie di difetto** nel database, definendo un *codice* e una *descrizione* che saranno poi utilizzati nei processi di controllo qualità.
+
+**** 
+
+**Cosa si intende**
+
+Quando si parla di “Tipi difetti – Crea”, ci si riferisce alla procedura con cui un utente autorizzato crea un nuovo record di difetto, specificando:
+
+* **Codice del difetto (CdTipDif)** → un identificatore univoco (es. “TD001”).
+* **Descrizione** → un testo esplicativo (es. “Cucitura irregolare sulla manica”).
+
+Questi valori saranno poi selezionabili dagli operatori di qualità durante la registrazione delle non conformità.
+
+ 
+
+**Esempi pratici**
+
+**Codice**
+
+**Descrizione**
+
+**ST01**
+
+Macchia sul tessuto (pre-confezione)
+
+**CU05**
+
+Scucitura su cucitura laterale
+
+**BO03**
+
+Bottoni non allineati o montati male
+
+**CO10**
+
+Colore non conforme al campione
+
+**TA07**
+
+Taglio asimmetrico del pannello
+
+**ET02**
+
+Etichetta applicata in posizione errata
+
+Esempio operativo:
+Un nuovo difetto viene rilevato frequentemente dal reparto qualità (“Difetto di stampa logo”). Per poterlo registrare, il responsabile QA deve crearlo in **Tipi difetti – Crea**, così da renderlo disponibile nei controlli successivi.
+
+**2-    Guida step-by-step per 4S Next Edition**
+
+**3-    Creazione di un nuovo Tipo Difetto**
+
+**Apri la pagina Tipi Difetti**
+Vai al link:
+[**Tipi**](https://iat-4sne.sys-web.it/quality-check/defect-typesTipi) di difetti
+
+**Attendi il caricamento completo della pagina**
+Comparirà l’elenco dei difetti già presenti nel sistema.
+
+1. **Crea un nuovo difetto**
+   Clicca sul pulsante **“Nuovo”** o sull’icona equivalente per aggiungere un nuovo record.
+2. **Inserisci il Codice del Difetto**
+   * Clicca nel campo **“CdTipDif”**
+   * Digita il codice che vuoi assegnare (es. *TEST2*).
+     ⚠️ Il codice deve essere univoco.
+3. **Inserisci la Descrizione del Difetto**
+   * Clicca nel campo **“Descrizione”**
+   * Digita una descrizione chiara e significativa (es. *TESTNW*).
+4. **Salva**
+   Clicca sul pulsante **“Salva”** per confermare la creazione.
+   Il nuovo difetto sarà ora disponibile nel sistema per gli operatori del controllo qualità.
+
+ 
+
+**4-     FAQ sull’argomento – Tipi Difetti**
+
+**** 
+
+**1.     Che cos’è un “Tipo Difetto”?**
+
+È una categoria che descrive un problema riscontrato durante il controllo qualità (es. macchia, scucitura, errore di etichetta).
+
+**2.     Perché devo creare un nuovo tipo difetto?**
+
+Per registrare correttamente nuove anomalie non presenti nell’elenco, garantendo uniformità e analisi accurate delle non conformità.
+
+**3.     Chi può creare nuovi tipi di difetti?**
+
+Solitamente solo utenti con profilo *Quality Manager* o *Amministratore del sistema*.
+
+**4.     Posso modificare un difetto già esistente?**
+
+Dipende dalle autorizzazioni. In genere sì, ma è preferibile evitare modifiche che possano alterare dati storici; meglio creare una nuova voce.
+
+**5.     Il codice del difetto può essere cambiato dopo il salvataggio?**
+
+Nella maggior parte dei sistemi il codice è univoco e non modificabile, per garantire l’integrità dei dati.
+
+**6.     Cosa succede se inserisco un codice già esistente?**
+
+Il sistema mostrerà un errore e non permetterà il salvataggio.
+
+**7.     Come faccio a capire che il nuovo difetto è stato creato correttamente?**
+
+Dopo il salvataggio, il difetto appare nell’elenco e può essere selezionato nei moduli di controllo qualità.
