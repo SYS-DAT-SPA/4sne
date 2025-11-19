@@ -5,13 +5,177 @@ description: Date consegna Clienti
 
 ### Guide for Date consegna Clienti
 
-*Add the description here*
 
-___
 
-\--- name: Date consegna Clienti --- ### Date consegna Clienti \*Add a description here\* 1. Successivamente, \*\*Attendere\*\* il caricamento della pagina su `https://iat-4sne.sys-web.it/general-data/delivery-dates/`. 2. A questo punto, \*\*Ridimensiona\*\* la finestra a 1522×727 pixel. 3. Subito dopo, \*\*fai clic\*\* sull'elemento con l'attributo test id uguale a \*\*Nuovo\*\* . 4. Successivamente, \*\*fai clic\*\* sull'elemento con l'attributo test id uguale a \*\*CdDcons\*\* . 5. \*\*Digitare\*\* `TEST` nell'input con valore \*\*TEST\*\* . 6. Successivamente, \*\*fai clic\*\* sull'elemento con l'attributo test id uguale a \*\*Descrizion\*\* . 7. A questo punto, \*\*Digitare\*\* `GEN2025-DIC2025` nell'input con il valore \*\*GEN2025-DIC2025\*\* . 8. Successivamente, \*\*fai clic\*\* sull'elemento con l'attributo test id uguale a \*\*gRiferim\*\* contenente l'attributo uguale a \*\*gRiferim\*\* . 9. \*\*Clicca\*\* sull'elemento contenente il testo \*\*Cliente\*\* . 10. Successivamente, \*\*fai clic\*\* sull'elemento con l'attributo test id uguale a \*\*Dati1\*\* . 11. Per continuare, \*\*Digita\*\* `01/01/2025` nell'input con il valore \*\*01/01/2025\*\* . 12. Quindi, \*\*fai clic\*\* sull'elemento con l'attributo test id uguale a \*\*Dati2\*\* . 13. Per continuare, \*\*Digita\*\* `31/12/2025` nell'input con il valore \*\*31/12/2025\*\* . 14. Per continuare, \*\*Fare clic\*\* sul pulsante etichettato \*\*SALVA\*\* .
+**Date Consegna Clienti**
 
-FAQ
----
+**** 
 
-...
+1 - **Date Consegna Clienti – Guida all’Uso**
+
+ 
+
+Si riferisce alla funzione del sistema 4S Next Edition che permette di **configurare e gestire i periodi di consegna associati ai clienti**, utili nei processi di pianificazione, produzione, allocazione e logistica.
+
+Nel settore moda — caratterizzato da collezioni stagionali, finestre di consegna predefinite, capsule e flussi B2B complessi — è fondamentale mantenere un controllo preciso sulle **delivery windows** per:
+
+* Coordinare le attività tra vendite, produzione e logistica
+* Garantire conformità agli accordi commerciali con i clienti
+* Supportare previsioni di capacità produttiva
+* Evitare ritardi e penalità
+* Sincronizzare ERP, PLM, WMS e portali B2B
+
+ 
+
+La funzione **“Date Consegna Clienti”** consente quindi ai responsabili IT, pianificazione o customer service di **inserire o modificare i periodi di consegna** collegati ai clienti o ai gruppi di clienti.
+
+ 
+
+**Cosa si intende**
+
+Con “Date Consegna Clienti” si intende la definizione di una finestra temporale durante la quale la merce deve essere consegnata a uno specifico cliente o gruppo clienti.
+Ogni record creato contiene:
+
+* **Codice** della finestra di consegna (es. DCONSSS24)
+* **Descrizione** (es. “Consegne Spring-Summer 2024”)
+* **Riferimento** → Cliente / Categoria cliente
+* **Data inizio**
+* **Data fine**
+
+Queste informazioni vengono poi utilizzate nei processi di:
+
+* generazione ordini
+* controlli di lead time
+* pianificazione stagionale
+* allineamento vendite–produzione–logistica
+
+ 
+
+**Esempi pratici**
+
+**Cliente**
+
+**Codice consegna**
+
+**Finestra consegna**
+
+**Utilità**
+
+Boutique Europa
+
+**EU-SS25**
+
+01/01/2025 – 31/03/2025
+
+Pianificazione consegne collezione Primavera
+
+Department Store USA
+
+**US-HOL25**
+
+15/09/2025 – 10/11/2025
+
+Consegnare prima della stagione Holiday
+
+Franchise Asia
+
+**AS-FW25**
+
+01/07/2025 – 30/09/2025
+
+Allineamento alle tempistiche locali
+
+**** 
+
+**Esempio reale operativo:**
+Se un cliente richiede che le consegne FW25 vengano effettuate solo tra luglio e settembre 2025, l’IT o il Customer Service devono configurare questa finestra in “Date Consegna Clienti” così che gli ordini vadano in errore o in warning se fuori range.
+
+ 
+
+**2 - Guida step-by-step per 4S Next Edition**
+
+**Apri la pagina dedicata**
+
+Vai al link:
+**dell’argomento in oggetto**
+Attendi che la pagina si carichi completamente.
+
+ 
+
+**Crea un nuovo record**
+
+Clicca sul pulsante **“Nuovo”** per inserire una nuova finestra di consegna.
+
+ 
+
+Compila i campi principali
+
+**Codice finestra consegna**
+
+* Clicca nel campo **CdDcons**
+* Digita il codice desiderato (es. **TEST**)
+
+ 
+
+**Descrizione**
+
+* Clicca nel campo **Descrizion**
+* Inserisci una descrizione significativa (es. **GEN2025-DIC2025**)
+
+ 
+
+**Imposta il riferimento**
+
+* Clicca sul campo **gRiferim**
+* Seleziona **Cliente**
+
+ 
+
+**Inserisci il periodo di consegna**
+
+* Campo **Dati1** → Inserisci la **data di inizio**, ad esempio **01/01/2025**
+* Campo **Dati2** → Inserisci la **data di fine**, ad esempio **31/12/2025**
+
+ 
+
+**Salva**
+
+Clicca sul pulsante **SALVA** per registrare la nuova finestra di consegna.
+
+Il nuovo record sarà ora disponibile per gli ordini e i processi aziendali.
+
+ 
+
+**3 - FAQ**
+
+**1.     Che cosa sono le “Date Consegna Clienti”?**
+
+2.     Sono finestre temporali che indicano quando un cliente accetta o richiede di ricevere la merce.
+
+**3.     Perché sono importanti nel settore moda?**
+
+4.     Perché la produzione e distribuzione sono legate alle stagioni, alle campagne vendita e alle calendarizzazioni internazionali. Consegne fuori periodo possono causare rifiuti, penalità o perdita di vendite.
+
+**5.     Chi può creare o modificare una finestra di consegna?**
+
+6.     Normalmente l’IT, il Customer Service o il Planning, in base ai ruoli configurati nel sistema.
+
+**7.     Il codice della consegna può essere riutilizzato?**
+
+8.     No. Deve essere univoco per evitare confusione tra stagioni diverse.
+
+**9.     Cosa succede se un ordine è fuori dalla finestra di consegna?**
+
+10.  A seconda delle logiche aziendali, il sistema può generare un warning, bloccare l’ordine o richiedere l’approvazione.
+
+**11.  Posso creare più finestre per lo stesso cliente?**
+
+12.  Sì, soprattutto quando il cliente ha diversi canali o linee (es. Retail, Outlet, Ecommerce).
+
+**13.  È possibile modificare le date dopo il salvataggio?**
+
+14.  Sì, se l’utente ha i permessi adeguati. Tuttavia, le modifiche potrebbero impattare ordini già pianificati.
+
+**15.  La finestra vale per tutti i marchi o solo per uno?**
+
+16.  Dipende dalla configurazione aziendale; in alcuni sistemi è globale, in altri per brand o linea.
