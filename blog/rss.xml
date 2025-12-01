@@ -38,6 +38,7 @@ SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni p
 <li>Richieste Fabbisogni: migliorata la visualizzazione dello stato della richiesta una volta lanciato il calcola.</li>
 <li>Ordini Fornitori CF: valorizzato in automatico il cambio in fase di versamento a magazzino.</li>
 <li>Rettifica materiale ordini fornitori: gestita la quantità amministrativa.</li>
+<li>Modificata gestione dell'input numerico basato sul locale (a.k.a. "lingua del browser") utente</li>
 <li>Ordine Cliente: all'aggiunta di una spesa viene recuperato il conto e l'iva inserito nella spesa stessa.</li>
 <li>Buoni di Prelievo: i documenti creati dai buoni di prelievo non possono essere eliminati ma si deve gestire il tutto dalla procedura di scarico/rientro materiali per una gestione puntuale di impegni/movimenti.</li>
 <li>Autorizzazione Reso: corretto il bug che non ricalcolava in visualizzazione il totale della riga una volta modificata.</li>
@@ -46,8 +47,8 @@ SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni p
 <li>La nuova release risolve il problema del mancato reperimento materiali nella scheda tecnica, garantendo agli utenti un accesso più rapido e affidabile alle informazioni necessarie per ottimizzare i processi di lavoro.</li>
 <li>La nuova release risolve l'anomalia nelle richieste di lancio, garantendo un processo più fluido e affidabile per l'utente.</li>
 <li>La nuova release corregge i filtri nell’estrazione del barcode per stagione di vendita, garantendo agli utenti risultati più precisi e affidabili.</li>
-<li>STD - Corretto errore nel calcolo del lancio in produzione.</li>
-<li>COL - Risolto il problema nel recupero dell'unità di misura alternativa nel ciclo commessa.</li>
+<li>Corretto errore nel calcolo del lancio in produzione.</li>
+<li>Risolto il problema nel recupero dell'unità di misura alternativa nel ciclo commessa.</li>
 </ol>]]></content:encoded>
             <category>4SNE</category>
         </item>
