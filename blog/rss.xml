@@ -4,10 +4,59 @@
         <title>4Seasons Next Edition Blog</title>
         <link>https://sys-dat-spa.github.io/4sne/blog</link>
         <description>4Seasons Next Edition Blog</description>
-        <lastBuildDate>Fri, 07 Nov 2025 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 08 Dec 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Release note 2543]]></title>
+            <link>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-12-08</link>
+            <guid>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-12-08</guid>
+            <pubDate>Mon, 08 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[4Seasons Next]]></description>
+            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-12-08#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
+<p>La seguente versione 2543 del 08/12/2025 riporta i seguenti aggiornamenti</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p><p>Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-12-08#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
+<h1>31</h1>
+<p>L'aggiornamento software ha introdotto diverse migliorie, tra cui la gestione del cambio valuta in vari moduli (buoni di prelievo, magazzino viaggiante, materiali e capi finiti), l'ottimizzazione delle funzioni di magazzino e produzione (apertura automatica delle commesse, cancellazione di fasi, gestione oneri nel WIP) e miglioramenti nell'interfaccia utente (etichette, paginazione, filtri e ricerca colori). Sono state inoltre potenziate le funzionalità di fatturazione massiva, stampa barcode e gestione documenti clienti, con correzioni di bug e ottimizzazioni nelle operazioni di inventario e distinta base. Le aree più coinvolte sono la gestione magazzino, la produzione, la fatturazione e il controllo documentale.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-12-08#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
+<ol>
+<li>Ribaltamento costi: prevista una funzione esterna dove spalmare i costi su diverse entrate merce, materiali e lavorazioni.</li>
+<li>Buoni di prelievo: aggiunto il recupero del cambio in valuta.</li>
+<li>Buono di prelievo manuale: migliorate le label.</li>
+<li>Gestione magazzino viaggiante: aggiunta la gestione del cambio in valuta.</li>
+<li>Gestione materiali magazzino: aggiunta la gestione del cambio in valuta sui movimenti manuali.</li>
+<li>Fatturazione massiva: aggiunta la possibilità di scalare&nbsp; in automatico l'anticipo sul cliente a parità di stagione.</li>
+<li>Listini in valuta: aggiunta la possibilità di aggiornare il singolo record di listino.</li>
+<li>Articoli: implementata la ricerca del colori dentro la pagina degli abbinamenti.</li>
+<li>Gestione capi magazzino: aggiunta l'informazione del lotto nel filtro del prodotto univoco.</li>
+<li>Lancio in produzione: aggiunta la possibilità di apertura automatica delle commesse appena create.</li>
+<li>Situazione Materiali Commessa: aggiunta l'informazione della parte modello.</li>
+<li>Versamento Ordine MP da fornitore: aggiunta la paginazione sulle righe.</li>
+<li>Versamento Ordini Fornitori e Commesse da ASN: implementato il cambio in valuta.</li>
+<li>Annullamento e capi notifica: tolte dalla visualizzazione le righe già evase.</li>
+<li>Ordine di produzione: aggiunta la cancellazione della singola fase dentro la commessa.</li>
+<li>Magazzino capi finiti: aggiunta la gestione del cambio in valuta sul movimento manuale.</li>
+<li>Stampa Barcode: implementate le funzioni di selezione e deselezione di tutti gli elementi.</li>
+<li>Sessioni occupate: ripristinata la funzione di sblocca sessione per indirizzo IP.</li>
+<li>Autorizzazione ai resi: migliorata la paginazione delle righe dentro il reso.</li>
+<li>Oneri nel WIP: Implementata la gestione degli oneri all'interno del Work In Progress.</li>
+<li>Iter commessa: risolto il problema nel recupero dell'unità di misura alternativa nel ciclo commessa.</li>
+<li>Ristampa massiva documenti clienti: aggiunto il reset&nbsp; dei filtri una volta ritornati nella prima pagina.</li>
+<li>Avanzamento in produzione: nella creazione del documento fornitore recuperata da valuta in automatico dal fornitore.</li>
+<li>Documento cliente: aggiunto la gestione della fattura di anticipo manuale.</li>
+<li>Inventario: risolto il problema che impediva l'aggiunta di nuove righe.</li>
+<li>Gestione Ubicazioni Capi Finiti: aggiunta nuova funzionalità import da lista libera.</li>
+<li>Distinta Base: ottimizzata la cancellazione della distinta base.</li>
+<li>Ordinamento ricerca colore in materie prime: implementato un nuovo criterio di ordinamento per migliorare la gestione e la visualizzazione dei risultati.</li>
+<li>Commesse: aggiunte le descrizioni mancanti per migliorare la completezza delle informazioni.</li>
+<li>Buoni di prelievo: risolto il problema che impediva l'aggiunta di nuovo materiale alla commessa.</li>
+<li>Quantità in gestione materiali a magazzino: implementata la gestione accurata delle quantità disponibili in magazzino.</li>
+</ol>]]></content:encoded>
+            <category>4SNE</category>
+        </item>
         <item>
             <title><![CDATA[Release note 2541]]></title>
             <link>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-11-07</link>
@@ -720,48 +769,6 @@ SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni p
 <li>Creazione cartella: rimossa gestione colore NONE</li>
 <li>Inserito Alert deprecazione dell'assegnazione versione 1</li>
 <li>Filtri preimpostati: attivato il salvataggio per tutti gli utenti</li>
-</ol>]]></content:encoded>
-            <category>4SNE</category>
-        </item>
-        <item>
-            <title><![CDATA[Release note 256]]></title>
-            <link>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-02-07</link>
-            <guid>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-02-07</guid>
-            <pubDate>Fri, 07 Feb 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[4Seasons Next]]></description>
-            <content:encoded><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-02-07#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
-<p>La seguente versione 256 del 07/02/2025 riporta i seguenti aggiornamenti</p>
-<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p><p>Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
-SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-02-07#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
-<h1>19</h1>
-<p>Ecco un riepilogo delle principali novità dell'aggiornamento software:</p>
-<ol>
-<li>La generazione dei codici a barre ora si applica solo alle taglie presenti nell'ordine, migliorando l'efficienza.</li>
-<li>È stata introdotta la paginazione nei documenti cliente e ottimizzata la gestione dei resi, con la possibilità di gestire il conto vendita durante il versamento a magazzino.</li>
-<li>Sono state apportate migliorie significative in vari ambiti, come l'interfaccia contabile, la produzione, e la valorizzazione dei materiali, rendendo il sistema più fluido e configurabile.</li>
-</ol>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-02-07#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
-<ol>
-<li>Stampa barcode: durante la generazione la quantità verrà spalmata solo per le taglie presente nella riga dell'ordine e non su tutte le taglie abilitate sul modello.</li>
-<li>Documento cliente: aggiunta paginazione su righe materiali per un utilizzo più fluido.</li>
-<li>Versamento resi: contemplata la gestione del conto vendita in fase di versamento a magazzino, scaricando l'eventuale magazzino in c/v specificato (al momento solo manuale).</li>
-<li>Cambia dati documento: divisa la possibilità di cambiare numero/data oppure clienti, con l'eventuale nuova numerazione della spedizione in caso di cambio cliente spedizione.</li>
-<li>Aspetto beni: aggiunta traduzione.</li>
-<li>Versamento capi a magazzino:&nbsp;esteso input alfanumerico su numero documento (anche caratteri speciali).</li>
-<li>Snellita la paginazione nell'inserimento righe autorizzazione&nbsp;da documento</li>
-<li>Interfaccia contabile SAM: integrata con le principali anagrafiche interessate.</li>
-<li>Produzione: è ora possibile avanzare al laboratorio anche una quantità maggiore rispetto alla commessa.</li>
-<li>Valorizzazione MP: velocizzata la procedura nei controlli.</li>
-<li>Scheda tecnica: controllo che non permette la duplica o modifica se esiste una scheda tecnica con prodotto e stagione di vendita già presenti.</li>
-<li>Magazzino CF: visualizzati anche i capi che hanno una giacenza negativa in&nbsp;vista e selezione.</li>
-<li>Valorizzazione CF: velocizzata la procedura di analisi e di elaborazione degli strati.</li>
-<li>E' stato ottimizzata la selezione ByPrority nella v2 della assegnazione</li>
-<li>Scheda tecnica: la copia sezione adesso applica correttamente le regole dalla taglia base nel quadro misura.</li>
-<li>Packing list: corretti i totali in testa al riepilogo lista.</li>
-<li>Ordine fornitore MP: in aggiunta riga manuale previsto il filtro dei colori associati al materiale.</li>
-<li>Sono stati revisionati interamente i campi di input testuale, numerico, booleano e tendinato nella gestione dei default. Ora è possibile impostare obbligatorietà, valore default, visibilità e mask anche ai campi non legati a tabelle, ovvero tutti quei parametri funzionali presenti nelle pagine operative. Questa estensione è estremamente impattante e permetterà di configurarsi autonomamente la quasi totalità degli elementi a schermo.</li>
-<li>Ristampa documenti clienti: aggiunta possibilità di stampare un unico pdf per tipo documento.</li>
 </ol>]]></content:encoded>
             <category>4SNE</category>
         </item>
