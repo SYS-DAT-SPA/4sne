@@ -1,0 +1,66 @@
+---
+slug: Release note 2025-12-08
+title: Release note 2543
+authors: [4sne]
+tags: [4sne]
+---
+
+# Release note 2543
+
+### 4Seasons Next
+
+La seguente versione 2543 del 08/12/2025 riporta i seguenti aggiornamenti
+
+:::warning
+
+Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.
+
+Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.
+
+:::
+
+
+<!-- truncate -->
+
+### Aggiornamenti:        
+
+#  31
+
+L'aggiornamento software ha introdotto diverse migliorie, tra cui la gestione del cambio valuta in vari moduli (buoni di prelievo, magazzino viaggiante, materiali e capi finiti), l'ottimizzazione delle funzioni di magazzino e produzione (apertura automatica delle commesse, cancellazione di fasi, gestione oneri nel WIP) e miglioramenti nell'interfaccia utente (etichette, paginazione, filtri e ricerca colori). Sono state inoltre potenziate le funzionalità di fatturazione massiva, stampa barcode e gestione documenti clienti, con correzioni di bug e ottimizzazioni nelle operazioni di inventario e distinta base. Le aree più coinvolte sono la gestione magazzino, la produzione, la fatturazione e il controllo documentale.
+
+
+##### Release notes
+
+1. Ribaltamento costi: prevista una funzione esterna dove spalmare i costi su diverse entrate merce, materiali e lavorazioni. 
+1. Buoni di prelievo: aggiunto il recupero del cambio in valuta. 
+1. Buono di prelievo manuale: migliorate le label. 
+1. Gestione magazzino viaggiante: aggiunta la gestione del cambio in valuta. 
+1. Gestione materiali magazzino: aggiunta la gestione del cambio in valuta sui movimenti manuali. 
+1. Fatturazione massiva: aggiunta la possibilità di scalare&nbsp; in automatico l'anticipo sul cliente a parità di stagione. 
+1. Listini in valuta: aggiunta la possibilità di aggiornare il singolo record di listino. 
+1. Articoli: implementata la ricerca del colori dentro la pagina degli abbinamenti. 
+1. Gestione capi magazzino: aggiunta l'informazione del lotto nel filtro del prodotto univoco. 
+1. Lancio in produzione: aggiunta la possibilità di apertura automatica delle commesse appena create. 
+1. Situazione Materiali Commessa: aggiunta l'informazione della parte modello. 
+1. Versamento Ordine MP da fornitore: aggiunta la paginazione sulle righe. 
+1. Versamento Ordini Fornitori e Commesse da ASN: implementato il cambio in valuta. 
+1. Annullamento e capi notifica: tolte dalla visualizzazione le righe già evase. 
+1. Ordine di produzione: aggiunta la cancellazione della singola fase dentro la commessa. 
+1. Magazzino capi finiti: aggiunta la gestione del cambio in valuta sul movimento manuale. 
+1. Stampa Barcode: implementate le funzioni di selezione e deselezione di tutti gli elementi.
+1. Sessioni occupate: ripristinata la funzione di sblocca sessione per indirizzo IP. 
+1. Autorizzazione ai resi: migliorata la paginazione delle righe dentro il reso. 
+1. Oneri nel WIP: Implementata la gestione degli oneri all'interno del Work In Progress.
+1. Iter commessa: risolto il problema nel recupero dell'unità di misura alternativa nel ciclo commessa. 
+1. Ristampa massiva documenti clienti: aggiunto il reset&nbsp; dei filtri una volta ritornati nella prima pagina. 
+1. Avanzamento in produzione: nella creazione del documento fornitore recuperata da valuta in automatico dal fornitore. 
+1. Documento cliente: aggiunto la gestione della fattura di anticipo manuale. 
+1. Inventario: risolto il problema che impediva l'aggiunta di nuove righe.
+1. Gestione Ubicazioni Capi Finiti: aggiunta nuova funzionalità import da lista libera. 
+1. Distinta Base: ottimizzata la cancellazione della distinta base. 
+1. Ordinamento ricerca colore in materie prime: implementato un nuovo criterio di ordinamento per migliorare la gestione e la visualizzazione dei risultati.
+1. Commesse: aggiunte le descrizioni mancanti per migliorare la completezza delle informazioni.
+1. Buoni di prelievo: risolto il problema che impediva l'aggiunta di nuovo materiale alla commessa.
+1. Quantità in gestione materiali a magazzino: implementata la gestione accurata delle quantità disponibili in magazzino.
+
