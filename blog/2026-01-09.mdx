@@ -1,0 +1,62 @@
+---
+slug: Release note 2026-01-09
+title: Release note 2601
+authors: [4sne]
+tags: [4sne]
+---
+
+# Release note 2601
+
+### 4Seasons Next
+
+La seguente versione 2601 del 09/01/2026 riporta i seguenti aggiornamenti
+
+:::warning
+
+Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.
+
+Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.
+
+:::
+
+
+<!-- truncate -->
+
+### Aggiornamenti:        
+
+#  24
+
+Ecco un riepilogo ad alto livello degli aggiornamenti software:
+
+Sono stati migliorati i processi di gestione materiali e produzione, con nuove funzionalità per il controllo avanzamento, filtri tabellari, gestione materie prime e distinta base, inclusa la precompilazione delle fasi. Inoltre, sono stati aggiornati componenti chiave come il refactoring del componente "stark-input" con nuove proprietà configurabili, e ottimizzate le funzionalità di packing list, ordini e assegnazioni lotto, oltre a correggere vari bug relativi a barcode, unità di misura e visualizzazioni. Questi interventi coinvolgono principalmente i moduli di produzione, gestione materiali, documenti cliente, e interfacce utente.
+
+
+##### Release notes
+
+1. Scarico Materiali a Laboratorio: previsto il funzionamento su avanzamento per parte. 
+1. Avanzamento Produzione: aggiunto il controllo di obbligatorietà sullo stato di avanzamento. 
+1. Filtri tabellari: implementati filtri per saldo e data saldo nella lista arrivi. 
+1. Pacchetto Accessori: nuova gestione di materie prime e consumo per poi essere importato nella distinta base. 
+1. Distinta Base: implementati i semilavorati articoli a misura. 
+1. Distinta Base: aggiornamento e correzione dei dati con una funziona esterna massiva. 
+1. Documenti Cliente: previsto il recupero di una nota fissa per copiarla nelle note del documento. 
+1. Prodotti: in caso di pagina personalizzata non apriva le gestioni sui vari campi. 
+1.  UF: Refactoring completo del componente stark-input.
+Il nuovo componente è completamente retrocompatibile con il codice esistente, mantenendo tutte le funzionalità precedenti e introducendo nuove possibilità di configurazione. Nuove funzionalità È stata introdotta la nuova proprietà [emptyInputValue], che consente di definire il valore da assegnare quando il campo di input risulta vuoto.  Per DataType.DOUBLE è stata aggiunta la proprietà [decimalPrecision], che permette di definire la massima precisione decimale desiderata (senza zero padding). Nel caso in cui [price] sia impostata a true (precisione di default pari a 2 decimali), [decimalPrecision] ha priorità e viene considerata come valore valido.      
+1. Packing list: nella chiusura previsto il passaggio in spedizione solo dei colli selezionati, attualmente spediva tutti quelli preparati. 
+1. Fatture fornitore: aggiunte informazioni su righe materie prime e lavorazioni. 
+1. Stampa barcode: il recupero delle quantità da archivio e da evadere erano invertite, corretto. 
+1. Ordine fornitore: nel momento che importo la lista libera segnata come già elaborata, attualmente non lo faceva. 
+1. Materie prime: protetto la modifica del codice misura una volta salvato. 
+1. Prodotti: aggiunto anche il feedback senza modifica nel tasto verifica taglie nei prodotti, attualmente lo proponeva solo in casi di utilizzo. 
+1. Prodotti: risolto il problema che impediva la modifica dell'unità di misura nella funzione di duplicazione.
+1. Distinta base: creata utility per la precompilazione del ciclo delle distinte nella giusta sequenza delle fasi. 
+1. Aggiunta prodotti: aggiunta l'informazione del lotto se presente a livello di riga prodotto. 
+1. Assegnazione: in fase di associazione del lotto se presente un solo lotto non faceva vedere che lotto fosse, aggiunta questa informazione a livello visivo. 
+1. Scheda tecnica: filtro materiale in creazione nuova scheda, recuperati tutti i materiali abbinati al modello, attualmente prendeva solo i primi due. 
+1. UF - Generale: abilitata la ricerca con ordinamento su più campi, attualmente era solo per un campo. 
+1. Creazione Barcode: corretta la generazione del barcode per proporre il numero successivo in base a quelli già creati, permettendo di generarli tutti insieme.
+1. Assegnazione: risolto il malfunzionamento del filtro clienti. 
+1. Programma Prodotti: corretto errore nella creazione del barcode, ora il barcode viene generato correttamente.
+
