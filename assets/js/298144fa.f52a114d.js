@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkinsighter=self.webpackChunkinsighter||[]).push([[9898],{4238:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/4sne/blog/page/2","page":2,"postsPerPage":10,"totalPages":4,"totalCount":36,"previousPage":"/4sne/blog","nextPage":"/4sne/blog/page/3","blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
