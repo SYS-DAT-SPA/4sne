@@ -1,0 +1,59 @@
+---
+slug: Release note 2026-01-30
+title: Release note 2601
+authors: [4sne]
+tags: [4sne]
+---
+
+# Release note 2601
+
+### 4Seasons Next
+
+La seguente versione 2601 del 30/01/2026 riporta i seguenti aggiornamenti
+
+:::warning
+
+Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.
+
+Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.
+
+:::
+
+
+<!-- truncate -->
+
+### Aggiornamenti:        
+
+#  24
+
+Ecco un riepilogo ad alto livello dell’aggiornamento software: sono stati corretti bug e migliorate funzionalità in diverse aree, tra cui la gestione dei documenti clienti, la distinta base, le fatture fornitore e le giacenze di magazzino. Sono state introdotte nuove funzionalità come la creazione della scheda costo, l’ordinamento per campi calcolati, la gestione del workflow per la scheda tecnica e l’invio mail dagli ordini fornitori. Inoltre, sono stati ottimizzati processi di calcolo, ricerca, visualizzazione e aggiornamento dati per migliorare l’efficienza complessiva del sistema.
+
+
+##### Release notes
+
+1. Documenti clienti: corretto fix in fase di visualizzazione dei prezzi per fascia dentro le righe di un documento cliente. 
+1. Distinta base: alla duplicazione di una distinta base prevista la possibilità di mantenere reticolo e consumi dalla precedente. 
+1. Fatture fornitore: implementato il cambio nel processo di verifica delle fatture. 
+1. Scheda costo: implementata la funzionalità per la creazione e gestione della scheda costo. 
+1. UF: introdotta la possibilità di ordinare per i campi calcolati, utilizzando il decoratore ComputedField sul campo interessato. 
+1. Prodotti: aggiunto il popup di conferma annullamento. 
+1. Giacenze magazzino materie prime: ordinata meglio la griglia in base ai campi chiave. 
+1. Ordini fornitori capi finiti: corretto bug nella visualizzazione dei totali nel popup di chiusura. 
+1. Schema consumi: implementato il nuovo schema consumi per tipo modello e tipo materiale.
+1. Fatture fornitore: ottimizzato il calcolo live sui totali in presenza di sconti. 
+1. UF - Tabelle sottoentità: è ora possibile filtrare, personalizzare, pinnare e riconfigurare le tabelle delle sottoentità (esempio righe distinta base) nelle pagine di dettaglio 
+1. Contatori: ottimizzata la selezione dei tipi contatori degli esercizi e stagionale. 
+1. Ordine fornitore materiale: implementata la gestione dell'invio mail direttamente dal componente di stampa. 
+1. Gruppi utente: refresh della pagina immediata dopo la cancellazione. 
+1. Scheda tecnica: implementata la gestione del flusso workflow per scheda tecnica. 
+1. Distinta base: Risolti vari problemi riscontrati durante i test in ambiente DEV.
+1. Distinta colorata: risolto il problema di caricamento dei componenti articoli.
+1. Filtro prodotto unico: ottimizzata la ricerca del capo. 
+1. Distinta base: aggiunto il riferimento modello e sequenza nella visualizzazione in alto. 
+1. Distinta base: implementato un controllo ulteriore sul completamento dei consumi per taglia. 
+1. Modifica movimenti capi finiti: implementata la funzionalità di aggiornamento prezzi da WIP. 
+1. Avanzamento produzione: ottimizzata l'elaborazione dei risultati. 
+1. Materie prime: aggiunti i default sui campi prezzi nel dettaglio fornitori materiali 
+1. Documenti cliente spedizione: corretta la gestione dei documenti cliente per la spedizione.
+

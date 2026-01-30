@@ -1,0 +1,56 @@
+## 1. Assegnazione della Merce (Obbligatoria)
+L'evasione di un ordine non può avvenire senza la presenza di giacenza a magazzino e il relativo impegno.
+*   Accedere a **Ordini clienti > Assegnazione ordini a cliente**..
+*   Indicare il **magazzino** da cui prelevare la disponibilità..
+*   Filtrare gli ordini (per cliente, modello o numero ordine)..
+*   Utilizzare il pulsante **Assegna** per creare il legame tra giacenza e ordine..
+*   Il sistema effettua uno spostamento logico della merce verso un **magazzino di spedizione** (es. Magazzino P)..
+
+## 2. Creazione della Lista di Spedizione
+Una volta assegnata la merce, è necessario creare un contenitore logistico per il magazziniere.
+*   Andare in **Spedizioni > Creazione lista di spedizione**..
+*   Selezionare gli ordini con merce assegnata..
+*   Scegliere se unire più ordini in un'unica lista o mantenerli separati..
+*   Confermare per generare la lista, che nascerà solitamente in **Stato 1 (Da confermare)**..
+
+## 3. Gestione della Lista e Packing
+In questa fase la lista avanza di stato in base alle lavorazioni logistiche.
+*   **Situazione lista di prelievo**: da qui è possibile passare la lista allo **Stato 10 (Confermata)** per l'effettiva lavorazione..
+*   **Packing List**: se previsto, l'operatore riscontra i capi inserendoli nelle scatole..
+    *   La lista passa allo **Stato 20/30** durante il riscontro..
+*   **Chiusura Spedizione**: cliccando su "Chiudi spedizione", la lista passa allo **Stato 40 (Pronta per bolla)**..
+
+## 4. Emissione del Documento Finale
+Il passaggio finale trasforma la lista logistica in un documento fiscale.
+*   Accedere a **Documenti > Documenti cliente da ordini cliente**..
+*   **Creazione Prebolla**: selezionare le liste in Stato 40 e generare la prebolla. Questo passaggio serve per raggruppare i documenti secondo regole amministrative.,.
+*   **Emissione Documento**: dalla scheda "Documenti pronti per l'emissione", selezionare la prebolla e confermare..
+*   Il documento (DDT o Fattura) assume un numero definitivo dal **contatore** e può essere stampato.,.
+
+---
+
+## FAQ - Domande Frequenti
+
+**1. È possibile spedire un ordine se la merce non è presente a magazzino?**
+No, Next non gestisce l'evasione di un ordine di vendita senza la relativa giacenza e l'assegnazione obbligatoria.
+
+**2. Cosa succede alla quantità dell'ordine dopo l'assegnazione?**
+La quantità visualizzata nell'ordine rappresenta quanto resta "ancora da evadere"; pertanto, man mano che si assegna o si spedisce, tale valore diminuisce.
+
+**3. Posso annullare un'assegnazione già fatta?**
+Sì, tramite la funzione di **Disassegnazione** (pulsante "Dealloca"). Questa operazione riporta la merce nel magazzino di disponibilità e ripristina il residuo dell'ordine.
+
+**4. A cosa serve il passaggio della "Prebolla"?**
+Serve per preparare il set di dati fiscale, permettendo di gestire rotture di documento (es. due fatture da una sola lista) o per anticipare i documenti a sistemi esterni prima dell'effettiva partenza del camion.
+
+**5. Posso spedire una quantità superiore a quella ordinata dal cliente?**
+Sì, ma solo se nell'anagrafica del cliente è attivo il flag **"Accetta maggiorazione quantità ordinata"**; in caso contrario, il sistema bloccherà l'operazione.
+
+**6. Come posso modificare un documento già reso definitivo?**
+Un documento definitivo non è modificabile direttamente. Deve essere eliminato (generando contromovimenti di rettifica) oppure riportato allo stato **Provvisorio** tramite l'apposita funzione, se il sistema lo permette,.
+
+**7. Come viene deciso se emettere un DDT o una Fattura?**
+Il tipo di documento viene ereditato dalle impostazioni presenti nell'anagrafica cliente o nella tipologia d'ordine, ma può essere variato manualmente durante la fase di emissione dalla prebolla.
+
+---
+*Metafora: Il processo è come una staffetta in cui il testimone (la merce) passa dalla Vendita (Assegnazione) alla Logistica (Packing) e infine all'Amministrazione (Fatturazione); se un corridore cade, bisogna tornare al punto di scambio precedente per ripartire correttamente.*
