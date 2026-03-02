@@ -1,0 +1,56 @@
+---
+slug: Release note 2026-02-27
+title: Release note 2602
+authors: [4sne]
+tags: [4sne]
+---
+
+# Release note 2602
+
+### 4Seasons Next
+
+La seguente versione 2602 del 27/02/2026 riporta i seguenti aggiornamenti
+
+:::warning
+
+Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.
+
+Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.
+
+:::
+
+
+<!-- truncate -->
+
+### Aggiornamenti:        
+
+#  21
+
+L'aggiornamento software ha introdotto nuove funzionalità e ottimizzazioni in diverse aree chiave, tra cui la gestione licenze, il workflow delle schede tecniche, e il packing list con controlli più rigorosi come il codice scatola obbligatorio e la gestione del flag di chiusura collo. Sono stati migliorati i filtri nei movimenti di magazzino, implementato il caricamento diretto di immagini da fotocamera e la gestione delle immagini nel Passaporto Digitale Prodotto, oltre a introdurre il blocco movimenti magazzino a data fissa e ottimizzazioni nella valorizzazione WIP e nelle liste di spedizione. Infine, sono stati resi obbligatori campi per la corretta compilazione dei documenti da avanzamento e migliorata l’usabilità nelle visualizzazioni di ordini cliente e fornitore.
+
+
+##### Release notes
+
+1. Gestione licenze: implementata la funzionalità per la gestione e il controllo delle licenze utente.
+1. Assegnazione ordine cliente: al versamento della commessa possibilità di aprire in automatico l'assegnazione dell'ordine. 
+1. Scheda tecnica: implementata la gestione del flusso workflow per scheda tecnica. 
+1. Packing list: il codice scatola adesso è richiesto in fase di chiusura del collo. 
+1. Packing list: gestito flag di chiuso sul collo. 
+1. Modifica movimenti magazzino CF e MP: aggiunti diversi filtri. 
+1. Scheda tecnica: aggiunti nuovi flag da utilizzare nello schema della scheda tecnica. 
+1. Caricamento immagini da fotocamera: implementato il supporto per il caricamento diretto delle immagini scattate con la fotocamera.
+1. Passaporto Digitale Prodotto (DDP): implementata la gestione delle immagini sul prodotto 
+1. Data blocco magazzini: implementata la funzionalità di blocco dei movimenti ad una data sia per CF sia per MP. 
+1. Gestione autorizzazione resi: implementata la paginazione sull'import da righe documenti per ottimizzare la procedura. 
+1. Packing list: implementata la possibilità di accodare le sparate ad un collo aperto. 
+1. Valorizzazione WIP: ottimizzato il calcolo per il coefficiente WIP. 
+1. Buoni di prelievo: fix sul filtro del lotto che non funzionava. 
+1. Schede tecniche quadri: implementata la gestione delle misure per i quadri nelle schede tecniche. 
+1. Gestione classe infiammabilità implementata. 
+1. Liste spedizione: alla creazione ottimizzata la visualizzazione delle righe dell'ordine. 
+1. Filtro ordine cliente: velocizzato il filtro numero ordine. 
+1. Documento da avanzamento: sono stati resi obbligatori i campi necessari per garantire la corretta compilazione.
+1. Sostituzione ordini cliente: aggiunta in visualizzazione anche il tipo ordine. 
+1. Ordini fornitore: Modificata la label per migliorare la chiarezza e l’usabilità.
+
