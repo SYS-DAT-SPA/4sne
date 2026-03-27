@@ -1,0 +1,62 @@
+---
+slug: Release note 2026-03-27
+title: Release note 2603
+authors: [4sne]
+tags: [4sne]
+---
+
+# Release note 2603
+
+### 4Seasons Next
+
+La seguente versione 2603 del 27/03/2026 riporta i seguenti aggiornamenti
+
+:::warning
+
+Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.
+
+Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.
+
+:::
+
+
+<!-- truncate -->
+
+### Aggiornamenti:        
+
+#  27
+
+L'aggiornamento software ha coinvolto principalmente le aree di gestione documenti clienti, scheda tecnica, gestione magazzino e sicurezza. Sono state introdotte nuove funzionalità come il filtro agente nei documenti clienti, la gestione completa dei resi con lotto, l'autenticazione a due fattori per la sicurezza e miglioramenti nelle performance e usabilità di vari moduli. Inoltre, sono stati risolti bug, aggiunti campi e opzioni per una gestione più precisa di ordini, prezzi, conferme e fatture.
+
+
+##### Release notes
+
+1. Documenti Clienti da Ordini Clienti: aggiunto filtro agente. 
+1. Gestione Resi: implementata tutta la gestione dei resi con la gestione del lotto (attualmente non era possibile). 
+1. UF: aggiunta della data di scadenza per migliorare la gestione delle scadenze. 
+1. Scheda Tecnica: aggiunta la gestione dei cali dei tessuti per Gestione cali per tessuto nel quadro a misure. 
+1. Buono Prelievo: aggiunta la possibilità di inviare i materiali senza impegnarli. 
+1. Documenti Clienti: aggiunto il recupero del prezzo da listino anche per l'import da magazzino. 
+1. Documenti Clienti: se documento definitivo bloccati i campi della movimentazione magazzini e causale di trasporto. 
+1. Scheda Tecnica: aggiunti nuovi campi note per tutti i quadri (ce ne era solo uno). 
+1. Aggiornamento Massivo Laboratorio: aggiunta&nbsp; la possibilità di aggiornare anche i buoni di prelievo provvisori. 
+1. Documenti Clienti: standardizzate le pagine per l'aggiunta manuale delle righe nei documenti clienti. 
+1. Autenticazione: Implementata la funzionalità di autenticazione a due fattori (2FA) per aumentare la sicurezza degli accessi.
+1. Filtro Ordine Cliente: migliorate le performance del filtro numero ordine. 
+1. Scheda Tecnica: nelle regole antropometriche abilitati i valori negativi. 
+1. Liste Spedizione: dopo il post creazione ritornare alla pagina iniziale. 
+1. Sostituzione ordini cliente: aggiunta in visualizzazione il tipo ordine. 
+1. UF: implementati nuovi plug personalizzati per migliorare la funzionalità. 
+1. Workflow: implementate fasi parallele con integrazione della Todolist.
+1. Contabilizzazione Documenti Clienti: risolto il bug del pop-up che impediva la corretta visualizzazione. 
+1. Scheda Tecnica: Implementato il pulsante report nella sezione generalità.
+1. UF: modificati i filtri e migliorata la formattazione per una migliore usabilità. 
+1. UF: creata versione di AuthGuard che permette di richiamare qualsiasi pagina a custom se esiste 
+1. Prezzi con Decimali: possibilità di prevedere più di due decimali sui prezzi tramite configurazione. 
+1. Gestione Capi Magazzino: il campo numero documento era obbligatorio ma non editabile. 
+1. Conferma Ordine Cliente: ripristinato il salvataggio del numero e data conferma sull'ordine. 
+1. Fattura Proforma: iva esente recuperata a cascata da spedizione e poi fatturazione adeguata come la creazione documenti da spedizione. 
+1. Verifica fatture fornitori: implementata la funzionalità di controllo e validazione delle fatture ricevute dai fornitori.
+1. Documenti Clienti: mantenimento della pagina per migliorare la gestione dei documenti. 
+
