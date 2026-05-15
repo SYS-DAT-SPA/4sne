@@ -1,0 +1,68 @@
+---
+slug: Release note 2026-04-24
+title: Release note 2604
+authors: [4sne]
+tags: [4sne]
+---
+
+# Release note 2604
+
+### 4Seasons Next
+
+La seguente versione 2604 del 24/04/2026 riporta i seguenti aggiornamenti
+
+:::warning
+
+Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.
+
+Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.
+
+:::
+
+
+<!-- truncate -->
+
+### Aggiornamenti:        
+
+#  33
+
+L'aggiornamento software ha risolto vari problemi e introdotto miglioramenti in diverse aree chiave, tra cui la gestione del magazzino, i movimenti delle materie prime, la distinta base, il PDM e l'ecommerce. Sono state ottimizzate funzionalità come la selezione e il lancio ordini, la gestione dei semilavorati, il controllo delle fatture fornitori e la movimentazione delle commesse, oltre a implementare nuove funzionalità per la svalutazione e il workflow. Inoltre, sono stati corretti errori specifici e ampliati campi personalizzati per migliorare l’efficienza e l’integrità dei dati.
+
+
+##### Release notes
+
+1. Versamento materiali a magazzino: risolto il problema che alterava il completamento dell'operazione. 
+1. Movimenti MP: corretto l'inserimento delle unità di misura nei movimenti generati dai documenti fornitori. 
+1. Cartella colori: aggiunta la paginazione delle righe così da poter gestire centinaia di colori 
+1. Apertura Distinta Base: Ottimizzata l'apertura della Diba&nbsp; 
+1. Risultato lancio in produzione: implementata la selezione delle righe ordini clienti per il lancio per ordine.
+1. Lancio per ordine: implementata la creazione automatica dell’impegno su lanciato.
+1. Cali materiali: resi non modificabili i dati per garantire l'integrità delle informazioni.
+1. Lancio per ordine: implementata l'assegnazione automatica da versamento commessa.
+1. PDM: implementato il vincolo gerarchico per la gestione delle sottoclassi nel modello PDM. 
+1. Sottoclassi prefiltrate automaticamente in base alla definizione del modello per migliorare la selezione in PDM NEXT.
+1. Distinta Base: implementato l’ordinamento delle righe in modalità tabella.
+1. Flag WIP: implementata la funzionalità per gestire correttamente il flag solo WIP.
+1. Ecommerce: corretto il filtraggio delle locazioni per garantire il corretto funzionamento.
+1. Inventario MP: corretto l’arrotondamento nelle quantità di magazzino.
+1. Movimenti da giacenza: implementata la visualizzazione della data movimento corretta.
+1. Carico reso parziale: implementata la funzionalità per gestire il carico parziale dei resi.
+1. Gestione semilavorato a misura: implementata nuova tipologia per migliorare la gestione dei semilavorati su PDM. 
+1. Verifica fatture fornitori: implementata la funzionalità di controllo e validazione delle fatture ricevute dai fornitori.
+1. Sbo Passive: implementata la funzionalità di aggiunta di reso.
+1. Data blocco movimentazione commesse: Implementato il blocco per la movimentazione delle commesse in base alla data impostata.
+1. Funzioni di svalutazione MP e CF: implementate nuove funzionalità per la gestione della svalutazione.
+1. Ecommerce: Risolto il malfunzionamento nell’estrazione dei dati da file xls. 
+1. Ordine CRM: implementata la gestione della modifica del codice cliente per migliorare la precisione dei dati.
+1. Gestione semilavorato a misura: completata la revisione e implementate le correzioni nella gestione semilavorato a misura.
+1. Gestione flusso di workflow: implementata la versionatura automatica della scheda nel processo di workflow.
+1. Custom field: estensione del campo personalizzato da 5 a 10 slot implementata. 
+1. Flag abbinamenti prodotti: implementata la gestione della disponibilità nel CRM per migliorare il controllo delle risorse.
+1. Controllo plafond: implementato il controllo del plafond su documenti rispetto a SAM.
+1. Inserimento diba da Materia prima semilavorato: corretto errore che impediva l’alimentazione automatica del codice modello.
+1. Ordini clienti: implementata la funzionalità di cambio prodotto con ricamo.
+1. Distinta base commessa: corretto errore in caso di inserimento errato delle misure.
+1. Contabilizzazione ciclo attivo Next-Essenzia: implementata la contabilizzazione automatica per il ciclo attivo.
+1. Workflow: Corretto l'errore nel link dei flussi di workflow.
+
