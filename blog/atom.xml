@@ -2,11 +2,67 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sys-dat-spa.github.io/4sne/blog</id>
     <title>4Seasons Next Edition Blog</title>
-    <updated>2026-04-24T00:00:00.000Z</updated>
+    <updated>2026-05-22T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sys-dat-spa.github.io/4sne/blog"/>
     <subtitle>4Seasons Next Edition Blog</subtitle>
     <icon>https://sys-dat-spa.github.io/4sne/img/logo.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Release note 2605]]></title>
+        <id>https://sys-dat-spa.github.io/4sne/blog/Release note 2026-05-22</id>
+        <link href="https://sys-dat-spa.github.io/4sne/blog/Release note 2026-05-22"/>
+        <updated>2026-05-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[4Seasons Next]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202026-05-22#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
+<p>La seguente versione 2605 del 22/05/2026 riporta i seguenti aggiornamenti</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p><p>Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202026-05-22#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
+<h1>34</h1>
+<p>Ecco un recap ad alto livello degli aggiornamenti software: sono state migliorate le funzionalità legate alla gestione dei movimenti materie prime, produzione e distinta base, con nuove possibilità di valorizzazione, gestione semilavorati e calcolo costi più precisi. Sono stati ottimizzati i processi di prelievo, ordini, fattibilità e sicurezza, includendo controlli più rigorosi, limitazioni di accesso e integrazioni con web-api per i corrieri. Infine, sono stati uniformati layout e procedure, migliorata la gestione colori, e introdotte nuove opzioni per stampa barcode e inserimento articoli nei documenti.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202026-05-22#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
+<ol>
+<li>Modifica movimenti materie prime: aggiunta la possibilità di&nbsp;recuperare il prezzo dei movimenti da diversi fonti come per i capi finiti.</li>
+<li>Produzione: in fase di versamento commessa aggiunti valuta, cambio e costo da diba per valorizzare i movimenti.</li>
+<li>Buono di prelievo: integrare la possibilità di aggiungere i materiali da distinta base.</li>
+<li>Documenti clienti: standardizzate le pagine di import prodotti dalle varie voci in modo da uniformare il layout.</li>
+<li>Annullamento righe ordini: data la visibilità&nbsp;se per la riga è presente la commessa relativa creata con il lancio per ordine.</li>
+<li>Lancio in produzione: riviste le coperture se utilizzato il lancio per ordine.</li>
+<li>Modelli: prefiltrati i valori della sottoclasse merceologica in base alla definizione modello selezionata.&nbsp;</li>
+<li>Produzione: in fase di versamento della commessa disimpegnato in automatico la riga ordine se utilizzato il lancio per ordine.</li>
+<li>Buoni di prelievo: possibilità di evitare la creazione di un documento in presenza di impegni su laboratori interni.</li>
+<li>Fattibilità: integrato il lancio per ordine nel calcolo della fattibilità.</li>
+<li>Distinta base: implementata la gestione del semilavorato a misura nella distinta base.</li>
+<li>Distinta base commessa:&nbsp;implementata la gestione del semilavorato a misura nella diba commessa.</li>
+<li>Distinta base: implemento nel calcolo dei costi della diba il materiale fittizio di tipo lavorazione per incrementare il costo della diba.</li>
+<li>Distinta base: il campo tempo delle fasi è stato reso decimale, prima era intero.</li>
+<li>Calo previsto: nuova gestione calo previsto con lunghezza\larghezza.</li>
+<li>Scheda tecnica: nel quadro misure&nbsp;possibilità di ereditare i tessuti dalla diba.</li>
+<li>Scheda tecnica: implementata la conferma del prodotto come già presente per la diba.</li>
+<li>Rilevazione al taglio: integrato il lancio per ordine nella rilevazione al taglio.</li>
+<li>Scheda tecnica: implementata la selezione della taglia base tramite menù a tendina.</li>
+<li>Distinta base: possibilità di disabilitare un utente all'accesso al calcolo dei costi in diba.</li>
+<li>Vettori: integrata la gestione delle web-api come possibilità di comunicazione con i corrieri.</li>
+<li>Chiusura magazzino fiscale: ottimizzata la procedura.</li>
+<li>Autorizzazione resi: controllato lo stato del reso per evitare la cancellazione di un reso in stato avanzato.</li>
+<li>Colore: nel duplica colore riportati i campi cartella e colore.</li>
+<li>Materiale per produzione (PERS): Implementata la gestione e ottimizzazione del materiale per la produzione.</li>
+<li>Commessa di semilavorato: corretto il calcolo del fabbisogno dei materiali per semilavorati non a misura.</li>
+<li>Colori: nella gestione dei colori in cartella fixato il problema della descrizione colore che non si poteva cambiare.</li>
+<li>Filtro variante modello implementato nelle procedure di generazione listini per migliorare la selezione dei dati.</li>
+<li>Sicurezza: limitato l'accesso alle notifiche.</li>
+<li>Sicurezza: la registrazione per nuovi utenti deve avvenire sotto autentificazione.</li>
+<li>Sicurezza: aggiunta la funzionalità di rate-limiting delle richieste per migliorare la gestione del traffico.</li>
+<li>Inserimento articoli documento: evidenziato correttamente l'annullo per il materiale annullato.</li>
+<li>Stampa barcode: integrata la possibilità di scegliere l'etichetta di partenza da stampare su A4.</li>
+<li>Modifica righe su ordini: filtrate solo le righe principali e non le frazioni, il prezzo si propagherà in automatico su tutte le frazioni.</li>
+</ol>]]></content>
+        <author>
+            <name>4SNE</name>
+            <uri>https://www.sys-datgroup.com/</uri>
+        </author>
+        <category label="4SNE" term="4SNE"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Release note 2604]]></title>
         <id>https://sys-dat-spa.github.io/4sne/blog/Release note 2026-04-24</id>
@@ -784,36 +840,6 @@ SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni p
 <li>Buoni di prelievo: revisionata la distribuzione dei materiali all'interno delle righe commesse nei buoni di prelievo</li>
 <li>Tracciabilità prodotto: gestita la tracciabilità per lotto in versamento</li>
 <li>Commercializzato: nuova gestione semplificata per l'inserimento dati di commercializzato nei prodotti</li>
-</ol>]]></content>
-        <author>
-            <name>4SNE</name>
-            <uri>https://www.sys-datgroup.com/</uri>
-        </author>
-        <category label="4SNE" term="4SNE"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Release note 2513-beta]]></title>
-        <id>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-04-04</id>
-        <link href="https://sys-dat-spa.github.io/4sne/blog/Release note 2025-04-04"/>
-        <updated>2025-04-04T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[4Seasons Next]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-04-04#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
-<p>La seguente versione 2513-beta del 04/04/2025 riporta i seguenti aggiornamenti</p>
-<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p><p>Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
-SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-04-04#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
-<h1>7</h1>
-<p>Ecco un riepilogo dell'aggiornamento del software:</p>
-<p>Sono state apportate diverse migliorie, tra cui l'estensione del prodotto nella maschera di movimento manuale nel magazzino CF e l'aggiunta della funzione per creare buoni di prelievo nella pagina degli Avanzamenti. Inoltre, è stato implementato un controllo per la commessa semilavorato-articoli, che verifica l'esistenza degli abbinamenti di vendita, e sono stati introdotti filtri per i colori negli ordini fornitori. Infine, sono stati migliorati la gestione delle taglie e il recupero delle provvigioni sui documenti clienti.</p>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-04-04#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
-<ol>
-<li>Magazzino CF: prevista l'estensione prodotto (etichetta/cartellino/richiesta confezione) nella maschera di movimento manuale.&nbsp;</li>
-<li>Nella pagina degli Avanzamenti, aggiunta la funzione che permette di creare i buoni di prelievo. Selezionando il laboratorio e le commesse, con il tasto crea, verrà generato il buono. Si può navigare direttamente dentro il buono con il bottone di modifica.</li>
-<li>Lancio commessa semilavorato-articoli: aggiunto un controllo delle righe che verifica l'esistenza degli abbinamenti di vendita e della DiBa per la stagione di vendita della testata.&nbsp;Lo stato di riga viene verificato all'inserimento/cambio del prodotto e/o della stagione della commessa.&nbsp;Le righe devono essere tutte verificate per poter lanciare la commessa.</li>
-<li>Scheda tecnica: controllo che non permette la duplica o modifica se esiste una scheda tecnica con prodotto e stagione di vendita già presenti.</li>
-<li>Ordine fornitore MP: in aggiunta riga manuale previsto il filtro dei colori associati al materiale.</li>
-<li>Salti di taglie in scalarino prodotti: verificata la corretta gestione delle fasce prezzo in "Taglie", migliorata la duplicazione di prodotti con cambio cdtaglia quando il modellitaglie originale è più ampio del nuovo, e ottimizzata la visualizzazione delle righe prodotto (giacenza, documenti, ordini) in presenza di buchi di taglie.</li>
-<li>Documenti clienti: recupero provvigioni (oltre che l'agente) su riga manuale</li>
 </ol>]]></content>
         <author>
             <name>4SNE</name>
