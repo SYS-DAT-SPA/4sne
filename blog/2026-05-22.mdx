@@ -1,0 +1,69 @@
+---
+slug: Release note 2026-05-22
+title: Release note 2605
+authors: [4sne]
+tags: [4sne]
+---
+
+# Release note 2605
+
+### 4Seasons Next
+
+La seguente versione 2605 del 22/05/2026 riporta i seguenti aggiornamenti
+
+:::warning
+
+Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.
+
+Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.
+
+:::
+
+
+<!-- truncate -->
+
+### Aggiornamenti:        
+
+#  34
+
+Ecco un recap ad alto livello degli aggiornamenti software: sono state migliorate le funzionalità legate alla gestione dei movimenti materie prime, produzione e distinta base, con nuove possibilità di valorizzazione, gestione semilavorati e calcolo costi più precisi. Sono stati ottimizzati i processi di prelievo, ordini, fattibilità e sicurezza, includendo controlli più rigorosi, limitazioni di accesso e integrazioni con web-api per i corrieri. Infine, sono stati uniformati layout e procedure, migliorata la gestione colori, e introdotte nuove opzioni per stampa barcode e inserimento articoli nei documenti.
+
+
+##### Release notes
+
+1. Modifica movimenti materie prime: aggiunta la possibilità di&nbsp;recuperare il prezzo dei movimenti da diversi fonti come per i capi finiti. 
+1. Produzione: in fase di versamento commessa aggiunti valuta, cambio e costo da diba per valorizzare i movimenti. 
+1. Buono di prelievo: integrare la possibilità di aggiungere i materiali da distinta base. 
+1. Documenti clienti: standardizzate le pagine di import prodotti dalle varie voci in modo da uniformare il layout. 
+1. Annullamento righe ordini: data la visibilità&nbsp;se per la riga è presente la commessa relativa creata con il lancio per ordine. 
+1. Lancio in produzione: riviste le coperture se utilizzato il lancio per ordine. 
+1. Modelli: prefiltrati i valori della sottoclasse merceologica in base alla definizione modello selezionata.&nbsp; 
+1. Produzione: in fase di versamento della commessa disimpegnato in automatico la riga ordine se utilizzato il lancio per ordine. 
+1. Buoni di prelievo: possibilità di evitare la creazione di un documento in presenza di impegni su laboratori interni. 
+1. Fattibilità: integrato il lancio per ordine nel calcolo della fattibilità. 
+1. Distinta base: implementata la gestione del semilavorato a misura nella distinta base. 
+1. Distinta base commessa:&nbsp;implementata la gestione del semilavorato a misura nella diba commessa. 
+1. Distinta base: implemento nel calcolo dei costi della diba il materiale fittizio di tipo lavorazione per incrementare il costo della diba. 
+1. Distinta base: il campo tempo delle fasi è stato reso decimale, prima era intero. 
+1. Calo previsto: nuova gestione calo previsto con lunghezza\larghezza. 
+1. Scheda tecnica: nel quadro misure&nbsp;possibilità di ereditare i tessuti dalla diba. 
+1. Scheda tecnica: implementata la conferma del prodotto come già presente per la diba. 
+1. Rilevazione al taglio: integrato il lancio per ordine nella rilevazione al taglio. 
+1. Scheda tecnica: implementata la selezione della taglia base tramite menù a tendina.
+1. Distinta base: possibilità di disabilitare un utente all'accesso al calcolo dei costi in diba. 
+1. Vettori: integrata la gestione delle web-api come possibilità di comunicazione con i corrieri. 
+1. Chiusura magazzino fiscale: ottimizzata la procedura. 
+1. Autorizzazione resi: controllato lo stato del reso per evitare la cancellazione di un reso in stato avanzato. 
+1. Colore: nel duplica colore riportati i campi cartella e colore. 
+1. Materiale per produzione (PERS): Implementata la gestione e ottimizzazione del materiale per la produzione.
+1. Commessa di semilavorato: corretto il calcolo del fabbisogno dei materiali per semilavorati non a misura.
+1. Colori: nella gestione dei colori in cartella fixato il problema della descrizione colore che non si poteva cambiare. 
+1. Filtro variante modello implementato nelle procedure di generazione listini per migliorare la selezione dei dati.
+1. Sicurezza: limitato l'accesso alle notifiche. 
+1. Sicurezza: la registrazione per nuovi utenti deve avvenire sotto autentificazione. 
+1. Sicurezza: aggiunta la funzionalità di rate-limiting delle richieste per migliorare la gestione del traffico. 
+1. Inserimento articoli documento: evidenziato correttamente l'annullo per il materiale annullato.
+1. Stampa barcode: integrata la possibilità di scegliere l'etichetta di partenza da stampare su A4. 
+1. Modifica righe su ordini: filtrate solo le righe principali e non le frazioni, il prezzo si propagherà in automatico su tutte le frazioni. 
+
