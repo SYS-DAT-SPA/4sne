@@ -2,11 +2,48 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sys-dat-spa.github.io/4sne/blog</id>
     <title>4Seasons Next Edition Blog</title>
-    <updated>2026-05-22T00:00:00.000Z</updated>
+    <updated>2026-06-19T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sys-dat-spa.github.io/4sne/blog"/>
     <subtitle>4Seasons Next Edition Blog</subtitle>
     <icon>https://sys-dat-spa.github.io/4sne/img/logo.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Release note 2606]]></title>
+        <id>https://sys-dat-spa.github.io/4sne/blog/Release note 2026-06-19</id>
+        <link href="https://sys-dat-spa.github.io/4sne/blog/Release note 2026-06-19"/>
+        <updated>2026-06-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[4Seasons Next]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202026-06-19#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
+<p>La seguente versione 2606 del 19/06/2026 riporta i seguenti aggiornamenti</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p><p>Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202026-06-19#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
+<h1>15</h1>
+<p>L'aggiornamento software ha coinvolto principalmente le aree di gestione documenti cliente, distinta base, produzione, scheda tecnica, magazzino e ordini fornitori. Tra le novità principali si segnalano la verifica giacenza per chi gestisce i lotti, la possibilità di eliminare materiali e generare schede tecniche direttamente dalla distinta base, l’aggiunta di selezioni di stock nel lancio in produzione e l’implementazione di funzionalità automatiche per la gestione dei lotti e la creazione delle commesse. Sono stati inoltre migliorati strumenti di visualizzazione, ordinamento e propagazione automatica di dati come colori e costi, per ottimizzare l’efficienza e la tracciabilità dei processi.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202026-06-19#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
+<ol>
+<li>Documento Cliente: verifica giacenza capi finiti funzionante anche per chi gestisce i lotti.</li>
+<li>Distinta Base: nell'aggiornamento massivo implementata la funzionalità di eliminare un materiale dalla distinta base.</li>
+<li>Lancio in Produzione: aggiunta la selezione delle righe di stock se lanciato per ordine.</li>
+<li>Scheda tecnica: nel quadro misure&nbsp;possibilità di ereditare i tessuti dalla diba.</li>
+<li>Articoli: per i semilavorati normali e a misura previsto il recupero in automatico del costo scheda sull'anagrafica al salvataggio della distinta base relativa.</li>
+<li>Scheda Tecnica: implementato il calo per tessuti.</li>
+<li>Magazzino Capi Finiti: implementata la possibilità di interrogare i movimenti di magazzino storici (da chiusura) nella maschera della gestione capi.</li>
+<li>Colori: implementata la propagazione automatica di un nuovo colore nella cartella sui prodotti su richiesta&nbsp; dell'utente.</li>
+<li>Ordini Fornitori: implementata la gestione del lotto automatica anche da creazione ordine cliente se l'automatismo è attivato da configurazione aziendale.</li>
+<li>Todolist: implementato l'ordinamento degli elementi.</li>
+<li>Distinta Base: nella pagina coloritura a fianco al codice&nbsp;previsto anche un cerchio colorato corrispondente.</li>
+<li>Sequenza fasi DIBA: implementata la creazione automatica delle commesse.</li>
+<li>Distinta Base: implementata la possibilità di generare la scheda tecnica dentro una diba.</li>
+<li>Aggiornamento massivo DIBA: implementata la funzionalità di aggiornamento massivo per migliorare l'efficienza del processo.</li>
+<li>Righe descrittive: implementata la visualizzazione del Numero Ordine.</li>
+</ol>]]></content>
+        <author>
+            <name>4SNE</name>
+            <uri>https://www.sys-datgroup.com/</uri>
+        </author>
+        <category label="4SNE" term="4SNE"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Release note 2605]]></title>
         <id>https://sys-dat-spa.github.io/4sne/blog/Release note 2026-05-22</id>
@@ -810,36 +847,6 @@ SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni p
 <li>La nuova release della pagina ASN Fornitori introduce filtri migliorati, consentendo agli utenti di trovare rapidamente le informazioni desiderate, ottimizzando così l'efficienza e la facilità d'uso.</li>
 <li>Ordini cliente - revisionato il calcolo del totale assegnato ed aggiunto il totale spedito per ordine, anche in griglia</li>
 <li>Movimenti da Giacenza non permette piu la movimentazione di quantità negative mostrando un messaggio d'errore. Inoltre cambiando la quantità negativa a 0 è possibile proseguire con il movimento</li>
-</ol>]]></content>
-        <author>
-            <name>4SNE</name>
-            <uri>https://www.sys-datgroup.com/</uri>
-        </author>
-        <category label="4SNE" term="4SNE"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Release note 2513]]></title>
-        <id>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-04-12</id>
-        <link href="https://sys-dat-spa.github.io/4sne/blog/Release note 2025-04-12"/>
-        <updated>2025-04-12T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[4Seasons Next]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-04-12#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
-<p>La seguente versione 2513 del 12/04/2025 riporta i seguenti aggiornamenti</p>
-<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p><p>Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
-SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-04-12#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
-<h1>7</h1>
-<p>Ecco un riepilogo ad alto livello delle recenti aggiornamenti software:</p>
-<p>Sono state apportate modifiche significative alla scheda tecnica, inclusa l'espansione del flag per "solo prodotti disponibili" e la gestione delle varianti articolo. Inoltre, è stata migliorata la funzionalità di precarico ASN con l'aggiunta della sequenza barcode e sono state revisionate le distribuzioni dei materiali nei buoni di prelievo. Infine, è stata implementata una nuova gestione semplificata per l'inserimento dei dati di commercializzato e migliorata la tracciabilità del prodotto per lotto.</p>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-04-12#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
-<ol>
-<li>Scheda tecnica:&nbsp;espansione logica del flag in schema scheda tecnica "solo prodotti disponibili"</li>
-<li>Precarichi ASN: popolamento della sequenza barcode in "aggiungi non in lista"</li>
-<li>Produzione: alla creazione del buono di prelievo richiesto se aprire direttamente il documento</li>
-<li>Scheda tecnica: fixata la gestione della variante articolo</li>
-<li>Buoni di prelievo: revisionata la distribuzione dei materiali all'interno delle righe commesse nei buoni di prelievo</li>
-<li>Tracciabilità prodotto: gestita la tracciabilità per lotto in versamento</li>
-<li>Commercializzato: nuova gestione semplificata per l'inserimento dati di commercializzato nei prodotti</li>
 </ol>]]></content>
         <author>
             <name>4SNE</name>
