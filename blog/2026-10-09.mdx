@@ -1,0 +1,84 @@
+---
+slug: Release note 2026-10-09
+title: Release note 2609
+authors: [4sne]
+tags: [4sne]
+---
+
+# Release note 2609
+
+### 4Seasons Next
+
+La seguente versione 2609 del 09/10/2026 riporta i seguenti aggiornamenti
+
+:::warning
+
+Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.
+
+Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.
+
+:::
+
+
+<!-- truncate -->
+
+### Aggiornamenti:        
+
+#  49
+
+L'aggiornamento software ha migliorato diverse aree chiave, tra cui la generazione delle fatture proforma, la gestione delle distinte base e l’ottimizzazione dei documenti clienti e fornitori, con nuove funzionalità per filtri, controlli e personalizzazioni. Sono state implementate anche avanzate gestioni del magazzino ubicato, configurazioni API personalizzabili, e miglioramenti nelle autorizzazioni al reso e nella produzione, inclusa la gestione di articoli semilavorati. Infine, sono stati aggiornati moduli per l’invio mail, l’intelligenza artificiale (OpenAI API) e la gestione delle priorità negli ordini clienti, garantendo maggiore efficienza e controllo.
+
+
+##### Release notes
+
+1. Fattura proforma: ottimizzate le performance della generazione della fattura proforma da ordine cliente. 
+1. Configurazioni generali: introdotto un nuovo parametro personalizzabile per definire la dimensione massima delle richieste API. 
+1. Modelli: nella pagina delle immagini aggiunta la possibilità di indicare anche il colore (opzionale) e gestite le immagini per abbinamento. 
+1. Digital Product Passport (DPP) step 1/3: implementata la parte di configurazione del passaporto digitale del prodotto. 
+1. Distinta base: implementata la funzionalità per la gestione dei modelli di tipo completo. 
+1. Documenti clienti: ottimizzata e unificata la procedura di import righe dentro il documento cliente. 
+1. Distinta base: nuova funzione aggiuntiva che copia gli abbinamenti di vendita e la distinta base da una stagione di vendita ad un'altra.  
+1. Autorizzazione al reso: in fase di ASN gestita una riga aggiuntiva contrassegnata qualora sia attivo il flag accetta non in lista. 
+1. Produzione: implementata la gestione degli articoli semilavorati alla rilevazione capi al taglio. 
+1. Documenti clienti: per le righe descrittive previsto nuovo campo numero ordine cliente. 
+1. Ordine cliente: nella funzione di sostituzione cliente su ordine cliente implementata la possibilità di aggiornare anche il cliente spedizione documenti e il cliente triangolazione. 
+1. Ordini clienti: migliorata e unificata la funzionalità di export excel dentro l'ordine cliente aprendo direttamente il modulo del report ordini clienti con il numero ordine prefiltrato. 
+1. Ordine cliente: implementato un nuovo filtro codice colore nella maschera di aggiunta prodotto. 
+1. Distinta base: nella riga del materiale aggiunto nuovo campo tabellato per la gestione delle categorie di taglio. 
+1. Scheda tecnica: nella sezione delle misure implementata la selezione automatica della regola di default, applicati i cali e gestito il flag manuale. 
+1. Ordine fornitori: implementata la visualizzazione delle destinazioni nell’intestatario dell’ordine fornitori creato da ordine cliente.
+1. Magazzino materie prime: aggiunto il filtro del tipo materiale nella pagina vista e selezione. 
+1. Distinta base: nella riga del materiale è stata implementata la funzionalità per gestire il flag relativo al vincolo di lancio. 
+1. Modifica movimenti CF e MP: aggiunto un controllo per evitare modifiche ai movimenti derivati dai documenti clienti e fornitori. 
+1. Fatture fornitori: nella sezione delle spese è stato aggiunto un campo note libere. 
+1. Magazzino materie prime: implementata la visualizzazione dei movimenti storicizzati anche per le materie prime. 
+1. Configurazioni generali: aggiornato il modulo per l'invio delle mail. 
+1. Autorizzazioni al reso: migliorato l’ordinamento delle righe nella funzione aggiungi da documento. 
+1. Stampa barcode: selezionando la provenienza da ordini aggiunti i filtri relativi alla commessa per lancia per ordini. 
+1. Stampa barcode: selezionando un tipo di barcode venivano selezionati di default tutti gli altri; adesso è prevista la selezione del singolo tipo di barcode. 
+1. Ubicazioni step 1/5: implementata l'anagrafica dei magazzini capi finiti per gestire il magazzino ubicato. 
+1. Ubicazioni step 3/5: implementata la gestione del magazzino ubicato negli ordini clienti e nei documenti clienti e fornitori manuali. 
+1. Valorizzazioni CF: corretto il problema per cui non veniva riportato il lotto.
+1. Lancio in produzione: aggiunta del flag per selezionare solo le distinte basi confermate (che hanno data conferma valorizzata). 
+1. Documenti clienti: aggiunti maggiori controlli per i documenti che arrivano da spedizione. 
+1. Quadro materiali scheda tecnica: implementata la funzionalità di cancellazione delle righe.
+1. Listini in valuta: aggiunto controllo per non cambiare la stagione di vendita di arrivo in modo che sia uguale a quella di partenza. 
+1. STD - NQL: Implementata la nuova funzionalità per migliorare la gestione delle query NQL.
+1. Documenti clienti: implementata l’aliquota per la riga descrittiva.
+1. Ordinamento notifiche errori: implementato un nuovo sistema di ordinamento per migliorare la gestione e la visualizzazione delle notifiche di errore.
+1. Documenti fornitore: migliorati i controlli per evitare cancellazioni o modifiche di righe qualora il documento provenga da buono prelievo o abbia fatto movimenti di magazzino. 
+1. Documenti fornitore: implementato il recupero della destinazione di default nei documenti fornitore. 
+1. Ordini clienti: nella griglia sono state aggiunte le informazione dello stato cliente (codice blocco + descrizione). 
+1. Ubicazioni step 2/5: implementata la gestione del magazzino ubicato nella gestione capi a magazzino&nbsp;e nell'inventario di magazzino. 
+1. Scheda tecnica: implementata la gestione dei modelli che hanno il codice cliente specificato nella chiave del modello. 
+1. AI: aggiornato a OpenAI response API. 
+1. Ordini fornitore materiali: allargato da 3 a 4 decimali il prezzo. 
+1. Clienti: ripristinato l'accesso e la consultazione degli oggetti collegati. 
+1. Ordini clienti: nella gestione dell'assegnazione a livello di riga sono state aggiunte le informazioni mancanti delle priorità ordinamento, quali zona e priorità del cliente e data consegna. 
+1. Ordini clienti: nei tipi ordini clienti è stata implementata la funzionalità di inserire gli ordini nuovi con il flag di attesa in testata come era precedentemente gestito il flag bloccato. 
+1. Ordini fornitore da ordine cliente: nei filtri per ordini fornitori sono stati aggiunti la stagione di vendita e il codice fornitore. 
+1. Produzione: allargata la gestione fino a 6 decimali nella funzione&nbsp;scarico materiali a laboratori. 
+1. Documenti cliente: migliorati i controlli riguardanti le modifiche delle righe del documento qualora arrivi da spedizione. 
+1. UF: Potenziate le policy di lettura, scrittura e cancellazione delle entità così da garantire completa aderenza alla autorizzazioni 
+
