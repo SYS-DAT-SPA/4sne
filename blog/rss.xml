@@ -71,7 +71,7 @@ SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni p
 <li>Ordini fornitore da ordine cliente: nei filtri per ordini fornitori sono stati aggiunti la stagione di vendita e il codice fornitore.</li>
 <li>Produzione: allargata la gestione fino a 6 decimali nella funzione&nbsp;scarico materiali a laboratori.</li>
 <li>Documenti cliente: migliorati i controlli riguardanti le modifiche delle righe del documento qualora arrivi da spedizione.</li>
-<li>UF: Potenziate le policy di lettura, scrittura e cancellazione delle entità così da garantire completa aderenza alla autorizzazioni</li>
+<li>UFR: Potenziate le policy di lettura, scrittura e cancellazione delle entità così da garantire completa aderenza alla autorizzazioni (attenzionare le query che alternano lo schema DB)</li>
 </ol>]]></content:encoded>
             <category>4SNE</category>
         </item>
