@@ -2,11 +2,65 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://sys-dat-spa.github.io/4sne/blog</id>
     <title>4Seasons Next Edition Blog</title>
-    <updated>2026-10-09T00:00:00.000Z</updated>
+    <updated>2026-11-20T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://sys-dat-spa.github.io/4sne/blog"/>
     <subtitle>4Seasons Next Edition Blog</subtitle>
     <icon>https://sys-dat-spa.github.io/4sne/img/logo.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Release note 2610]]></title>
+        <id>https://sys-dat-spa.github.io/4sne/blog/Release note 2026-11-20</id>
+        <link href="https://sys-dat-spa.github.io/4sne/blog/Release note 2026-11-20"/>
+        <updated>2026-11-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[4Seasons Next]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202026-11-20#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
+<p>La seguente versione 2610 del 20/11/2026 riporta i seguenti aggiornamenti</p>
+<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p><p>Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202026-11-20#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
+<h1>32</h1>
+<p>L’aggiornamento software coinvolge principalmente le aree di produzione, gestione magazzino, distinta base e documenti clienti, con nuove funzionalità come l’aggiunta di immagini modello per articolo e colore, la duplicazione massiva di distinte basi tra stagioni e la gestione avanzata di semilavorati e buoni di prelievo. Sono state migliorate le performance con ottimizzazioni delle query, l’invio del Digital Product Passport, e l’implementazione di controlli più rigorosi per evitare disallineamenti in produzione. Infine, sono stati introdotti miglioramenti nell’interfaccia utente, nella gestione delle autorizzazioni, e nella visualizzazione e calcolo di ordini e magazzino, garantendo una maggiore precisione e usabilità.</p>
+<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202026-11-20#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
+<ol>
+<li>Modelli: previsto l'aggiunta delle immagini del modello a livello di articolo e colore.</li>
+<li>Produzione: nella funzione aggiornamento massivo laboratorio aggiunta la possibilità di aggiornare anche i buoni di prelievo provvisori.</li>
+<li>Distinta base: nuova funzionalità per duplicare massivamente abbinamenti di vendita e distinte basi da una stagione di vendita ad un'altra.</li>
+<li>Produzione: implementata la gestione degli articoli semilavorati alla rilevazione capi al taglio.</li>
+<li>Documenti clienti: previsto con un ulteriore flag di copiare anche il numero ordine e riga quando importi le righe da altro documento.</li>
+<li>Digital Product Passport (DPP) step 2/3: implementato l'invio del prodotto per il passaporto digitale standard, da agganciare poi all'interfaccia selezionata.</li>
+<li>Ubicazioni step 5/5: implementata la gestione del magazzino ubicato nel ciclo della spedizione.</li>
+<li>Documenti clienti: in fase di contabilizzazione clienti abbiamo aggiunto le informazioni&nbsp;del documento per capire in tempo reale lo status dell'invio.</li>
+<li>Ubicazioni step 4/5: implementata la gestione del magazzino ubicato&nbsp;nelle liste libere capi finiti.</li>
+<li>Utenti: implementata la funzionalità per gestire le eliminazioni delle abilitazioni inserite sul singolo utente.</li>
+<li>Autorizzazione al reso: nella gestione del reso dentro le righe in fase di visualizzazione è stato recuperato il prezzo originale del documento di origine qualora agganciato.</li>
+<li>Ordini clienti: nel riepilogo dei totali ottimizzato il calcolo in presenza di annullamenti parziali.</li>
+<li>Ordini fornitori materie prime: implementata la gestione del prezzo a scaglioni sulla quantità ordinata.</li>
+<li>NQL: Ottimizzazione delle query per migliorare le prestazioni e l'affidabilità.</li>
+<li>Fornitori: implementata la gestione del campo MidCode presente nell’anagrafica.</li>
+<li>Produzione: aggiunti dei controlli ulteriori alla modifica della distinta di produzione in presenza di buoni di prelievo attivi per evitare disallineamenti.</li>
+<li>Autorizzazioni al reso: in fase di versamento a magazzino previsto il seleziona tutto per tutte le righe e non solo quelle della pagina corrente.</li>
+<li>Distinta base: ottimizzata la gestione di import da altra distinta base.</li>
+<li>Materie prime: previsto in visualizzazione della griglia più decimali per il campo peso.</li>
+<li>Anticipi su vendite: implementata la gestione proporzionale alla vendita per stagione degli anticipi.</li>
+<li>UFR: implementata la funzionalità per gestire query complesse nel filtro.</li>
+<li>Magazzino capi finiti: restyling della maschera organizzando meglio i campi e riepilogando il totale capi a fondo.</li>
+<li>Materie prime: implementati nuovi formati per il caricamento delle immagini.</li>
+<li>E-commerce: migliorata l'accessibilità in fase di visualizzazione degli stati dei prodotti e-commerce.</li>
+<li>Magazzino capi finiti: all'inserimento del movimento manuale corretti i simboli della valuta scelta che potrebbe essere diversa da quella aziendale.</li>
+<li>Ordini fornitori capi finiti: al versamento a magazzino aggiunto nel riepilogo finale che esce in coda il campo totale netto.</li>
+<li>Documenti clienti: previsti i contro-movimenti di magazzino qualora cancelli un documento anche per le materie prime.</li>
+<li>Produzione: al documento creato da buono di prelievo è stata aggiunta la stagione di testata, proposta quella della commessa.</li>
+<li>Produzione: nella gestione degli avanzamenti è stata prevista la paginazione nella visualizzazione dei dati.</li>
+<li>Stampa barcode: aggiunto il filtro variante capo.</li>
+<li>Configurazioni generali: rivisitazione di diverse diciture non tradotte su tutto il gestionale.</li>
+<li>Distinta base: ottimizzato lo spostamento delle righe dei materiali.</li>
+</ol>]]></content>
+        <author>
+            <name>4SNE</name>
+            <uri>https://www.sys-datgroup.com/</uri>
+        </author>
+        <category label="4SNE" term="4SNE"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Release note 2609]]></title>
         <id>https://sys-dat-spa.github.io/4sne/blog/Release note 2026-10-09</id>
@@ -818,39 +872,6 @@ SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni p
 <li>Stampe barcode: aggiunta la possibilità di poter utilizzare più serie barcode per lo stesso capo.</li>
 <li>Aggiunto il dark-mode layout.</li>
 <li>La nuova funzionalità di coloritura delle celle pivot offre agli utenti un modo intuitivo per evidenziare e analizzare i dati, migliorando la leggibilità e facilitando l'individuazione delle informazioni chiave.</li>
-</ol>]]></content>
-        <author>
-            <name>4SNE</name>
-            <uri>https://www.sys-datgroup.com/</uri>
-        </author>
-        <category label="4SNE" term="4SNE"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Release note 2521]]></title>
-        <id>https://sys-dat-spa.github.io/4sne/blog/Release note 2025-06-06</id>
-        <link href="https://sys-dat-spa.github.io/4sne/blog/Release note 2025-06-06"/>
-        <updated>2025-06-06T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[4Seasons Next]]></summary>
-        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4seasons-next">4Seasons Next<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-06-06#4seasons-next" class="hash-link" aria-label="Direct link to 4Seasons Next" title="Direct link to 4Seasons Next">​</a></h3>
-<p>La seguente versione 2521 del 06/06/2025 riporta i seguenti aggiornamenti</p>
-<div class="theme-admonition theme-admonition-warning admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>warning</div><div class="admonitionContent_BuS1"><p>Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.</p><p>Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
-SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.</p></div></div>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="aggiornamenti">Aggiornamenti:<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-06-06#aggiornamenti" class="hash-link" aria-label="Direct link to Aggiornamenti:" title="Direct link to Aggiornamenti:">​</a></h3>
-<h1>11</h1>
-<p>La recente aggiornamento del software introduce diverse nuove funzionalità che migliorano la gestione degli ordini e la tracciabilità dei prodotti. Tra le novità, spiccano l'inibizione dell'annullo a livello di riga, la tracciabilità completa dei prodotti, e la possibilità di modificare massivamente il lotto nelle commesse. Inoltre, sono stati ottimizzati i documenti clienti e la gestione dei capi a magazzino, aumentando l'efficienza e la precisione nelle operazioni quotidiane.</p>
-<h5 class="anchor anchorWithStickyNavbar_LWe7" id="release-notes">Release notes<a href="https://sys-dat-spa.github.io/4sne/blog/Release%20note%202025-06-06#release-notes" class="hash-link" aria-label="Direct link to Release notes" title="Direct link to Release notes">​</a></h5>
-<ol>
-<li>La nuova funzionalità di inibizione dell'annullo in testata ordine consente agli utenti di gestire gli annulli solo a livello di riga, migliorando la precisione nella gestione degli ordini e riducendo il rischio di errori.</li>
-<li>La nuova funzionalità di tracciabilità dei prodotti offre agli utenti un controllo completo e trasparente sulla provenienza e il percorso dei prodotti, migliorando la fiducia e la sicurezza nelle loro scelte d'acquisto.</li>
-<li>Documenti clienti: bloccati i campi contabili e sensibili in caso di DDT già fatturati</li>
-<li>Inserimento delle colonne dei Totali negli ordini fornitore materiali</li>
-<li>La nuova funzionalità di assegnazione ordini cliente consente di gestire gli ordini in modo più efficiente, permettendo di assegnare più pagine per volta,</li>
-<li>La nuova funzionalità in Excel per la gestione della situazione capi a magazzino ora evidenzia chiaramente i capi in negativo dei magazzini retail, migliorando la visibilità</li>
-<li>La nuova funzionalità consente all'amministratore di modificare gli ordini di controllo chiusi e ristampare i report, migliorando così la gestione e l'accuratezza delle informazioni per un'esperienza utente più efficiente.</li>
-<li>Ottimizzata la gestione negativi retail</li>
-<li>Modifica Massiva Commesse:&nbsp;Introdotta la possibilità di modificare il Lotto nelle commesse dalla pagina&nbsp;di gestione commesse massive. Oltre al saldo e sblocco commesse, ora è possibile anche variare il lotto massivamente.</li>
-<li>Su variazioni massive distinta base, aggiunto il filtro sul tessuto di testata della distinta base</li>
-<li>Aggiunto filtro per stagione commessa in scarico materiali a laboratorio</li>
 </ol>]]></content>
         <author>
             <name>4SNE</name>
