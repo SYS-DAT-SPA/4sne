@@ -1,0 +1,67 @@
+---
+slug: Release note 2026-11-20
+title: Release note 2610
+authors: [4sne]
+tags: [4sne]
+---
+
+# Release note 2610
+
+### 4Seasons Next
+
+La seguente versione 2610 del 20/11/2026 riporta i seguenti aggiornamenti
+
+:::warning
+
+Le presenti note di rilascio sono fornite a scopo informativo e non costituiscono un impegno definitivo. Le informazioni contenute in questo documento sono soggette a modifiche senza preavviso.
+
+Sebbene ci si sia impegnati a fornire informazioni accurate e aggiornate, è importante notare che le funzionalità e gli aggiornamenti descritti sono soggetti a ulteriore verifica da parte dell'utente finale.  Si consiglia agli utenti di testare e valutare attentamente ogni funzionalità nel proprio ambiente specifico prima di implementarla in produzione.
+SYS-DAT non si assume alcuna responsabilità per eventuali errori od omissioni presenti in queste note di rilascio.
+
+:::
+
+
+<!-- truncate -->
+
+### Aggiornamenti:        
+
+#  32
+
+L’aggiornamento software coinvolge principalmente le aree di produzione, gestione magazzino, distinta base e documenti clienti, con nuove funzionalità come l’aggiunta di immagini modello per articolo e colore, la duplicazione massiva di distinte basi tra stagioni e la gestione avanzata di semilavorati e buoni di prelievo. Sono state migliorate le performance con ottimizzazioni delle query, l’invio del Digital Product Passport, e l’implementazione di controlli più rigorosi per evitare disallineamenti in produzione. Infine, sono stati introdotti miglioramenti nell’interfaccia utente, nella gestione delle autorizzazioni, e nella visualizzazione e calcolo di ordini e magazzino, garantendo una maggiore precisione e usabilità.
+
+
+##### Release notes
+
+1. Modelli: previsto l'aggiunta delle immagini del modello a livello di articolo e colore. 
+1. Produzione: nella funzione aggiornamento massivo laboratorio aggiunta la possibilità di aggiornare anche i buoni di prelievo provvisori. 
+1. Distinta base: nuova funzionalità per duplicare massivamente abbinamenti di vendita e distinte basi da una stagione di vendita ad un'altra.   
+1. Produzione: implementata la gestione degli articoli semilavorati alla rilevazione capi al taglio. 
+1. Documenti clienti: previsto con un ulteriore flag di copiare anche il numero ordine e riga quando importi le righe da altro documento. 
+1. Digital Product Passport (DPP) step 2/3: implementato l'invio del prodotto per il passaporto digitale standard, da agganciare poi all'interfaccia selezionata. 
+1. Ubicazioni step 5/5: implementata la gestione del magazzino ubicato nel ciclo della spedizione. 
+1. Documenti clienti: in fase di contabilizzazione clienti abbiamo aggiunto le informazioni&nbsp;del documento per capire in tempo reale lo status dell'invio. 
+1. Ubicazioni step 4/5: implementata la gestione del magazzino ubicato&nbsp;nelle liste libere capi finiti. 
+1. Utenti: implementata la funzionalità per gestire le eliminazioni delle abilitazioni inserite sul singolo utente. 
+1. Autorizzazione al reso: nella gestione del reso dentro le righe in fase di visualizzazione è stato recuperato il prezzo originale del documento di origine qualora agganciato. 
+1. Ordini clienti: nel riepilogo dei totali ottimizzato il calcolo in presenza di annullamenti parziali. 
+1. Ordini fornitori materie prime: implementata la gestione del prezzo a scaglioni sulla quantità ordinata. 
+1. NQL: Ottimizzazione delle query per migliorare le prestazioni e l'affidabilità.
+1. Fornitori: implementata la gestione del campo MidCode presente nell’anagrafica. 
+1. Produzione: aggiunti dei controlli ulteriori alla modifica della distinta di produzione in presenza di buoni di prelievo attivi per evitare disallineamenti. 
+1. Autorizzazioni al reso: in fase di versamento a magazzino previsto il seleziona tutto per tutte le righe e non solo quelle della pagina corrente. 
+1. Distinta base: ottimizzata la gestione di import da altra distinta base. 
+1. Materie prime: previsto in visualizzazione della griglia più decimali per il campo peso. 
+1. Anticipi su vendite: implementata la gestione proporzionale alla vendita per stagione degli anticipi. 
+1. UFR: implementata la funzionalità per gestire query complesse nel filtro. 
+1. Magazzino capi finiti: restyling della maschera organizzando meglio i campi e riepilogando il totale capi a fondo. 
+1. Materie prime: implementati nuovi formati per il caricamento delle immagini. 
+1. E-commerce: migliorata l'accessibilità in fase di visualizzazione degli stati dei prodotti e-commerce. 
+1. Magazzino capi finiti: all'inserimento del movimento manuale corretti i simboli della valuta scelta che potrebbe essere diversa da quella aziendale. 
+1. Ordini fornitori capi finiti: al versamento a magazzino aggiunto nel riepilogo finale che esce in coda il campo totale netto. 
+1. Documenti clienti: previsti i contro-movimenti di magazzino qualora cancelli un documento anche per le materie prime. 
+1. Produzione: al documento creato da buono di prelievo è stata aggiunta la stagione di testata, proposta quella della commessa. 
+1. Produzione: nella gestione degli avanzamenti è stata prevista la paginazione nella visualizzazione dei dati. 
+1. Stampa barcode: aggiunto il filtro variante capo. 
+1. Configurazioni generali: rivisitazione di diverse diciture non tradotte su tutto il gestionale. 
+1. Distinta base: ottimizzato lo spostamento delle righe dei materiali. 
+
